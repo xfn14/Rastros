@@ -2,13 +2,15 @@
 
 int main() {
 
-    int c, l, jogadac;
-    char jogadal;
+    int c, l, jogadac, x;
     char linha = 'A';
 
+    char jogadal[100] = " ABCDEFGH";
+
     printf ("Jogada\n");
+    scanf ("%d", &x);
     scanf ("%d", &jogadac);
-    scanf ("%c", &jogadal);
+
 
     for (l=0; l<8; l++)
     {
@@ -17,7 +19,7 @@ int main() {
             if (linha=='A' && c==7) printf ("2");
             else if (linha=='H' && c==0) printf ("1");
             else if (linha=='C' && c==4) printf ("*");
-            else if (linha==jogadal && c==jogadac) printf ("*");
+            else if (linha==jogadal[x] && c==jogadac) printf ("#");
             else printf (".");
         }
         linha += 1;
