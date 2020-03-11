@@ -4,12 +4,15 @@
 
 int main() {
 
-    int jogadac, x;
+    int jogadac;
+    char x;
+
+
 
     tabuleiro();
 
     printf ("Jogada\n");
-    scanf ("%d", &x);
+    scanf (" %c", &x);
     scanf ("%d", &jogadac);
 
     jogada (x, jogadac);

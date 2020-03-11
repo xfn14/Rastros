@@ -1,1 +1,1 @@
-int jogada(int x, int y);
+int jogada(char x, int y);
