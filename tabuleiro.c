@@ -2,26 +2,25 @@
 
 int main() {
 
-    int l,c, jogadal, jogadac, coluna=0;
+    int c, l, jogadac;
+    char jogadal;
     char linha = 'A';
 
-    printf ("jogada");
+    printf ("Jogada\n");
     scanf ("%d", &jogadac);
-    printf ("jogada");
-    scanf ("%d", &jogadal);
+    scanf ("%c", &jogadal);
 
     for (l=0; l<8; l++)
     {
         for (c=0; c<8; c++)
         {
-            if (l==0 && c==7) printf ("2");
-            else if (l==7 && c==0) printf ("1");
-            else if (l==3 && c==4) printf ("*");
-            else if (c==jogadac && l==jogadal) printf ("*");
+            if (linha=='A' && c==7) printf ("2");
+            else if (linha=='H' && c==0) printf ("1");
+            else if (linha=='C' && c==4) printf ("*");
+            else if (linha==jogadal && c==jogadac) printf ("*");
             else printf (".");
-            coluna += c;
         }
-        linha += l;
+        linha += 1;
         printf("\n");
     }
 
