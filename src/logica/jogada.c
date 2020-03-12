@@ -4,7 +4,6 @@
 
 int jogar(ESTADO *estado, COORDENADA c){
     COORDENADA peca = obter_coordenada_peca(estado);
-
 }
 
     int jogada (char x, int y){
