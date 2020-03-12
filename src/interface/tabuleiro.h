@@ -1,7 +1,7 @@
 #ifndef SRC_TABULEIRO_H
 #define SRC_TABULEIRO_H
 
-#include "dados/data.h"
+#include "../dados/data.h"
 
 CASA tabuleiro_inicial[8][8] =
         {
