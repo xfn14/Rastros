@@ -37,7 +37,7 @@ COORDENADA obter_coordenada_peca(ESTADO *e){
             if(e->tab[i][j] == PECA){
                 COORDENADA coord = {
                         .coluna = j+1,
-                        .linha = i+1
+                        .linha = 8-i
                 };
                 return coord;
             }

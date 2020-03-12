@@ -8,12 +8,12 @@
 int main() {
 
     ESTADO *estado = inicializar_estado();
-    interpretador(estado);
+    //interpretador(estado);
     //COORDENADA coord_peca = obter_coordenada_peca(estado);
     //printf("%d", coord_peca.coluna);
     //printf("%d", coord_peca.linha);
 
-    //mostrar_tabuleiro(estado);
+    mostrar_tabuleiro(estado);
 
     return 0;
 }
