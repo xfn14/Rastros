@@ -13,22 +13,27 @@ const CASA tabuleiro_inicial[8][8] =
                 {PRETA, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO}
         };
 
-void mostrar_tabuleiro(){
-
-    int l, c;
-    char linha = 'A';
-
-    for (l=0; l<8; l++)
-    {
-        for (c=0; c<8; c++)
-        {
-            if (linha=='A' && c==7) printf ("2");
-            else if (linha=='H' && c==0) printf ("1");
-            else if (linha=='D' && c==4) printf ("*");
-            else printf (".");
+void mostrar_tabuleiro(ESTADO *e){
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            switch (e->tab[i][j]){
+                case PRETA:
+                    putchar('1');
+                    break;
+                case BRANCA:
+                    putchar('2');
+                    break;
+                case RASTRO:
+                    putchar('#');
+                    break;
+                case PECA:
+                    putchar('*');
+                    break;
+                case VAZIO:
+                    putchar('.');
+                    break;
+            }
         }
-        linha += 1;
-        printf("\n");
+        putchar('\n');
     }
-
 }

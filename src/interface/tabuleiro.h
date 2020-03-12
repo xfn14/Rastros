@@ -5,7 +5,7 @@
 
 const CASA tabuleiro_inicial[8][8];
 
-void mostrar_tabuleiro();
+void mostrar_tabuleiro(ESTADO *e);
 
 #endif //SRC_TABULEIRO_H
 

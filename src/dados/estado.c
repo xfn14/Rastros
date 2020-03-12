@@ -7,6 +7,7 @@ ESTADO *inicializar_estado() {
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
             e->tab[i][j] = tabuleiro_inicial[i][j];
+
         }
     }
 
@@ -35,8 +36,8 @@ COORDENADA obter_coordenada_peca(ESTADO *e){
         for(int j = 0; j < 8; j++){
             if(e->tab[i][j] == PECA){
                 COORDENADA coord = {
-                        .coluna = j,
-                        .linha = i
+                        .coluna = j+1,
+                        .linha = i+1
                 };
                 return coord;
             }
