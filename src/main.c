@@ -1,21 +1,15 @@
 #include <stdio.h>
-#include "tabuleiro.h"
-#include "jogada.h"
+#include "dados/data.h"
+#include "dados/estado.h"
+#include "interface/tabuleiro.h"
+#include "logica/jogada.h"
+
+#define BUF_SIZE 1024
 
 int main() {
-
-    int jogadac;
-    char x;
-
-
-
-    tabuleiro();
-
-    printf ("Jogada\n");
-    scanf (" %c", &x);
-    scanf ("%d", &jogadac);
-
-    jogada (x, jogadac);
+    ESTADO *estado = inicializar_estado();
+    mostrar_tabuleiro();
 
     return 0;
 }
+

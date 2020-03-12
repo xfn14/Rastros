@@ -3,4 +3,4 @@ project(src C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(src main.c)
+add_executable(src main.c logica/jogada.c logica/jogada.h main.c interface/tabuleiro.c interface/tabuleiro.h dados/data.h dados/estado.c dados/estado.h)

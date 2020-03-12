@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void tabuleiro(){
+void mostrar_tabuleiro(){
 
     int l, c;
     char linha = 'A';
