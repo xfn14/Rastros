@@ -1,16 +1,9 @@
 #include <stdio.h>
 
-int main() {
+void tabuleiro(){
 
-    int c, l, jogadac, x;
+    int l, c;
     char linha = 'A';
-
-    char jogadal[100] = " ABCDEFGH";
-
-    printf ("Jogada\n");
-    scanf ("%d", &x);
-    scanf ("%d", &jogadac);
-
 
     for (l=0; l<8; l++)
     {
@@ -18,13 +11,11 @@ int main() {
         {
             if (linha=='A' && c==7) printf ("2");
             else if (linha=='H' && c==0) printf ("1");
-            else if (linha=='C' && c==4) printf ("*");
-            else if (linha==jogadal[x] && c==jogadac) printf ("#");
+            else if (linha=='D' && c==4) printf ("*");
             else printf (".");
         }
         linha += 1;
         printf("\n");
     }
 
-    return 0;
 }

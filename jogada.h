@@ -1,0 +1,1 @@
+int jogada(char x, int y);
