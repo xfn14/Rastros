@@ -1,16 +1,19 @@
 #include "estado.h"
 #include <stdlib.h>
 
-ESTADO *inicializar_estado(){
+ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
 
-    *e = (ESTADO)
-            {
-        .tab = tabuleiro_inicial,
-        .jogadas = {},
-        .jogador_atual = 1,
-        .num_jogadas = 0
-            };
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            e->tab[i][j] = tabuleiro_inicial[i][j];
+        }
+    }
+
+    // e->jogadas init is empty
+
+    e->jogador_atual = 1;
+    e->num_jogadas = 0;
 
     return e;
 }
@@ -25,4 +28,18 @@ int obter_numero_de_jogadas(ESTADO *estado){
 
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
     return e->tab[c.coluna][c.linha];
+}
+
+COORDENADA obter_coordenada_peca(ESTADO *e){
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            if(e->tab[i][j] == PECA){
+                COORDENADA coord = {
+                        .coluna = j,
+                        .linha = i
+                };
+                return coord;
+            }
+        }
+    }
 }

@@ -1,4 +1,17 @@
 #include <stdio.h>
+#include "tabuleiro.h"
+
+const CASA tabuleiro_inicial[8][8] =
+        {
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, BRANCA},
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO},
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO},
+                {VAZIO, VAZIO, VAZIO, VAZIO, PECA, VAZIO, VAZIO, VAZIO},
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO},
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO},
+                {VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO},
+                {PRETA, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO, VAZIO}
+        };
 
 void mostrar_tabuleiro(){
 

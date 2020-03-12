@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include "../dados/data.h"
+
+int jogar(ESTADO *estado, COORDENADA c){
+
+}
 
     int jogada (char x, int y){
 
