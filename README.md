@@ -16,6 +16,6 @@
 ## Autores 📝
 André Filipe Novais Vaz - A93221
 
-Ricardo Silva Lopes - A93195
+Ricardo Lopes Santos Silva - A93195
 
 Benjamim Meleiro Rodrigues - A93323
