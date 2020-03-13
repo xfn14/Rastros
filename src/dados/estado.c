@@ -1,5 +1,4 @@
 #include "estado.h"
-#include <stdlib.h>
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));

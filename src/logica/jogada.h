@@ -2,11 +2,13 @@
 #define SRC_JOGADA_H
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "../dados/data.h"
 #include "../dados/estado.h"
-
+#include "../interface/interpretador.h"
 
 int jogar(ESTADO *estado, COORDENADA coord);
 int jogada_valida(ESTADO *estado, COORDENADA coord);
+int adicionar_jogada(ESTADO *estado, COORDENADA coord);
 
 #endif //SRC_JOGADA_H

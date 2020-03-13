@@ -1,6 +1,7 @@
 #ifndef SRC_ESTADO_H
 #define SRC_ESTADO_H
 
+#include <stdlib.h>
 #include "../interface/tabuleiro.h"
 #include "data.h"
 

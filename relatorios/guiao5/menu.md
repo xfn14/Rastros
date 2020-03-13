@@ -1,9 +1,9 @@
 # Relatório Guião 5 📝
 
-Neste guião 5 dá-se deu início à realização projeto. Foi nos proposto o
+Neste Guião 5 deu-se início à realização projeto. Foi nos proposto o
 jogo **Rastros**.
-Neste guião 5, haviam duas tarefas base: a organização dos módulos e a implementação das funções.
-Os módulos eram os seguintes:
+Haviam duas tarefas base: a organização dos módulos e a implementação das funções iniciais.
+Os módulos foram distribuidos de acordo com a seguinte estrutura:
 
 
 ### Estrutura

@@ -8,9 +8,7 @@ int main() {
     while(quit == 0){
         interpretador(estado);
     }
-    //COORDENADA coord_peca = obter_coordenada_peca(estado);
-    //printf("%d", coord_peca.coluna);
-    //printf("%d", coord_peca.linha);
+
     return 0;
 }
 
