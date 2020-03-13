@@ -8,9 +8,11 @@ Neste módulo tratamos de duas tarefas:
 Para cada tarefa seguem se as suas descrições.
 
 ####Mostrar o tabuleiro
+
 ***mostrar_tabuleiro***: Função que recebe um estado e imprime o tabuleiro para esse estado.
 
 ####Interpretador de comandos
+
 Para o interpretador eram pedidos os seguintes tópicos:
    
     1.Ler uma linha (usando fgets)
