@@ -24,4 +24,4 @@ Se a jogada for válida, a função pode ter 3 return diferentes:
 ### Array de Jogadas
 Para além de executar as jogadas e alterar o tabuleiro, as jogadas são armazenadas num array e o número de jogadas incrementado por 1.
 
-Assim temos disponível tod
+Assim temos disponível todas as jogadas numa só lista, sendo que vai ser util mais tarde.
