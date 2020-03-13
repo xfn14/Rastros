@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/GOGaHkq.jpg" align="center" alt="MIEI">
     <br>
     <br>
-    <strong><i>Laboratórios de Informática II - PL6 - Grupo 8</i></strong>
+    <strong><i>🔴 Rastros - Laboratórios de Informática II</i></strong>
     <br>
     <br>
     <br>
@@ -16,9 +16,9 @@
 <br>
 <br>
 
-## Autores 📝
-André Filipe Novais Vaz - A93221
+## PL6 - Grupo 8 📝
+- André Filipe Novais Vaz - A93221
+- Ricardo Lopes Santos Silva - A93195
+- Benjamim Meleiro Rodrigues - A93323
 
-Ricardo Lopes Santos Silva - A93195
-
-Benjamim Meleiro Rodrigues - A93323
+## Explicação do Projeto

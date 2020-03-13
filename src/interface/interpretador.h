@@ -7,6 +7,7 @@
 #include "tabuleiro.h"
 #include "../logica/jogada.h"
 
+int quit;
 int interpretador(ESTADO *e);
 
 #endif //SRC_INTERPRETADOR_H

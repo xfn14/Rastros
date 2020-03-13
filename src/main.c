@@ -5,7 +5,9 @@
 int main() {
     ESTADO *estado = inicializar_estado();
     mostrar_tabuleiro(estado);
-    interpretador(estado);
+    while(quit == 0){
+        interpretador(estado);
+    }
     //COORDENADA coord_peca = obter_coordenada_peca(estado);
     //printf("%d", coord_peca.coluna);
     //printf("%d", coord_peca.linha);
