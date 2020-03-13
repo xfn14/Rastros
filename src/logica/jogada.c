@@ -17,10 +17,9 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     int x2 = coord.coluna, y2 = coord.linha;
 
     // Validar casas em volta da PECA
-    if(((x1 == x2) && (y2 == y1-1 || y1+1 == y2)) // Cima e baixo
-    || ((x2+1 == x1) && (y2 == y1-1 || y2 == y1 || y1+1 == y2)) // Esquerda
-    || ((x2-1 == x1) && (y2 == y1-1 || y2 == y1 || y1+1 == y2))) // Direita
-    {
+    if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
+    || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
+     {
         if(obter_estado_casa(estado,coord) == VAZIO){
             return 1;
         }
