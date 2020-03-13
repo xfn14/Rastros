@@ -1,6 +1,10 @@
 # Relatório Guião 5 📝
 
-texto de introduçao
+Neste guião 5 dá-se deu início à realização projeto. Foi nos proposto o
+jogo **Rastros**.
+Neste guião 5, haviam duas tarefas base: a organização dos módulos e a implementação das funções.
+Os módulos eram os seguintes:
+
 
 ### Estrutura
 - [Main](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/main.md)
