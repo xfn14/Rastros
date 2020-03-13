@@ -16,15 +16,22 @@ Definimos os tipos:
 -Jogada
 -Estado, em que:
 > tab - armazena informação sobre o tabuleiro
+>
 > ultima_jogada - a coordenada da última jogada
+>
 > jogadas - armazena informação sobre as jogadas
+>
 > num_jogadas - indica quantas jogadas foram efetuadas 
+>
 > jogador_atual - indica qual é o jogador a jogar
 
 
 ### Funções que alteram o Estado
 
-> inicializar_estado - Esta função cria um estado vazio (com o tabuleiro inicializado) 
-> obter_jogador_atual - Esta função permite obter o número do jogador atual 
-> obter_estado_casa - Esta função permite obter o estado atual da casa 
-> obter_numero_de_jogadas -Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores) 
+> inicializar_estado - Esta função cria um estado vazio (com o tabuleiro inicializado)
+>
+> obter_jogador_atual - Esta função permite obter o número do jogador atual
+>
+> obter_estado_casa - Esta função permite obter o estado atual da casa
+>
+> obter_numero_de_jogadas -Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
