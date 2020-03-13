@@ -1,10 +1,10 @@
 # Camada de Dados
 
-Esta módulo tinha como objetivo ter a estrutura de dados do programa.
+Este módulo apresente a estrutura de dados do programa e as únicas funções capazes de alterar o Estado definido nesta estrutura.
 
 ### Data
 
-Para isto criamos um ficheiro que definiu os vários tipos necessários para criar as funções necessárias para a realização do jogo.
+Para isto, em primeiro lugar, criamos um ficheiro que definiu os vários tipos necessários para criar as funções necessárias para a realização do jogo.
 
 Definimos os tipos:
 
@@ -29,7 +29,7 @@ Definimos os tipos:
 
 ### Funções que alteram o Estado
 
-Pretendia-se também que fossem criadas funções que alterassem a estrutura de dados.
+Com os vários tipos de tipos da estrutura de dados agora definidos tinhamos como objetivos criar agora funções que conseguissem alterar o Estado.
 
 Todas estas funções recebem um apontador para ESTADO e modificam-o. 
 
