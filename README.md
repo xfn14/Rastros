@@ -22,4 +22,4 @@
 - Benjamim Meleiro Rodrigues - A93323
 
 ## Relatórios 📝
-- [Guião 5](https://github.com/andreubita/li2-201920/blob/master/exp/Guiao5_relatorio.md)
+- [Guião 5](https://github.com/andreubita/li2-201920/blob/master/relatorios/Guiao5_relatorio.md)
