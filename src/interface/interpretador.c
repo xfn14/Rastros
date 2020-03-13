@@ -10,7 +10,10 @@ int interpretador(ESTADO *e) {
             return 0;
 
         if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
-            COORDENADA coord = {*col - 'a'+1, *lin - '1'+1};
+            COORDENADA coord = {*col - 'a', *lin - '1'};
+            coord.linha = 7-coord.linha;
+            //printf("%d", coord.coluna);
+            //printf("%d", coord.linha);
             jogar(e, coord);
             mostrar_tabuleiro(e);
         }

@@ -13,8 +13,8 @@ ESTADO *inicializar_estado() {
     // e->jogadas init is empty
 
     COORDENADA pos_inicial_peca;
-    pos_inicial_peca.coluna = 0;
-    pos_inicial_peca.linha = 1;
+    pos_inicial_peca.coluna = 4;
+    pos_inicial_peca.linha = 3;
 
     e->ultima_jogada = pos_inicial_peca;
     e->jogador_atual = 1;
@@ -32,7 +32,7 @@ int obter_numero_de_jogadas(ESTADO *estado){
 }
 
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-    return e->tab[c.coluna][c.linha];
+    return e->tab[c.linha][c.coluna];
 }
 
 /*
