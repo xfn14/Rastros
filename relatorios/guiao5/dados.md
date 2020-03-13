@@ -8,13 +8,13 @@ Para isto criamos um ficheiro que definiu os vários tipos necessários para cri
 
 Definimos os tipos:
 
--Casa
+- Casa
 
--Coordenada
+- Coordenada
 
--Jogada
+- Jogada
 
--Estado, em que:
+- Estado, em que:
 
 > tab - armazena informação sobre o tabuleiro
 >
@@ -41,4 +41,4 @@ Estas são as únicas funções que alteram o estado! Todo o resto do programa a
 >
 > obter_estado_casa - Esta função permite obter o estado atual da casa
 >
-> obter_numero_de_jogadas -Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
+> obter_numero_de_jogadas - Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
