@@ -22,4 +22,9 @@
 - Benjamim Meleiro Rodrigues - A93323
 
 ## Relatórios 📝
-- [Guião 5](https://github.com/andreubita/li2-201920/blob/master/relatorios/Guiao5_relatorio.md)
+- [Guião 5](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/menu.md)
+
+## Como Jogar 🎯
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=a_5_H9-Rmg0" target="_blank">
+    <img src="http://img.youtube.com/vi/a_5_H9-Rmg0/0.jpg" alt="Jogo Rastros Video" width="240" height="180" border="10"/>
+</a>
