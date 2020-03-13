@@ -41,8 +41,9 @@ Estas são as únicas funções que alteram o estado! Todo o resto do programa a
 - obter_jogador_atual
 > Esta função permite obter o número do jogador atual
 
+- obter_numero_de_jogadas
+> Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
+
 - obter_estado_casa
 > Esta função permite obter o estado atual da casa
 
-- obter_numero_de_jogadas -
-> Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
