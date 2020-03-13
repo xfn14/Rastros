@@ -7,11 +7,11 @@ Neste módulo tratamos de duas tarefas:
 
 Para cada tarefa seguem se as suas descrições.
 
-####Mostrar o tabuleiro
+###Mostrar o tabuleiro
 
 ***mostrar_tabuleiro***: Função que recebe um estado e imprime o tabuleiro para esse estado.
 
-####Interpretador de comandos
+###Interpretador de comandos
 
 Para o interpretador eram pedidos os seguintes tópicos:
    
