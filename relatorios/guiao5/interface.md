@@ -16,7 +16,7 @@ Para cada tarefa seguem se as suas descrições.
 ***mostrar_tabuleiro***:
 Função que recebe um estado e imprime o tabuleiro para esse estado.
 Tal é desenhado através de dois for-loop que percorrem a array bidimensional do tabuleiro presente no estado.
-Cada elemento desta array é uma *CASA* logo através de ifs consegui-mos detetar que tipo de *CASA* é e colocar o char correto.
+Cada elemento desta array é uma *CASA* logo através de ifs conseguimos detetar que tipo de *CASA* é e colocar o char correto.
 
 ### Interpretador de comandos
 
@@ -31,10 +31,10 @@ Para o interpretador eram pedidos os seguintes tópicos:
     
 ***interpretador***:
 Atualmente o interpretador ainda não foi desenvolvido na sua totalidade mas já tem as features essenciais.
-Primeniramente a função é chamada na main() sendo fornecido e estado do jogo, sendo que esta função é chamada até o
+Primeiramente, a função é chamada na main() sendo fornecido o estado do jogo, sendo que esta função é chamada até o
 user introduzir um "q" ou o jogo acabar.
-O interpretador começa por ler input do nosso user, onde esse input é processado através de ifs para conseguir-mos
+O interpretador começa por ler o input do nosso user, onde esse input é processado através de ifs para conseguirmos
 determinar o seu conteúdo.
-De seguida, tento o conteúdo devidamente identificado, é executada as funções necessárias para que aconteça o que o user
+De seguida, tento o conteúdo devidamente identificado, são executadas as funções necessárias para que aconteça o que o user
 pretende.
-Apos isto ter isso concluido, a função volta a ser chamada para que novo input seja introduzido.
+Após isto ter isso concluído, a função volta a ser chamada para que novo input seja introduzido.

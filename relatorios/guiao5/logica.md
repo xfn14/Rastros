@@ -1,5 +1,12 @@
 # Lógica do programa
+<<<<<<< HEAD
 Neste módulo trata-se a lógica do jogo em si, implementando-se a função jogar, junto com outras que a suportam.
+=======
+##### Neste módulo trata-se a lógica do jogo em si, implementando-se a função jogar.
+***jogar*** : Esta função deverá receber o estado atual e uma coordenada e modificar o estado ao jogar 
+na casa correta se a jogada for válida. No fim da jogada, a função mostra o tabuleiro através da função
+**mostrar_tabuleiro** explicada no módulo da camada de interface.
+>>>>>>> e3fab1c799d36f31ec9f761bc3a886eb6aa9d94f
 
 ### Jogar
 Esta função recebe o estado atual e a coordenada de input do user através do interpretador.
