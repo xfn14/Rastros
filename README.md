@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/GOGaHkq.jpg" align="center" alt="MIEI">
     <br>
     <br>
-    <string><i>Laboratórios de Informática II - PL6 - Grupo 8</i></strong>
+    <strong><i>Laboratórios de Informática II - PL6 - Grupo 8</i></strong>
     <br>
     <br>
     <br>

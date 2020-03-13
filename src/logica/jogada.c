@@ -2,10 +2,10 @@
 #include "../dados/data.h"
 #include "../dados/estado.h"
 
-int jogar(ESTADO *estado, COORDENADA c){
-    COORDENADA peca = obter_coordenada_peca(estado);
-    //obter_estado_casa()
+int jogar(ESTADO *estado, COORDENADA coord){
 
+}
 
+int jogada_valida(ESTADO *estado, COORDENADA coord){
 
 }

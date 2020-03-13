@@ -8,10 +8,10 @@ typedef struct ESTADO ESTADO;
 
 enum CASA {
     VAZIO,
-    BRANCA,
-    PRETA,
     RASTRO,
-    PECA
+    PECA,
+    POS1,
+    POS2
 };
 
 struct COORDENADA {
@@ -27,6 +27,7 @@ typedef JOGADA JOGADAS[32];
 
 struct ESTADO{
     CASA tab[8][8];
+    COORDENADA ultima_jogada;
     JOGADAS jogadas;
     int num_jogadas;
     int jogador_atual;

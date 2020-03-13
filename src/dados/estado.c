@@ -7,12 +7,16 @@ ESTADO *inicializar_estado() {
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
             e->tab[i][j] = tabuleiro_inicial[i][j];
-
         }
     }
 
     // e->jogadas init is empty
 
+    COORDENADA pos_inicial_peca;
+    pos_inicial_peca.coluna = 0;
+    pos_inicial_peca.linha = 1;
+
+    e->ultima_jogada = pos_inicial_peca;
     e->jogador_atual = 1;
     e->num_jogadas = 0;
 
@@ -31,6 +35,11 @@ CASA obter_estado_casa(ESTADO *e, COORDENADA c){
     return e->tab[c.coluna][c.linha];
 }
 
+/*
+ *  Função para obter a posição da PECA
+ *  percorrendo a matriz da tabuleiro.
+ *  (Usar antes estado->ultimq_peca)
+ *
 COORDENADA obter_coordenada_peca(ESTADO *e){
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
@@ -43,4 +52,4 @@ COORDENADA obter_coordenada_peca(ESTADO *e){
             }
         }
     }
-}
+}*/
