@@ -18,12 +18,12 @@ int jogar(ESTADO *estado, COORDENADA coord){
             estado->jogador_atual = 1;
         }
 
+        mostrar_tabuleiro(estado);
+
         if(validar == 1 || validar == 2){
             printf("\nJogador %d vence.", validar);
             quit = 1;
         }
-
-        mostrar_tabuleiro(estado);
         return 1;
     }
     return 0;
