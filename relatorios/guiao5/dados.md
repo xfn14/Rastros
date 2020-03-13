@@ -4,8 +4,11 @@ Esta módulo tinha como objetivo ter a estrutura de dados do programa.
 
 Para isto criamos um ficheiro que definiu os vários tipos necessários para criar as funções necessárias para a realização do jogo.
 
-Pretendia-se também que fossem criadas funções que alterassem a estrutura de dados. 
+
+Pretendia-se também que fossem criadas funções que alterassem a estrutura de dados.
+
 Todas estas funções recebem um apontador para ESTADO e modificam-o. 
+
 Estas são as únicas funções que alteram o estado! Todo o resto do programa apenas modifica o estado através destas funções.
 
 ### Data
