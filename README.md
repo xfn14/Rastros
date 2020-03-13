@@ -16,9 +16,10 @@
 <br>
 <br>
 
-## PL6 - Grupo 8 📝
+## PL6 - Grupo 8 🧔
 - André Filipe Novais Vaz - A93221
 - Ricardo Lopes Santos Silva - A93195
 - Benjamim Meleiro Rodrigues - A93323
 
-## Explicação do Projeto
+## Relatórios 📝
+- [Guião 5](https://github.com/andreubita/li2-201920/blob/master/exp/Guiao5_relatorio.md)
