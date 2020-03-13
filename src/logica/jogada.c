@@ -6,7 +6,6 @@ int jogar(ESTADO *estado, COORDENADA coord){
         estado->tab[coord.linha][coord.coluna] = PECA;
         estado->tab[estado->ultima_jogada.linha][estado->ultima_jogada.coluna] = RASTRO;
         estado->ultima_jogada = coord;
-        estado->num_jogadas = obter_numero_de_jogadas(estado)+1;
 
         // Adicionar jogada ao array de jogadas
         adicionar_jogada(estado, coord);
