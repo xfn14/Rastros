@@ -11,10 +11,15 @@ Estas são as únicas funções que alteram o estado! Todo o resto do programa a
 ### Data
 
 Definimos os tipos:
+
 -Casa
+
 -Coordenada
+
 -Jogada
+
 -Estado, em que:
+
 > tab - armazena informação sobre o tabuleiro
 >
 > ultima_jogada - a coordenada da última jogada
