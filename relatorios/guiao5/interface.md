@@ -16,7 +16,7 @@ Para cada tarefa seguem se as suas descrições.
 ***mostrar_tabuleiro***:
 Função que recebe um estado e imprime o tabuleiro para esse estado.
 Tal é desenhado através de dois for-loop que percorrem a array bidimensional do tabuleiro presente no estado.
-Cada elemento desta array é uma *CASA* logo através de ifs conseguimos detetar que tipo de *CASA* é e colocar o char correto.
+Cada elemento desta array é uma [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) logo através de ifs conseguimos detetar que tipo de [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) é e colocar o char correto.
 
 ### Interpretador de comandos
 

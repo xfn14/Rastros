@@ -1,4 +1,5 @@
 # Lógica do programa
+
 Neste módulo trata-se a lógica do jogo em si, implementando-se a função jogar, junto com outras que a suportam.
 
 ### Jogar
@@ -12,7 +13,7 @@ Caso a jogada seja válida, então a função muda o tabuleiro presente no estad
 Esta função tem como objetivo determinar se uma jogada é valida de acordo com o estado atual do jogo e a coordenada
 de input. 
 
-Deste modo, a coordenada tem de estar em volta da *PECA* e a *CASA* da coordenada tem de ser *VAZIO*.
+Deste modo, a coordenada tem de estar em volta da *PECA* e a [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa)[*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) da coordenada tem de ser *VAZIO*.
 
 Se a jogada for inválida, a função da return de 0.
 
@@ -24,4 +25,4 @@ Se a jogada for válida, a função pode ter 3 return diferentes:
 ### Array de Jogadas
 Para além de executar as jogadas e alterar o tabuleiro, as jogadas são armazenadas num array e o número de jogadas incrementado por 1.
 
-Assim temos disponível todas as jogadas numa só lista, sendo que vai ser util mais tarde.
+Assim temos disponível todas as jogadas numa só array.

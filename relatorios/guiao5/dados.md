@@ -27,7 +27,7 @@ struct COORDENADA {
     int linha;
 };
 ```
-*COORDENADA* corresponde à posição de uma *CASA* no tabuleiro. As *COORDENADA* são representadas por dois números inteiros (0-7). O valor destas *COORDENDA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
+*COORDENADA* corresponde à posição de uma [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) no tabuleiro. As *COORDENADA* são representadas por dois números inteiros (0-7). O valor destas *COORDENDA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
 
 ###### Jogada
 ```c
@@ -65,24 +65,24 @@ Tais informações representam:
 
 ### Funções que alteram o Estado
 
-Com os vários tipos de tipos da estrutura de dados agora definidos tinhamos como objetivos criar agora funções que conseguissem alterar o Estado.
+Com os vários tipos de tipos da estrutura de dados agora definidos tinhamos como objetivos criar agora funções que conseguissem alterar o *ESTADO*.
 
-Todas estas funções recebem um apontador para ESTADO e modificam-o. 
+Todas estas funções recebem um apontador para *ESTADO* e modificam-o. 
 
 Estas são as únicas funções que alteram o estado! Todo o resto do programa apenas modifica o estado através destas funções.
 
 ***inicializar_estado***:
-Esta função cria um estado vazio (com o tabuleiro inicializado)
+Esta função cria um *ESTADO* vazio (com o tabuleiro inicializado)
 
 
 ***obter_jogador_atual***:
-Esta função permite obter o número do jogador que tem que executar a jogada.
+Esta função permite obter o número do jogador que tem que executar a *JOGADA*.
 
 
 ***obter_numero_de_jogadas***:
-Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
+Esta função permite obter quantas JOGADAs foram efetuadas (cada *JOGADA* tem o movimento de dois jogadores)
 
 
 **obter_estado_casa**
-Esta função permite obter a *CASA* em determinada coordenada do tabuleiro.
+Esta função permite obter a [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) em determinada coordenada do tabuleiro.
 
