@@ -13,7 +13,7 @@ Caso a [*JOGADA*][jogada] seja válida, então a função muda o tabuleiro prese
 Esta função tem como objetivo determinar se uma [*JOGADA*][jogada] é valida de acordo com o [*ESTADO*][estado] atual do jogo e a [*COORDENADA*][coordenada]
 de input. 
 
-Deste modo, a [*COORDENADA*][coordenada] tem de estar em volta da *PECA* e a [*CASA*][casa][*CASA*][casa] da [*COORDENADA*][coordenada] tem de ser *VAZIO*.
+Deste modo, a [*COORDENADA*][coordenada] tem de estar em volta da *PECA* e a [*CASA*][casa] da [*COORDENADA*][coordenada] tem de ser *VAZIO*.
 
 Se a [*JOGADA*][jogada] for inválida, a função da return de 0.
 
@@ -27,7 +27,7 @@ Para além de executar as [*JOGADA*][jogada]s e alterar o tabuleiro, as [*JOGADA
 
 Assim temos disponível todas as [*JOGADA*][jogada]s numa só array.
 
-[jogadas]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#jogada
+[jogada]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#jogada
 [coordenada]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#coordenada
 [casa]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa
 [estado]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#estado
