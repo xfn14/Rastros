@@ -35,15 +35,19 @@ Todas estas funções recebem um apontador para ESTADO e modificam-o.
 
 Estas são as únicas funções que alteram o estado! Todo o resto do programa apenas modifica o estado através destas funções.
 
-- inicializar_estado
-> Esta função cria um estado vazio (com o tabuleiro inicializado)
+***inicializar_estado***:
 
-- obter_jogador_atual
-> Esta função permite obter o número do jogador atual
+Esta função cria um estado vazio (com o tabuleiro inicializado)
 
-- obter_numero_de_jogadas
-> Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
+***obter_jogador_atual***:
 
-- obter_estado_casa
-> Esta função permite obter o estado atual da casa
+Esta função permite obter o número do jogador que tem que executar a jogada.
+
+***obter_numero_de_jogadas***:
+
+Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
+
+**obter_estado_casa**
+
+Esta função permite obter a *CASA* em determinada coordenada do tabuleiro.
 
