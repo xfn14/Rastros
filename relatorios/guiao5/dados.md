@@ -27,7 +27,7 @@ struct COORDENADA {
     int linha;
 };
 ```
-*COORDENADA* corresponde à posição de uma [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) no tabuleiro. As *COORDENADA* são representadas por dois números inteiros (0-7). O valor destas *COORDENDA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
+*COORDENADA* corresponde à posição de uma [*CASA*][casa] no tabuleiro. As *COORDENADA* são representadas por dois números inteiros (0-7). O valor destas *COORDENDA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
 
 ###### Jogada
 ```c
@@ -37,7 +37,7 @@ struct JOGADA {
 };
 typedef JOGADA JOGADAS[32];
 ```
-Uma *JOGADA* é constituida por um par de *COORDENADA*s, uma para cada jogador. Estas *JOGADA*s são armazenadas numa lista do tipo *JOGADAS*.
+Uma *JOGADA* é constituida por um par de [*COORDENADA*][coordenada]s, uma para cada jogador. Estas *JOGADA*s são armazenadas numa lista do tipo *JOGADAS*.
 
 ###### Estado
 ```c
@@ -65,24 +65,28 @@ Tais informações representam:
 
 ### Funções que alteram o Estado
 
-Com os vários tipos de tipos da estrutura de dados agora definidos tinhamos como objetivos criar agora funções que conseguissem alterar o *ESTADO*.
+Com os vários tipos de tipos da estrutura de dados agora definidos tinhamos como objetivos criar agora funções que conseguissem alterar o [*ESTADO*][estado].
 
-Todas estas funções recebem um apontador para *ESTADO* e modificam-o. 
+Todas estas funções recebem um apontador para [*ESTADO*][estado] e modificam-o. 
 
-Estas são as únicas funções que alteram o estado! Todo o resto do programa apenas modifica o estado através destas funções.
+Estas são as únicas funções que alteram o [*ESTADO*][estado]! Todo o resto do programa apenas modifica o [*ESTADO*][estado] através destas funções.
 
 ***inicializar_estado***:
-Esta função cria um *ESTADO* vazio (com o tabuleiro inicializado)
+Esta função cria um [*ESTADO*][estado] vazio (com o tabuleiro inicializado)
 
 
 ***obter_jogador_atual***:
-Esta função permite obter o número do jogador que tem que executar a *JOGADA*.
+Esta função permite obter o número do jogador que tem que executar a [*JOGADA*][jogada].
 
 
 ***obter_numero_de_jogadas***:
-Esta função permite obter quantas JOGADAs foram efetuadas (cada *JOGADA* tem o movimento de dois jogadores)
+Esta função permite obter quantas [*JOGADA*][jogada]s foram efetuadas (cada [*JOGADA*][jogada] tem o movimento de dois jogadores)
 
 
 **obter_estado_casa**
-Esta função permite obter a [*CASA*](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa) em determinada coordenada do tabuleiro.
+Esta função permite obter a [*CASA*][casa] em determinada [*COORDENADA*][coordenada] do tabuleiro.
 
+[jogada]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#jogada
+[coordenada]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#coordenada
+[casa]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#casa
+[estado]: https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/dados.md#estado
