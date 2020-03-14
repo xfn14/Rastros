@@ -2,7 +2,9 @@
 
 Neste Guião 5 deu-se início à realização projeto. Foi nos proposto o
 jogo **Rastros**.
+
 Haviam duas tarefas base: a organização dos módulos e a implementação das funções iniciais.
+
 Os módulos foram distribuidos de acordo com a seguinte estrutura:
 
 
