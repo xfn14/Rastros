@@ -2,7 +2,7 @@
 
 Este módulo apresente a estrutura de dados do programa e as únicas funções capazes de alterar o Estado definido nesta estrutura.
 
-### Data
+### Data.h
 
 Para isto, em primeiro lugar, criamos um ficheiro que definiu os vários tipos necessários para criar as funções necessárias para a realização do jogo.
 
@@ -36,18 +36,17 @@ Todas estas funções recebem um apontador para ESTADO e modificam-o.
 Estas são as únicas funções que alteram o estado! Todo o resto do programa apenas modifica o estado através destas funções.
 
 ***inicializar_estado***:
-
 Esta função cria um estado vazio (com o tabuleiro inicializado)
 
-***obter_jogador_atual***:
 
+***obter_jogador_atual***:
 Esta função permite obter o número do jogador que tem que executar a jogada.
 
-***obter_numero_de_jogadas***:
 
+***obter_numero_de_jogadas***:
 Esta função permite obter quantas jogadas foram efetuadas (cada jogada tem o movimento de dois jogadores)
 
-**obter_estado_casa**
 
+**obter_estado_casa**
 Esta função permite obter a *CASA* em determinada coordenada do tabuleiro.
 
