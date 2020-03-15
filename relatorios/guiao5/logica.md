@@ -7,7 +7,7 @@ Esta função recebe o [*ESTADO*][estado] atual e a [*COORDENADA*][coordenada] d
 
 Antes de poder-mos aplicar a [*JOGADA*][jogada] temos de a validar, tal é feito na função ***jogada_valida()***.
 
-Caso a [*JOGADA*][jogada] seja válida, então a função muda o tabuleiro presente no [*ESTADO*][estado] devidamente, a função adicionar_jogada() é chamada, é eftuada uma troca de jogador, o tabuleiro é mostrado e caso algum jogador tenha gajo com esta [*JOGADA*][jogada], o jogo acabar e aparece uma mensagem de vitória.
+Caso a [*JOGADA*][jogada] seja válida, então a função muda o tabuleiro presente no [*ESTADO*][estado] devidamente, a função adicionar_jogada() é chamada, é eftuada uma troca de jogador, o tabuleiro é mostrado e caso algum jogador tenha ganho com esta [*JOGADA*][jogada], o jogo acaba e aparece uma mensagem de vitória.
 
 ### Validar Jogada
 Esta função tem como objetivo determinar se uma [*JOGADA*][jogada] é valida de acordo com o [*ESTADO*][estado] atual do jogo e a [*COORDENADA*][coordenada]
