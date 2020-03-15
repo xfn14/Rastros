@@ -27,7 +27,7 @@ struct COORDENADA {
     int linha;
 };
 ```
-*COORDENADA* corresponde à posição de uma [*CASA*][casa] no tabuleiro. As *COORDENADA* são representadas por dois números inteiros (0-7). O valor destas *COORDENDA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
+*COORDENADA* corresponde à posição de uma [*CASA*][casa] no tabuleiro. As *COORDENADA*s são representadas por dois números inteiros (0-7). O valor destas *COORDENADA*s corresponde à posição de determinado elemento na array bidimensional do tabuleiro.
 
 ###### Jogada
 ```c
@@ -49,7 +49,7 @@ struct ESTADO{
     int jogador_atual;
 };
 ```
-O *ESTADO* serve para armazenar-mos os diferentes tipos de informação de um jogo, de maneira a poder-mos manipulá-la de diversas maneiras.
+O *ESTADO* serve para armazenar-mos os diferentes tipos de informação de um jogo, de maneira a podermos manipulá-la de diversas maneiras.
 
 Tais informações representam:
 > tab - armazena informação sobre o tabuleiro
