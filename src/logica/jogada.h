@@ -1,9 +1,6 @@
 #ifndef SRC_JOGADA_H
 #define SRC_JOGADA_H
 
-#include <stdlib.h>
-#include <stdio.h>
-#include "../dados/data.h"
 #include "../dados/estado.h"
 #include "../interface/interpretador.h"
 

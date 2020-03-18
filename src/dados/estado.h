@@ -3,7 +3,6 @@
 
 #include <stdlib.h>
 #include "../interface/tabuleiro.h"
-#include "data.h"
 
 ESTADO *inicializar_estado();
 int obter_jogador_atual(ESTADO *estado);

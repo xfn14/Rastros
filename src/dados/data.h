@@ -1,36 +1,31 @@
 #ifndef SRC_DATA_H
 #define SRC_DATA_H
 
-typedef enum CASA CASA;
-typedef struct COORDENADA COORDENADA;
-typedef struct JOGADA JOGADA;
-typedef struct ESTADO ESTADO;
-
-enum CASA {
+typedef enum{
     VAZIO,
     RASTRO,
     PECA,
     POS1,
     POS2
-};
+}CASA;
 
-struct COORDENADA {
+typedef struct {
     int coluna;
     int linha;
-};
+}COORDENADA;
 
-struct JOGADA {
+typedef struct {
     COORDENADA jogador1;
     COORDENADA jogador2;
-};
+}JOGADA;
 typedef JOGADA JOGADAS[32];
 
-struct ESTADO{
+typedef struct{
     CASA tab[8][8];
     COORDENADA ultima_jogada;
     JOGADAS jogadas;
     int num_jogadas;
     int jogador_atual;
-};
+}ESTADO;
 
 #endif //SRC_DATA_H
