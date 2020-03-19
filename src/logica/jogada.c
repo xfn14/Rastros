@@ -17,6 +17,7 @@ int jogar(ESTADO *estado, COORDENADA coord){
             estado->jogador_atual = 1;
         }
 
+        putchar('\n');
         mostrar_tabuleiro(estado);
 
         if(validar == 1 || validar == 2){
