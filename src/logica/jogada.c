@@ -25,7 +25,7 @@ int jogar(ESTADO *estado, COORDENADA coord){
         }
         return 1;
     }else{
-        printf("Jogada invalida.");
+        printf("Jogada invalida.\n");
     }
     return 0;
 }
