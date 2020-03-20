@@ -2,7 +2,7 @@
 #include "tabuleiro.h"
 
 void mostrar_tabuleiro(ESTADO *e){
-    int linha = 1;
+    int linha = 8;
 
     for(int i = 0; i < 8; i++){
         printf("%d | ", linha);
@@ -32,7 +32,7 @@ void mostrar_tabuleiro(ESTADO *e){
             }*/
         }
         putchar('\n');
-        linha++;
+        linha--;
     }
 
     printf("  | ABCDEFGH\n");
