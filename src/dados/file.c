@@ -1,5 +1,7 @@
 #include "file.h"
 
+// TODO Gravar e ler o resto do estado
+
 void gr(char *file_name, ESTADO *estado){
     file_name = strcat(file_name,".txt");
     FILE *file_p;
@@ -19,5 +21,34 @@ void gr(char *file_name, ESTADO *estado){
 }
 
 void ler(char *file_name, ESTADO *estado){
+    file_name = strcat(file_name,".txt");
+    FILE *file_p;
+    file_p = fopen(file_name, "r");
+    char line[150];
+    CASA tabuleiro[8][8];
 
+    if(file_p == NULL){
+        printf("Nome de ficheiro invalido");
+        return;
+    }
+
+    int linha = 0;
+    while(!feof(file_p)){
+        fgets(line, 150, file_p);
+        for(int i = 0; i < 8; i++){
+            if(line[i] == '1') tabuleiro[linha][i] = POS1;
+            else if(line[i] == '2') tabuleiro[linha][i] = POS2;
+            else if(line[i] == '#') tabuleiro[linha][i] = RASTRO;
+            else if(line[i] == '*') tabuleiro[linha][i] = PECA;
+            else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
+        }
+        linha++;
+    }
+
+    setTabuleiro(estado, tabuleiro);
+    estado->ultima_jogada = obter_coordenada_peca(tabuleiro);
+    mostrar_tabuleiro(estado);
+    //printf("\n%d %d", estado->ultima_jogada.coluna, estado->ultima_jogada.linha);
+
+    fclose(file_p);
 }

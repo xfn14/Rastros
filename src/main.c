@@ -8,7 +8,6 @@ int main() {
     while(quit == 0){
         interpretador(estado);
     }
-
     return 0;
 }
 

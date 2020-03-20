@@ -4,6 +4,7 @@
 #include "stdio.h"
 #include <string.h>
 #include "data.h"
+#include "estado.h"
 
 void gr(char *file_name, ESTADO *estado);
 void ler(char *file_name, ESTADO *estado);

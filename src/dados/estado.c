@@ -46,21 +46,28 @@ CASA obter_estado_casa(ESTADO *e, COORDENADA c){
     return e->tab[c.linha][c.coluna];
 }
 
-/*
- *  Função para obter a posição da PECA
- *  percorrendo a matriz da tabuleiro.
- *  (Usar antes estado->ultimq_peca)
- *
-COORDENADA obter_coordenada_peca(ESTADO *e){
+void setTabuleiro(ESTADO *e, CASA tab[8][8]){
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
-            if(e->tab[i][j] == PECA){
+            e->tab[i][j] = tab[i][j];
+        }
+    }
+}
+
+/*Função para obter a posição da PECA
+percorrendo a matriz da tabuleiro.
+(Usar antes estado->ultimq_peca)*/
+
+COORDENADA obter_coordenada_peca(CASA tab[8][8]){
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            if(tab[i][j] == PECA){
                 COORDENADA coord = {
-                        .coluna = j+1,
-                        .linha = 8-i
+                        .coluna = j,
+                        .linha = i
                 };
                 return coord;
             }
         }
     }
-}*/
+}
