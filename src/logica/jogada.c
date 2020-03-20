@@ -5,8 +5,10 @@
 @param coord A coordenada
 @returns 1 se a jogada for válida, 0 caso contrário
 */
-
 int jogar(ESTADO *estado, COORDENADA coord){
+    /**
+    \brief Valida a jogada
+    */
     int validar = jogada_valida(estado, coord);
     if(validar == 1 || validar == 2 || validar == 3) {
         estado->tab[coord.linha][coord.coluna] = PECA;
