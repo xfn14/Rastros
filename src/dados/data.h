@@ -2,14 +2,12 @@
 @file data.h
 Definição do estado e das funções que o manipulam
 */
-
 #ifndef SRC_DATA_H
 #define SRC_DATA_H
 
 /**
 \brief Tipo de dados para a casa
 */
-
 typedef enum{
     VAZIO,
     RASTRO,
@@ -21,7 +19,6 @@ typedef enum{
 /**
 \brief Tipo de dados para as coordenadas
 */
-
 typedef struct {
     int coluna;
     int linha;
@@ -30,7 +27,6 @@ typedef struct {
 /**
 \brief Tipo de dados para a jogada
 */
-
 typedef struct {
     COORDENADA jogador1;
     COORDENADA jogador2;
@@ -39,13 +35,11 @@ typedef struct {
 /**
 \brief Tipo de dados para as jogadas
 */
-
 typedef JOGADA JOGADAS[32];
 
 /**
 \brief Tipo de dados para o estado
 */
-
 typedef struct{
     /** O tabuleiro */
     CASA tab[8][8];
