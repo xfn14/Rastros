@@ -23,6 +23,7 @@
 
 ## Relatórios 📝
 - [Guião 5](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao5/README.md)
+- [Guião 6](https://github.com/andreubita/li2-201920/blob/master/relatorios/guiao6/README.md)
 
 ## Como Jogar 🎯
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a_5_H9-Rmg0" target="_blank">
