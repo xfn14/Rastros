@@ -2,6 +2,9 @@
 #include "dados/estado.h"
 #include "interface/interpretador.h"
 
+/**
+\brief Função principal
+*/
 int main() {
     ESTADO *estado = inicializar_estado();
     mostrar_tabuleiro(estado);

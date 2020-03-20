@@ -1,4 +1,10 @@
 #include "jogada.h"
+/**
+\brief Efetua uma jogada
+@param estado Apontador para o estado
+@param coord A coordenada
+@returns 1 se a jogada for válida, 0 caso contrário
+*/
 
 int jogar(ESTADO *estado, COORDENADA coord){
     int validar = jogada_valida(estado, coord);
