@@ -7,6 +7,9 @@
 #include "../dados/file.h"
 
 int quit;
+/**
+\brief Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa.
+*/
 int interpretador(ESTADO *e);
 
 #endif //SRC_INTERPRETADOR_H
