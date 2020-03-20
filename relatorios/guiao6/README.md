@@ -1,6 +1,6 @@
 # Relatório Guião 6 📝
 
-Neste Guião 6 tinha-mos várias tarefas para completar: documentação do código, prompt,
+Neste Guião 6 tinhamos várias tarefas para completar: documentação do código, prompt,
 implementar jogadas, adicionar os comandos gr e ler.
 
 ### Estrutura
