@@ -18,7 +18,7 @@ int jogar(ESTADO *estado, COORDENADA coord){
         // Adicionar jogada ao array de jogadas
         adicionar_jogada(estado, coord);
 
-        // Switch jogador
+        //! Switch jogador
         if(obter_jogador_atual(estado) == 1){
             estado->jogador_atual = 2;
         }else{
@@ -38,7 +38,12 @@ int jogar(ESTADO *estado, COORDENADA coord){
     }
     return 0;
 }
-
+/**
+\brief Verifica se a jogada é válida
+@param estado Apontador para o estado
+@param coord A coordenada
+@returns 1 se o jogador ganha, 2 se o jogador 2 ganha, 3 se se move para uma casa vazia e 0 se a jogada não é válida
+*/
 int jogada_valida(ESTADO *estado, COORDENADA coord){
     int x1 = estado->ultima_jogada.coluna, y1 = estado->ultima_jogada.linha;
     int x2 = coord.coluna, y2 = coord.linha;
@@ -69,7 +74,11 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     }
     return 0;
 }
-
+/**
+\brief Adicionar jogadas ao array de jogadas
+@param estado Apontador para o estado
+@param coord A coordenada
+*/
 int adicionar_jogada(ESTADO *estado, COORDENADA coord){
     if(obter_jogador_atual(estado) == 1){
         JOGADA jog;
