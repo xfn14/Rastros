@@ -8,7 +8,7 @@ ESTADO *inicializar_estado();
 int obter_jogador_atual(ESTADO *estado);
 int obter_numero_de_jogadas(ESTADO *estado);
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
-void setTabuleiro(ESTADO *e, CASA tab[8][8]);
+void set_tabuleiro(ESTADO *e, CASA tab[8][8]);
 COORDENADA obter_coordenada_peca(CASA tab[8][8]);
 
 #endif //SRC_ESTADO_H

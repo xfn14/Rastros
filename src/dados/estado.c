@@ -42,11 +42,11 @@ int obter_numero_de_jogadas(ESTADO *estado){
     return estado->num_jogadas;
 }
 
-CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-    return e->tab[c.linha][c.coluna];
+CASA obter_estado_casa(ESTADO *estado, COORDENADA coord){
+    return estado->tab[coord.linha][coord.coluna];
 }
 
-void setTabuleiro(ESTADO *e, CASA tab[8][8]){
+void set_tabuleiro(ESTADO *e, CASA tab[8][8]){
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
             e->tab[i][j] = tab[i][j];

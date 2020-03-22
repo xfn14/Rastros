@@ -45,7 +45,7 @@ void ler(char *file_name, ESTADO *estado){
         linha++;
     }
 
-    setTabuleiro(estado, tabuleiro);
+    set_tabuleiro(estado, tabuleiro);
     estado->ultima_jogada = obter_coordenada_peca(tabuleiro);
     mostrar_tabuleiro(estado);
     //printf("\n%d %d", estado->ultima_jogada.coluna, estado->ultima_jogada.linha);

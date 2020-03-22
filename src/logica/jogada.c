@@ -44,13 +44,28 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     int x2 = coord.coluna, y2 = coord.linha;
 
     // Validar casas em volta da PECA
-    if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
+    if((((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
     || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
+    && (estado->tab[coord.linha][coord.coluna] != RASTRO))
      {
         CASA casa_coord = obter_estado_casa(estado, coord);
-        if(casa_coord == POS1) return 1;
-        if(casa_coord == POS2) return 2;
-        if(casa_coord == VAZIO) return 3;
+
+        // Tabuleiro com a jogada efetuada
+        CASA new_tab[8][8];
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
+                new_tab[i][j] = estado->tab[i][j];
+            }
+        }
+        new_tab[coord.linha][coord.coluna] = PECA;
+        new_tab[estado->ultima_jogada.linha][estado->ultima_jogada.coluna] = RASTRO;
+
+         if(casa_coord == POS1) {
+             return 1;
+         }else if(casa_coord == POS2){
+             return 2;
+         }
+         return 3;
     }
     return 0;
 }

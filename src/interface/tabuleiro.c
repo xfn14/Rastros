@@ -13,23 +13,6 @@ void mostrar_tabuleiro(ESTADO *e){
             else if(cs == RASTRO) putchar('#');
             else if(cs == PECA) putchar('*');
             else if(cs == VAZIO) putchar('.');
-            /*switch (e->tab[i][j]){
-                case POS1:
-                    putchar('1');
-                    break;
-                case POS2:
-                    putchar('2');
-                    break;
-                case RASTRO:
-                    putchar('#');
-                    break;
-                case PECA:
-                    putchar('*');
-                    break;
-                case VAZIO:
-                    putchar('.');
-                    break;
-            }*/
         }
         putchar('\n');
         linha--;
