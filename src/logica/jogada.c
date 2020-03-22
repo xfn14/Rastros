@@ -65,6 +65,17 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
         new_tab[coord.linha][coord.coluna] = PECA;
         new_tab[estado->ultima_jogada.linha][estado->ultima_jogada.coluna] = RASTRO;
 
+        if((new_tab[abs(coord.linha-1)][abs(coord.coluna-1)] == RASTRO)
+        && (new_tab[abs(coord.linha-1)][abs(coord.coluna)] == RASTRO)
+        && (new_tab[abs(coord.linha-1)][abs(coord.coluna+1)] == RASTRO)
+        && (new_tab[abs(coord.linha+1)][abs(coord.coluna-1)] == RASTRO)
+        && (new_tab[abs(coord.linha+1)][abs(coord.coluna)] == RASTRO)
+        && (new_tab[abs(coord.linha+1)][abs(coord.coluna+1)] == RASTRO)
+        && (new_tab[abs(coord.linha)][abs(coord.coluna+1)] == RASTRO)
+        && (new_tab[abs(coord.linha)][abs(coord.coluna-1)] == RASTRO)){
+            return obter_jogador_atual(estado);
+        }
+
          if(casa_coord == POS1) {
              return 1;
          }else if(casa_coord == POS2){
