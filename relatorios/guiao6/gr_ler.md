@@ -9,9 +9,6 @@ Nesta tarefa foi-nos proposto adicionar comandos ao interpretador, mais concreta
 
 Tanto o comando gr como o ler recebem um argumento: o nome do ficheiro.
 
-Os comandos gr e ler não precisam de ser implementados na totalidade. 
-Por agora pede-se que o programa só crie o ficheiro com o tabuleiro. A informação relativa às jogadas pode ficar para depois.
-Pretende-se que adicione mais comandos ao intepretador:
+Por agora este programa tinha como objetivo a criação de um ficheiro com o tabuleiro.
 
-    Comando gr
-    Comando ler
+### Comando gr
