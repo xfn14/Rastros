@@ -54,6 +54,13 @@ void setTabuleiro(ESTADO *e, CASA tab[8][8]){
     }
 }
 
+<<<<<<< HEAD
+=======
+/**
+\brief Função para obter a posição da PECA
+percorrendo a matriz da tabuleiro.
+ */
+>>>>>>> f6790c1b913db3d3d352d52a50b1390b59536feb
 COORDENADA obter_coordenada_peca(CASA tab[8][8]){
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
