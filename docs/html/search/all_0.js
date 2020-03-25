@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['casa',['CASA',['../data_8h.html#aba91601f16d4c485b2d9b8c429f27039',1,'data.h']]],
-  ['coordenada',['COORDENADA',['../structCOORDENADA.html',1,'']]]
+  ['adicionar_5fjogada',['adicionar_jogada',['../jogada_8h.html#a9238c12e22d35dc1f13ba66dfe91727e',1,'jogada.c']]]
 ];
