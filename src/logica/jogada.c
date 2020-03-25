@@ -1,14 +1,7 @@
 #include "jogada.h"
-/**
-\brief Efetua uma jogada
-@param estado Apontador para o estado
-@param coord A coordenada
-@returns 1 se a jogada for válida, 0 caso contrário
-*/
+
 int jogar(ESTADO *estado, COORDENADA coord){
-    /**
-    \brief Valida a jogada
-    */
+
     int validar = jogada_valida(estado, coord);
     if(validar == 1 || validar == 2 || validar == 3) {
         estado->tab[coord.linha][coord.coluna] = PECA;
@@ -18,7 +11,6 @@ int jogar(ESTADO *estado, COORDENADA coord){
         // Adicionar jogada ao array de jogadas
         adicionar_jogada(estado, coord);
 
-        //! Switch jogador
         if(obter_jogador_atual(estado) == 1){
             estado->jogador_atual = 2;
         }else{
@@ -38,17 +30,12 @@ int jogar(ESTADO *estado, COORDENADA coord){
     }
     return 0;
 }
-/**
-\brief Verifica se a jogada é válida
-@param estado Apontador para o estado
-@param coord A coordenada
-@returns 1 se o jogador ganha, 2 se o jogador 2 ganha, 3 se se move para uma casa vazia e 0 se a jogada não é válida
-*/
+
 int jogada_valida(ESTADO *estado, COORDENADA coord){
     int x1 = estado->ultima_jogada.coluna, y1 = estado->ultima_jogada.linha;
     int x2 = coord.coluna, y2 = coord.linha;
 
-    //! Validar casas em volta da PECA
+    // Validar casas em volta da PECA
     if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
     || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
      {
@@ -59,11 +46,7 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     }
     return 0;
 }
-/**
-\brief Adicionar jogadas ao array de jogadas
-@param estado Apontador para o estado
-@param coord A coordenada
-*/
+
 int adicionar_jogada(ESTADO *estado, COORDENADA coord){
     if(obter_jogador_atual(estado) == 1){
         JOGADA jog;
