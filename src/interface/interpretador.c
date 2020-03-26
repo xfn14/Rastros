@@ -5,9 +5,7 @@
 int quit = 0;
 int comandos = 0;
 
-/**
-\brief Interpreta o comando a executar e chama a função correspondente do interface ou da lógica do programa.
-*/
+
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];

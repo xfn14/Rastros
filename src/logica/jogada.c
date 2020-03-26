@@ -36,14 +36,9 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     int x2 = coord.coluna, y2 = coord.linha;
 
     // Validar casas em volta da PECA
-<<<<<<< HEAD
     if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
-=======
-    if((((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
->>>>>>> f6790c1b913db3d3d352d52a50b1390b59536feb
-    || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
-    && (estado->tab[coord.linha][coord.coluna] != RASTRO))
-     {
+       || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
+    {
         CASA casa_coord = obter_estado_casa(estado, coord);
 
         // Tabuleiro com a jogada efetuada

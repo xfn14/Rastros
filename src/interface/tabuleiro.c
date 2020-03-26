@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include "tabuleiro.h"
 
-/**
-\brief Recebe o Estado e imprime o tabuleiro para esse Estado.
-*/
+
 void mostrar_tabuleiro(ESTADO *e){
     int linha = 8;
 
