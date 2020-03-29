@@ -1,0 +1,86 @@
+\hypertarget{interpretador_8h}{}\doxysection{interface/interpretador.h File Reference}
+\label{interpretador_8h}\index{interface/interpretador.h@{interface/interpretador.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../logica/jogada.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../dados/file.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interpretador_8h_a24da95ebeede4a540e37790ce8be359b}{interpretador}} (\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interpretador_8h_a2896431d6a80cd39b3d24b40237612ee}\label{interpretador_8h_a2896431d6a80cd39b3d24b40237612ee}} 
+int {\bfseries quit}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definição do interpretador e das suas funções 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{interpretador_8h_a24da95ebeede4a540e37790ce8be359b}\label{interpretador_8h_a24da95ebeede4a540e37790ce8be359b}} 
+\index{interpretador.h@{interpretador.h}!interpretador@{interpretador}}
+\index{interpretador@{interpretador}!interpretador.h@{interpretador.h}}
+\doxysubsubsection{\texorpdfstring{interpretador()}{interpretador()}}
+{\footnotesize\ttfamily int interpretador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & estado atual \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 para sair do programa, 0 nao acontece nada, 1 jogar, 2 gr, 3 ler 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file interpretador.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                              \{}
+\DoxyCodeLine{10     \textcolor{keywordtype}{char} linha[BUF\_SIZE];}
+\DoxyCodeLine{11     \textcolor{keywordtype}{char} col[2], lin[2];}
+\DoxyCodeLine{12     \textcolor{keywordtype}{char} file[16];}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     printf(\textcolor{stringliteral}{"\%d PL\%d (\%d)>"}, comandos, \mbox{\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}}(e), \mbox{\hyperlink{estado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\_numero\_de\_jogadas}}(e));}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keywordflow}{if}(fgets(linha, BUF\_SIZE, stdin) == NULL)}
+\DoxyCodeLine{17         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     comandos++;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordflow}{if}(strlen(linha) == 2 \&\& strcmp(linha,\textcolor{stringliteral}{"q\(\backslash\)n"}) == 0)\{}
+\DoxyCodeLine{22         quit = 1;}
+\DoxyCodeLine{23         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{24     \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"gr \%s"}, file))\{}
+\DoxyCodeLine{27         \mbox{\hyperlink{file_8h_a88be94d179abd5073870fc1d206b3770}{gr}}(file, e);}
+\DoxyCodeLine{28         \textcolor{keywordflow}{return} 2;}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"ler \%s"}, file))\{}
+\DoxyCodeLine{32         \mbox{\hyperlink{file_8h_ae6bfa898954094e9a4f4540e72ac3c81}{ler}}(file, e);}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordflow}{if}(strlen(linha) == 3 \&\& sscanf(linha, \textcolor{stringliteral}{"\%[a-\/h]\%[1-\/8]"}, col, lin) == 2)\{}
+\DoxyCodeLine{37         \mbox{\hyperlink{structCOORDENADA}{COORDENADA}} coord = \{*col -\/ \textcolor{charliteral}{'a'}, *lin -\/ \textcolor{charliteral}{'1'}\};}
+\DoxyCodeLine{38         coord.linha = 7-\/coord.linha;}
+\DoxyCodeLine{39         \mbox{\hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}}(e, coord);}
+\DoxyCodeLine{40         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     printf(\textcolor{stringliteral}{"Comando invalido.\(\backslash\)n"});}
+\DoxyCodeLine{44     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
