@@ -43,6 +43,9 @@ void ler(char *file_name, ESTADO *estado){
         return;
     }
 
+    resetJogadas(estado);
+    estado->num_jogadas = 0;
+
     int linha = 0;
     while(!feof(file_p)){
         fgets(line, 150, file_p);
@@ -55,26 +58,40 @@ void ler(char *file_name, ESTADO *estado){
                 else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
             }
         }else{
-            /*//printf("%s", line);
-            int file_coluna, file_linha, jogada = 0, jogada_index = 0;
-            sscanf(line, "%d%d\n", file_coluna, file_linha);
             COORDENADA coord;
-            coord.coluna = file_coluna;
-            coord.linha = file_linha;
-            if(jogada%2 == 0){
-                estado->jogadas[jogada_index].jogador1 = coord;
+            coord.coluna = line[0] - '0';
+            coord.linha = line[1] - '0';
+
+            adicionar_jogada(estado, coord);
+
+            if(obter_jogador_atual(estado) == 1){
+                estado->jogador_atual = 2;
             }else{
-                estado->jogadas[jogada_index].jogador2 = coord;
-                jogada_index++;
+                estado->jogador_atual = 1;
             }
-            jogada++;*/
         }
         linha++;
     }
 
-
     setTabuleiro(estado, tabuleiro);
     estado->ultima_jogada = obter_coordenada_peca(tabuleiro);
+
+    if(obter_jogador_atual(estado) == 1){
+        estado->jogador_atual = 2;
+        estado->num_jogadas = obter_numero_de_jogadas(estado) - 1;
+    }else{
+        estado->jogador_atual = 1;
+    }
+
+    COORDENADA nula;
+    nula.linha = -1;
+    nula.coluna = -1;
+
+    if(obter_jogador_atual(estado) == 1){
+        estado->jogadas[obter_numero_de_jogadas(estado)].jogador1 = nula;
+    }else{
+        estado->jogadas[obter_numero_de_jogadas(estado)].jogador2 = nula;
+    }
 
     mostrar_tabuleiro(estado);
     //printf("\n%d %d", estado->ultima_jogada.coluna, estado->ultima_jogada.linha);

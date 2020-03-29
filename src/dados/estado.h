@@ -46,4 +46,6 @@ percorrendo a matriz da tabuleiro.
  */
 COORDENADA obter_coordenada_peca(CASA tab[8][8]);
 
+void resetJogadas(ESTADO *estado);
+
 #endif //SRC_ESTADO_H

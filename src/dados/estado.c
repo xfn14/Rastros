@@ -21,14 +21,7 @@ ESTADO *inicializar_estado() {
         }
     }
 
-    for(int i = 0; i < 32; i++){
-        COORDENADA nula;
-        nula.coluna = -1;
-        nula.linha = -1;
-
-        e->jogadas[i].jogador1 = nula;
-        e->jogadas[i].jogador2 = nula;
-    }
+    resetJogadas(e);
 
     COORDENADA pos_inicial_peca;
     pos_inicial_peca.coluna = 4;
@@ -72,5 +65,16 @@ COORDENADA obter_coordenada_peca(CASA tab[8][8]){
                 return coord;
             }
         }
+    }
+}
+
+void resetJogadas(ESTADO *estado){
+    for(int i = 0; i < 32; i++){
+        COORDENADA nula;
+        nula.coluna = -1;
+        nula.linha = -1;
+
+        estado->jogadas[i].jogador1 = nula;
+        estado->jogadas[i].jogador2 = nula;
     }
 }
