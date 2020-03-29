@@ -1,6 +1,6 @@
-# Relatório Guião 6 📝
+# Relatório Guião 7 📝
 
-Neste Guião 6 tinhamos várias tarefas para completar: comando movs e adicionar a lista de jogadas na utilização
+Neste Guião 7 tinhamos várias tarefas para completar: comando movs e adicionar a lista de jogadas na utilização
 dos comandos gr e ler.
 
 ### Estrutura
