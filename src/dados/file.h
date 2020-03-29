@@ -22,7 +22,10 @@ void gr(char *file_name, ESTADO *estado);
 @param estado O estado atual
 */
 void ler(char *file_name, ESTADO *estado);
-
+/**
+\brief Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores
+@param estado O estado atual
+*/
 void movs(ESTADO *estado);
 
 #endif //SRC_FILE_H
