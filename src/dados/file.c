@@ -1,7 +1,5 @@
 #include "file.h"
 
-// TODO Gravar e ler o resto do estado
-
 void gr(char *file_name, ESTADO *estado){
     file_name = strcat(file_name,".txt");
     FILE *file_p;
@@ -17,6 +15,18 @@ void gr(char *file_name, ESTADO *estado){
         }
         fprintf(file_p, "\n");
     }
+
+    for(int i = 0; i < (obter_numero_de_jogadas(estado) + 1); i++){
+        COORDENADA jogador1 = estado->jogadas[i].jogador1;
+        COORDENADA jogador2 = estado->jogadas[i].jogador2;
+        if(jogador1.linha != -1){
+            fprintf(file_p, "%d%d\n", jogador1.coluna, jogador1.linha);
+        }
+        if(jogador2.linha != -1){
+            fprintf(file_p, "%d%d\n", jogador2.coluna, jogador2.linha);
+        }
+    }
+
     fclose(file_p);
 }
 
@@ -36,12 +46,28 @@ void ler(char *file_name, ESTADO *estado){
     int linha = 0;
     while(!feof(file_p)){
         fgets(line, 150, file_p);
-        for(int i = 0; i < 8; i++){
-            if(line[i] == '1') tabuleiro[linha][i] = POS1;
-            else if(line[i] == '2') tabuleiro[linha][i] = POS2;
-            else if(line[i] == '#') tabuleiro[linha][i] = RASTRO;
-            else if(line[i] == '*') tabuleiro[linha][i] = PECA;
-            else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
+        if(linha < 8){
+            for(int i = 0; i < 8; i++){
+                if(line[i] == '1') tabuleiro[linha][i] = POS1;
+                else if(line[i] == '2') tabuleiro[linha][i] = POS2;
+                else if(line[i] == '#') tabuleiro[linha][i] = RASTRO;
+                else if(line[i] == '*') tabuleiro[linha][i] = PECA;
+                else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
+            }
+        }else{
+            /*//printf("%s", line);
+            int file_coluna, file_linha, jogada = 0, jogada_index = 0;
+            sscanf(line, "%d%d\n", file_coluna, file_linha);
+            COORDENADA coord;
+            coord.coluna = file_coluna;
+            coord.linha = file_linha;
+            if(jogada%2 == 0){
+                estado->jogadas[jogada_index].jogador1 = coord;
+            }else{
+                estado->jogadas[jogada_index].jogador2 = coord;
+                jogada_index++;
+            }
+            jogada++;*/
         }
         linha++;
     }
