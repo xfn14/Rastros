@@ -21,7 +21,14 @@ ESTADO *inicializar_estado() {
         }
     }
 
-    // e->jogadas init is empty
+    for(int i = 0; i < 32; i++){
+        COORDENADA nula;
+        nula.coluna = -1;
+        nula.linha = -1;
+
+        e->jogadas[i].jogador1 = nula;
+        e->jogadas[i].jogador2 = nula;
+    }
 
     COORDENADA pos_inicial_peca;
     pos_inicial_peca.coluna = 4;

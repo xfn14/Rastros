@@ -56,6 +56,24 @@ void ler(char *file_name, ESTADO *estado){
     fclose(file_p);
 }
 
-void movs ( ESTADO *estado){
+void movs(ESTADO *estado){
+    for(int i = 0; i < 32; i++){
+        COORDENADA jogador1 = estado->jogadas[i].jogador1;
+        COORDENADA jogador2 = estado->jogadas[i].jogador2;
 
+        int jogador1_linha, jogador2_linha;
+        char jogador1_coluna, jogador2_coluna;
+
+        jogador1_linha = 8 - jogador1.linha;
+        jogador2_linha = 8 - jogador2.linha;
+
+        jogador1_coluna = 'a' + jogador1.coluna;
+        jogador2_coluna = 'a' + jogador2.coluna;
+
+        if(jogador2.linha == -1 && jogador1.linha != -1){
+            printf("(%d) %c%d\n", i+1, jogador1_coluna, jogador1_linha);
+        }else if(jogador1.linha != -1 && jogador2.linha != -1){
+            printf("(%d) %c%d %c%d\n", i+1, jogador1_coluna, jogador1_linha, jogador2_coluna, jogador2_linha);
+        }
+    }
 }

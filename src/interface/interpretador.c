@@ -28,9 +28,14 @@ int interpretador(ESTADO *e) {
         return 2;
     }
 
-    if(sscanf(linha, "ler %s", file)){
+    if(sscanf(linha, "ler %s", file)) {
         ler(file, e);
         return 3;
+    }
+
+    if(strlen(linha) == 5 && strcmp(linha,"movs\n") == 0){
+        movs(e);
+        return 4;
     }
 
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){

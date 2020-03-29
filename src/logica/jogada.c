@@ -76,6 +76,12 @@ int adicionar_jogada(ESTADO *estado, COORDENADA coord){
     if(obter_jogador_atual(estado) == 1){
         JOGADA jog;
         jog.jogador1 = coord;
+
+        COORDENADA nula;
+        nula.linha = -1;
+        nula.coluna = -1;
+        jog.jogador2 = nula;
+
         estado->jogadas[estado->num_jogadas] = jog;
     }else{
         JOGADA jog = estado->jogadas[estado->num_jogadas];

@@ -23,4 +23,6 @@ void gr(char *file_name, ESTADO *estado);
 */
 void ler(char *file_name, ESTADO *estado);
 
+void movs(ESTADO *estado);
+
 #endif //SRC_FILE_H
