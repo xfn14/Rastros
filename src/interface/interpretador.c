@@ -11,7 +11,7 @@ int interpretador(ESTADO *e) {
     char col[2], lin[2];
     char file[16];
 
-    printf("%d PL%d (%d)>", comandos, obter_jogador_atual(e), obter_numero_de_jogadas(e));
+    printf("%d PL%d (%d)>", comandos, obter_jogador_atual(e), obter_numero_de_jogadas(e) + 1);
 
     if(fgets(linha, BUF_SIZE, stdin) == NULL)
         return 0;
