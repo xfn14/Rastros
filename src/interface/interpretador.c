@@ -18,7 +18,7 @@ int interpretador(ESTADO *e) {
 
     comandos++;
 
-    if(strlen(linha) == 2 && strcmp(linha,"q\n") == 0){
+    if(strlen(linha) == 2 && strcmp(linha,"Q\n") == 0){
         quit = 1;
         return -1;
     }

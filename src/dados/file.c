@@ -45,6 +45,10 @@ void gr(char *file_name, ESTADO *estado){
 
 
 void ler(char *file_name, ESTADO *estado){
+    COORDENADA nula;
+    nula.linha = -1;
+    nula.coluna = -1;
+
     file_name = strcat(file_name,".txt");
     FILE *file_p;
     file_p = fopen(file_name, "r");
@@ -60,8 +64,12 @@ void ler(char *file_name, ESTADO *estado){
     estado->num_jogadas = 0;
 
     int linha = 0;
-    while(!feof(file_p)){
+    while(1){
+        for(int i = 0; i < 150; i++){
+            line[i] = '\0';
+        }
         fgets(line, 150, file_p);
+
         if(linha < 8){
             for(int i = 0; i < 8; i++){
                 if(line[i] == '1') tabuleiro[linha][i] = POS1;
@@ -72,6 +80,8 @@ void ler(char *file_name, ESTADO *estado){
             }
         }else{
             if(strcmp(line, "\n") != 0){
+
+
                 COORDENADA jog1_coord;
                 jog1_coord.coluna = line[4] - 'a';
                 jog1_coord.linha = 7 - (line[5] - '1');
@@ -103,6 +113,10 @@ void ler(char *file_name, ESTADO *estado){
                 }
             }
         }
+
+        if(feof(file_p)){
+            break;
+        }
         linha++;
     }
 
@@ -110,7 +124,7 @@ void ler(char *file_name, ESTADO *estado){
     estado->ultima_jogada = obter_coordenada_peca(tabuleiro);
 
     // FIX Bug de linha no ficheiro
-    if(obter_jogador_atual(estado) == 1){
+    /*if(obter_jogador_atual(estado) == 1){
         COORDENADA nula;
         nula.linha = -1;
         nula.coluna = -1;
@@ -119,7 +133,7 @@ void ler(char *file_name, ESTADO *estado){
 
         estado->jogadas[obter_numero_de_jogadas(estado)].jogador1 = nula;
         estado->jogadas[obter_numero_de_jogadas(estado)].jogador2 = nula;
-    }
+    }*/
     ////////////////////////////////////////////////
 
     /*if (obter_jogador_atual(estado) != 1) {
