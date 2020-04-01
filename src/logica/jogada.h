@@ -26,6 +26,6 @@ int jogada_valida(ESTADO *estado, COORDENADA coord);
 @param estado Apontador para o estado
 @param coord A coordenada
 */
-int adicionar_jogada(ESTADO *estado, COORDENADA coord);
+void adicionar_jogada(ESTADO *estado, COORDENADA coord);
 
 #endif //SRC_JOGADA_H

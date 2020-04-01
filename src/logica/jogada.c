@@ -72,7 +72,7 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
     return 0;
 }
 
-int adicionar_jogada(ESTADO *estado, COORDENADA coord){
+void adicionar_jogada(ESTADO *estado, COORDENADA coord){
     if(obter_jogador_atual(estado) == 1){
         JOGADA jog;
         jog.jogador1 = coord;

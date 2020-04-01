@@ -8,7 +8,7 @@ Definição do interpretador e das suas funções
 #include <stdio.h>
 #include <string.h>
 #include "../logica/jogada.h"
-#include "../dados/file.h"
+#include "file.h"
 
 int quit;
 /**

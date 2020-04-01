@@ -7,8 +7,8 @@ Definição do
 
 #include "stdio.h"
 #include <string.h>
-#include "data.h"
-#include "estado.h"
+#include "../dados/data.h"
+#include "../dados/estado.h"
 #include "../logica/jogada.h"
 
 /**
