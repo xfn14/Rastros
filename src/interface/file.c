@@ -1,7 +1,6 @@
 #include "file.h"
 
 void gr(char *file_name, ESTADO *estado){
-    file_name = strcat(file_name,".txt");
     FILE *file_p;
     file_p = fopen(file_name, "w");
     for(int i = 0; i < 8; i++){
@@ -45,11 +44,6 @@ void gr(char *file_name, ESTADO *estado){
 
 
 void ler(char *file_name, ESTADO *estado){
-    COORDENADA nula;
-    nula.linha = -1;
-    nula.coluna = -1;
-
-    file_name = strcat(file_name,".txt");
     FILE *file_p;
     file_p = fopen(file_name, "r");
     char line[150];
