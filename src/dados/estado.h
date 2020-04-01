@@ -45,7 +45,10 @@ percorrendo a matriz da tabuleiro.
 @returns Retorna a coordenada da PECA
  */
 COORDENADA obter_coordenada_peca(CASA tab[8][8]);
-
+/**
+\brief Função para resetar as jogadas
+ * @param estado O estado atual
+ */
 void resetJogadas(ESTADO *estado);
 
 #endif //SRC_ESTADO_H
