@@ -29,4 +29,6 @@ void ler(char *file_name, ESTADO *estado);
 */
 void movs(ESTADO *estado);
 
+void pos(ESTADO *estado, int jogada);
+
 #endif //SRC_FILE_H

@@ -44,7 +44,7 @@ void gr(char *file_name, ESTADO *estado){
 
 
 void ler(char *file_name, ESTADO *estado){
-    FILE *file_p;
+FILE *file_p;
     file_p = fopen(file_name, "r");
     char line[150];
     CASA tabuleiro[8][8];
@@ -174,5 +174,43 @@ void movs(ESTADO *estado){
         }else if(jogador1.linha != -1 && jogador2.linha != -1){
             printf("(%d) %c%d %c%d\n", i+1, jogador1_coluna, jogador1_linha, jogador2_coluna, jogador2_linha);
         }
+    }
+}
+
+void pos(ESTADO *estado, int pos){
+    COORDENADA nula;
+    nula.linha = -1;
+    nula.coluna = -1;
+
+    int jogadas = obter_numero_de_jogadas(estado);
+    if(0 <= pos && pos <= jogadas){
+        for(int i = pos; i <= jogadas; i++){
+            COORDENADA jogador1_coord = estado->jogadas[i].jogador1;
+            COORDENADA jogador2_coord = estado->jogadas[i].jogador2;
+
+            estado->tab[jogador1_coord.linha][jogador1_coord.coluna] = VAZIO;
+            estado->tab[jogador2_coord.linha][jogador2_coord.coluna] = VAZIO;
+
+            estado->jogadas[i].jogador1 = nula;
+            estado->jogadas[i].jogador2 = nula;
+        }
+
+        if(pos == 0){
+            COORDENADA init;
+            init.linha = 3;
+            init.coluna = 4;
+            estado->tab[init.linha][init.coluna] = PECA;
+            estado->ultima_jogada = init;
+        }else{
+            COORDENADA jogador2_coord = estado->jogadas[pos-1].jogador2;
+            estado->tab[jogador2_coord.linha][jogador2_coord.coluna] = PECA;
+            estado->ultima_jogada = jogador2_coord;
+        }
+
+        estado->jogador_atual = 1;
+        estado->num_jogadas = pos;
+        mostrar_tabuleiro(estado);
+    }else{
+        printf("Argumento invalido.\n");
     }
 }

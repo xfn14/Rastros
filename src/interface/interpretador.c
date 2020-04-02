@@ -10,6 +10,7 @@ int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
     char file[16];
+    int p;
 
     printf("%d PL%d (%d)>", comandos, obter_jogador_atual(e), obter_numero_de_jogadas(e) + 1);
 
@@ -36,6 +37,13 @@ int interpretador(ESTADO *e) {
     if(strlen(linha) == 5 && strcmp(linha,"movs\n") == 0){
         movs(e);
         return 4;
+    }
+
+    if((strlen(linha) == 6 || strlen(linha) == 7)
+    && strstr(linha, "pos")){
+        p = atoi(&linha[4]);
+        pos(e, p);
+        return 5;
     }
 
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
