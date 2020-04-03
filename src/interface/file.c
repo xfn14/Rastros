@@ -74,8 +74,6 @@ FILE *file_p;
             }
         }else{
             if(strcmp(line, "\n") != 0){
-
-
                 COORDENADA jog1_coord;
                 jog1_coord.coluna = line[4] - 'a';
                 jog1_coord.linha = 7 - (line[5] - '1');
@@ -93,16 +91,12 @@ FILE *file_p;
                 if(0 <= jog1_coord.coluna && jog1_coord.coluna <= 7){
                     estado->jogador_atual = 1;
                     adicionar_jogada(estado, jog1_coord);
+                    estado->jogador_atual = 2;
                 }
 
                 if(0 <= jog2_coord.coluna && jog2_coord.coluna <= 7){
                     estado->jogador_atual = 2;
                     adicionar_jogada(estado, jog2_coord);
-                }
-
-                if(obter_jogador_atual(estado) == 1){
-                    estado->jogador_atual = 2;
-                }else{
                     estado->jogador_atual = 1;
                 }
             }
