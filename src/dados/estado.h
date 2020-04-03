@@ -47,7 +47,7 @@ percorrendo a matriz da tabuleiro.
 COORDENADA obter_coordenada_peca(CASA tab[8][8]);
 /**
 \brief Função para resetar as jogadas
- * @param estado O estado atual
+@param estado O estado atual
  */
 void resetJogadas(ESTADO *estado);
 

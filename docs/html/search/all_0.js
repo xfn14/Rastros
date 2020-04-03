@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adicionar_5fjogada_0',['adicionar_jogada',['../jogada_8h.html#a9238c12e22d35dc1f13ba66dfe91727e',1,'jogada.c']]]
+  ['adicionar_5fjogada',['adicionar_jogada',['../jogada_8h.html#a4067bb2bd3a973474435b8bebcf51775',1,'jogada.c']]]
 ];

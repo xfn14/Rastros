@@ -1,27 +1,27 @@
-\hypertarget{jogada_8h}{}\doxysection{logica/jogada.h File Reference}
-\label{jogada_8h}\index{logica/jogada.h@{logica/jogada.h}}
+\hypertarget{jogada_8h}{}\section{logica/jogada.h File Reference}
+\label{jogada_8h}\index{logica/jogada.\+h@{logica/jogada.\+h}}
 {\ttfamily \#include \char`\"{}../dados/estado.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../interface/interpretador.\+h\char`\"{}}\newline
-\doxysubsection*{Functions}
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}} (\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$estado, \mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} coord)
+int \hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} coord)
 \begin{DoxyCompactList}\small\item\em Efetua uma jogada. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{jogada_8h_ad38b311e5dd671c323311b069aab168f}{jogada\+\_\+valida}} (\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$estado, \mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} coord)
+int \hyperlink{jogada_8h_ad38b311e5dd671c323311b069aab168f}{jogada\+\_\+valida} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} coord)
 \begin{DoxyCompactList}\small\item\em Verifica se a jogada é válida. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{jogada_8h_a9238c12e22d35dc1f13ba66dfe91727e}{adicionar\+\_\+jogada}} (\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$estado, \mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} coord)
+void \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} coord)
 \begin{DoxyCompactList}\small\item\em Adicionar jogadas ao array de jogadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 Definição da camada logica e das suas funções 
 
-\doxysubsection{Function Documentation}
-\mbox{\Hypertarget{jogada_8h_a9238c12e22d35dc1f13ba66dfe91727e}\label{jogada_8h_a9238c12e22d35dc1f13ba66dfe91727e}} 
-\index{jogada.h@{jogada.h}!adicionar\_jogada@{adicionar\_jogada}}
-\index{adicionar\_jogada@{adicionar\_jogada}!jogada.h@{jogada.h}}
-\doxysubsubsection{\texorpdfstring{adicionar\_jogada()}{adicionar\_jogada()}}
-{\footnotesize\ttfamily int adicionar\+\_\+jogada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$}]{estado,  }\item[{\mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{coord }\end{DoxyParamCaption})}
+\subsection{Function Documentation}
+\mbox{\Hypertarget{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}\label{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}} 
+\index{jogada.\+h@{jogada.\+h}!adicionar\+\_\+jogada@{adicionar\+\_\+jogada}}
+\index{adicionar\+\_\+jogada@{adicionar\+\_\+jogada}!jogada.\+h@{jogada.\+h}}
+\subsubsection{\texorpdfstring{adicionar\+\_\+jogada()}{adicionar\_jogada()}}
+{\footnotesize\ttfamily void adicionar\+\_\+jogada (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{coord }\end{DoxyParamCaption})}
 
 
 
@@ -39,32 +39,31 @@ Adicionar jogadas ao array de jogadas.
 Definition at line 75 of file jogada.\+c.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{75                                                       \{}
-\DoxyCodeLine{76     \textcolor{keywordflow}{if}(\mbox{\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}}(estado) == 1)\{}
-\DoxyCodeLine{77         \mbox{\hyperlink{structJOGADA}{JOGADA}} jog;}
-\DoxyCodeLine{78         jog.jogador1 = coord;}
-\DoxyCodeLine{79 }
-\DoxyCodeLine{80         \mbox{\hyperlink{structCOORDENADA}{COORDENADA}} nula;}
-\DoxyCodeLine{81         nula.linha = -\/1;}
-\DoxyCodeLine{82         nula.coluna = -\/1;}
-\DoxyCodeLine{83         jog.jogador2 = nula;}
-\DoxyCodeLine{84 }
-\DoxyCodeLine{85         estado-\/>\mbox{\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}}[estado-\/>\mbox{\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}}] = jog;}
-\DoxyCodeLine{86     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{87         \mbox{\hyperlink{structJOGADA}{JOGADA}} jog = estado-\/>\mbox{\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}}[estado-\/>\mbox{\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}}];}
-\DoxyCodeLine{88         jog.jogador2 = coord;}
-\DoxyCodeLine{89         estado-\/>\mbox{\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}}[estado-\/>\mbox{\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}}] = jog;}
-\DoxyCodeLine{90         estado-\/>\mbox{\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}} = \mbox{\hyperlink{estado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\_numero\_de\_jogadas}}(estado) + 1;}
-\DoxyCodeLine{91     \}}
-\DoxyCodeLine{92 \}}
-
+\begin{DoxyCode}
+75                                                        \{
+76     \textcolor{keywordflow}{if}(\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}(estado) == 1)\{
+77         \hyperlink{structJOGADA}{JOGADA} jog;
+78         jog.jogador1 = coord;
+79 
+80         \hyperlink{structCOORDENADA}{COORDENADA} nula;
+81         nula.linha = -1;
+82         nula.coluna = -1;
+83         jog.jogador2 = nula;
+84 
+85         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}] = jog;
+86     \}\textcolor{keywordflow}{else}\{
+87         \hyperlink{structJOGADA}{JOGADA} jog = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}];
+88         jog.jogador2 = coord;
+89         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas}] = jog;
+90         estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas} = \hyperlink{estado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\_numero\_de\_jogadas}(estado) + 1;
+91     \}
+92 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{jogada_8h_ad38b311e5dd671c323311b069aab168f}\label{jogada_8h_ad38b311e5dd671c323311b069aab168f}} 
-\index{jogada.h@{jogada.h}!jogada\_valida@{jogada\_valida}}
-\index{jogada\_valida@{jogada\_valida}!jogada.h@{jogada.h}}
-\doxysubsubsection{\texorpdfstring{jogada\_valida()}{jogada\_valida()}}
-{\footnotesize\ttfamily int jogada\+\_\+valida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$}]{estado,  }\item[{\mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{coord }\end{DoxyParamCaption})}
+\index{jogada.\+h@{jogada.\+h}!jogada\+\_\+valida@{jogada\+\_\+valida}}
+\index{jogada\+\_\+valida@{jogada\+\_\+valida}!jogada.\+h@{jogada.\+h}}
+\subsubsection{\texorpdfstring{jogada\+\_\+valida()}{jogada\_valida()}}
+{\footnotesize\ttfamily int jogada\+\_\+valida (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{coord }\end{DoxyParamCaption})}
 
 
 
@@ -85,54 +84,55 @@ Verifica se a jogada é válida.
 Definition at line 34 of file jogada.\+c.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{34                                                    \{}
-\DoxyCodeLine{35     \textcolor{keywordtype}{int} x1 = estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.coluna, y1 = estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.linha;}
-\DoxyCodeLine{36     \textcolor{keywordtype}{int} x2 = coord.coluna, y2 = coord.linha;}
-\DoxyCodeLine{37 }
-\DoxyCodeLine{38     \textcolor{comment}{// Validar casas em volta da PECA}}
-\DoxyCodeLine{39     \textcolor{keywordflow}{if}(((x1 == x2) \&\& (((abs(y1-\/y2))==1))) \textcolor{comment}{// Cima e baixo}}
-\DoxyCodeLine{40        || (((abs(x2-\/x1))==1) \&\& ((abs(y2-\/y1))==1 || y2 == y1 ))) \textcolor{comment}{// Esquerda e Direita}}
-\DoxyCodeLine{41     \{}
-\DoxyCodeLine{42         \mbox{\hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA}} casa\_coord = \mbox{\hyperlink{estado_8h_a6faa68373203923729ed38657aa0f768}{obter\_estado\_casa}}(estado, coord);}
-\DoxyCodeLine{43 }
-\DoxyCodeLine{44         \textcolor{comment}{// Tabuleiro com a jogada efetuada}}
-\DoxyCodeLine{45         \mbox{\hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA}} new\_tab[8][8];}
-\DoxyCodeLine{46         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{}
-\DoxyCodeLine{47             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{}
-\DoxyCodeLine{48                 new\_tab[i][j] = estado-\/>\mbox{\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}}[i][j];}
-\DoxyCodeLine{49             \}}
-\DoxyCodeLine{50         \}}
-\DoxyCodeLine{51         new\_tab[coord.linha][coord.coluna] = PECA;}
-\DoxyCodeLine{52         new\_tab[estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.linha][estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.coluna] = RASTRO;}
-\DoxyCodeLine{53 }
-\DoxyCodeLine{54         \textcolor{keywordflow}{if}((new\_tab[abs(coord.linha-\/1)][abs(coord.coluna-\/1)] == RASTRO)}
-\DoxyCodeLine{55         \&\& (new\_tab[abs(coord.linha-\/1)][abs(coord.coluna)] == RASTRO)}
-\DoxyCodeLine{56         \&\& (new\_tab[abs(coord.linha-\/1)][abs(coord.coluna+1)] == RASTRO)}
-\DoxyCodeLine{57         \&\& (new\_tab[abs(coord.linha+1)][abs(coord.coluna-\/1)] == RASTRO)}
-\DoxyCodeLine{58         \&\& (new\_tab[abs(coord.linha+1)][abs(coord.coluna)] == RASTRO)}
-\DoxyCodeLine{59         \&\& (new\_tab[abs(coord.linha+1)][abs(coord.coluna+1)] == RASTRO)}
-\DoxyCodeLine{60         \&\& (new\_tab[abs(coord.linha)][abs(coord.coluna+1)] == RASTRO)}
-\DoxyCodeLine{61         \&\& (new\_tab[abs(coord.linha)][abs(coord.coluna-\/1)] == RASTRO))\{}
-\DoxyCodeLine{62             \textcolor{keywordflow}{return} \mbox{\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}}(estado);}
-\DoxyCodeLine{63         \}}
-\DoxyCodeLine{64 }
-\DoxyCodeLine{65          \textcolor{keywordflow}{if}(casa\_coord == POS1) \{}
-\DoxyCodeLine{66              \textcolor{keywordflow}{return} 1;}
-\DoxyCodeLine{67          \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(casa\_coord == POS2)\{}
-\DoxyCodeLine{68              \textcolor{keywordflow}{return} 2;}
-\DoxyCodeLine{69          \}}
-\DoxyCodeLine{70          \textcolor{keywordflow}{return} 3;}
-\DoxyCodeLine{71     \}}
-\DoxyCodeLine{72     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{73 \}}
-
+\begin{DoxyCode}
+34                                                    \{
+35     \textcolor{keywordtype}{int} x1 = estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.coluna, y1 = estado->
+      \hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.linha;
+36     \textcolor{keywordtype}{int} x2 = coord.coluna, y2 = coord.linha;
+37 
+38     \textcolor{comment}{// Validar casas em volta da PECA}
+39     \textcolor{keywordflow}{if}(((x1 == x2) && (((abs(y1-y2))==1))) \textcolor{comment}{// Cima e baixo}
+40        || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) \textcolor{comment}{// Esquerda e Direita}
+41     \{
+42         \hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA} casa\_coord = \hyperlink{estado_8h_a6faa68373203923729ed38657aa0f768}{obter\_estado\_casa}(estado, coord);
+43 
+44         \textcolor{comment}{// Tabuleiro com a jogada efetuada}
+45         \hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA} new\_tab[8][8];
+46         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
+47             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
+48                 new\_tab[i][j] = estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[i][j];
+49             \}
+50         \}
+51         new\_tab[coord.linha][coord.coluna] = PECA;
+52         new\_tab[estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.linha][estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.coluna] = 
+      RASTRO;
+53 
+54         \textcolor{keywordflow}{if}((new\_tab[abs(coord.linha-1)][abs(coord.coluna-1)] == RASTRO)
+55         && (new\_tab[abs(coord.linha-1)][abs(coord.coluna)] == RASTRO)
+56         && (new\_tab[abs(coord.linha-1)][abs(coord.coluna+1)] == RASTRO)
+57         && (new\_tab[abs(coord.linha+1)][abs(coord.coluna-1)] == RASTRO)
+58         && (new\_tab[abs(coord.linha+1)][abs(coord.coluna)] == RASTRO)
+59         && (new\_tab[abs(coord.linha+1)][abs(coord.coluna+1)] == RASTRO)
+60         && (new\_tab[abs(coord.linha)][abs(coord.coluna+1)] == RASTRO)
+61         && (new\_tab[abs(coord.linha)][abs(coord.coluna-1)] == RASTRO))\{
+62             \textcolor{keywordflow}{return} \hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}(estado);
+63         \}
+64 
+65          \textcolor{keywordflow}{if}(casa\_coord == POS1) \{
+66              \textcolor{keywordflow}{return} 1;
+67          \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(casa\_coord == POS2)\{
+68              \textcolor{keywordflow}{return} 2;
+69          \}
+70          \textcolor{keywordflow}{return} 3;
+71     \}
+72     \textcolor{keywordflow}{return} 0;
+73 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{jogada_8h_aedac94896fa0c978db67ffa48463b731}\label{jogada_8h_aedac94896fa0c978db67ffa48463b731}} 
-\index{jogada.h@{jogada.h}!jogar@{jogar}}
-\index{jogar@{jogar}!jogada.h@{jogada.h}}
-\doxysubsubsection{\texorpdfstring{jogar()}{jogar()}}
-{\footnotesize\ttfamily int jogar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}} $\ast$}]{estado,  }\item[{\mbox{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{coord }\end{DoxyParamCaption})}
+\index{jogada.\+h@{jogada.\+h}!jogar@{jogar}}
+\index{jogar@{jogar}!jogada.\+h@{jogada.\+h}}
+\subsubsection{\texorpdfstring{jogar()}{jogar()}}
+{\footnotesize\ttfamily int jogar (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{coord }\end{DoxyParamCaption})}
 
 
 
@@ -153,36 +153,36 @@ Efetua uma jogada.
 Definition at line 3 of file jogada.\+c.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{3                                            \{}
-\DoxyCodeLine{4 }
-\DoxyCodeLine{5     \textcolor{keywordtype}{int} validar = \mbox{\hyperlink{jogada_8h_ad38b311e5dd671c323311b069aab168f}{jogada\_valida}}(estado, coord);}
-\DoxyCodeLine{6     \textcolor{keywordflow}{if}(validar == 1 || validar == 2 || validar == 3) \{}
-\DoxyCodeLine{7         estado-\/>\mbox{\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}}[coord.linha][coord.coluna] = PECA;}
-\DoxyCodeLine{8         estado-\/>\mbox{\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}}[estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.linha][estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}}.coluna] = RASTRO;}
-\DoxyCodeLine{9         estado-\/>\mbox{\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}} = coord;}
-\DoxyCodeLine{10 }
-\DoxyCodeLine{11         \textcolor{comment}{// Adicionar jogada ao array de jogadas}}
-\DoxyCodeLine{12         \mbox{\hyperlink{jogada_8h_a9238c12e22d35dc1f13ba66dfe91727e}{adicionar\_jogada}}(estado, coord);}
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14         \textcolor{keywordflow}{if}(\mbox{\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}}(estado) == 1)\{}
-\DoxyCodeLine{15             estado-\/>\mbox{\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual}} = 2;}
-\DoxyCodeLine{16         \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{17             estado-\/>\mbox{\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual}} = 1;}
-\DoxyCodeLine{18         \}}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{20         putchar(\textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{21         \mbox{\hyperlink{tabuleiro_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\_tabuleiro}}(estado);}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23         \textcolor{keywordflow}{if}(validar == 1 || validar == 2)\{}
-\DoxyCodeLine{24             printf(\textcolor{stringliteral}{"\(\backslash\)nJogador \%d vence."}, validar);}
-\DoxyCodeLine{25             quit = 1;}
-\DoxyCodeLine{26         \}}
-\DoxyCodeLine{27         \textcolor{keywordflow}{return} 1;}
-\DoxyCodeLine{28     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{29         printf(\textcolor{stringliteral}{"Jogada invalida.\(\backslash\)n"});}
-\DoxyCodeLine{30     \}}
-\DoxyCodeLine{31     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{32 \}}
-
+\begin{DoxyCode}
+3                                            \{
+4 
+5     \textcolor{keywordtype}{int} validar = \hyperlink{jogada_8h_ad38b311e5dd671c323311b069aab168f}{jogada\_valida}(estado, coord);
+6     \textcolor{keywordflow}{if}(validar == 1 || validar == 2 || validar == 3) \{
+7         estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[coord.linha][coord.coluna] = PECA;
+8         estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.linha][estado->
+      \hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada}.coluna] = RASTRO;
+9         estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada} = coord;
+10 
+11         \textcolor{comment}{// Adicionar jogada ao array de jogadas}
+12         \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\_jogada}(estado, coord);
+13 
+14         \textcolor{keywordflow}{if}(\hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}(estado) == 1)\{
+15             estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 2;
+16         \}\textcolor{keywordflow}{else}\{
+17             estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
+18         \}
+19 
+20         putchar(\textcolor{charliteral}{'\(\backslash\)n'});
+21         \hyperlink{tabuleiro_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\_tabuleiro}(estado);
+22 
+23         \textcolor{keywordflow}{if}(validar == 1 || validar == 2)\{
+24             printf(\textcolor{stringliteral}{"\(\backslash\)nJogador %d vence."}, validar);
+25             quit = 1;
+26         \}
+27         \textcolor{keywordflow}{return} 1;
+28     \}\textcolor{keywordflow}{else}\{
+29         printf(\textcolor{stringliteral}{"Jogada invalida.\(\backslash\)n"});
+30     \}
+31     \textcolor{keywordflow}{return} 0;
+32 \}
 \end{DoxyCode}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ultima_5fjogada_29',['ultima_jogada',['../structESTADO.html#a4896a5c5c1f40b43fb795623327e3f47',1,'ESTADO']]]
+  ['settabuleiro',['setTabuleiro',['../estado_8h.html#ab3b8be2c1d31ca864df920d8f0df3a04',1,'estado.c']]]
 ];

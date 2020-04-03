@@ -28,7 +28,11 @@ void ler(char *file_name, ESTADO *estado);
 @param estado O estado atual
 */
 void movs(ESTADO *estado);
-
+/**
+\brief Esta função lê o estado e o valor dado pelo jogador e volta ao tabuleiro com as jogadas até essa posição
+@param estado O estado atual
+@param jogada Posição à qual se pretende voltar
+*/
 void pos(ESTADO *estado, int jogada);
 
 #endif //SRC_FILE_H
