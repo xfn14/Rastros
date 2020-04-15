@@ -9,8 +9,10 @@ Definição do interpretador e das suas funções
 #include <string.h>
 #include "../logica/jogada.h"
 #include "file.h"
+#include "bot.h"
 
 int quit;
+
 /**
 \brief Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa.
 @param e estado atual

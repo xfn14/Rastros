@@ -5,7 +5,6 @@
 int quit = 0;
 int comandos = 0;
 
-
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
@@ -36,6 +35,11 @@ int interpretador(ESTADO *e) {
 
     if(strlen(linha) == 5 && strcmp(linha,"movs\n") == 0){
         movs(e);
+        return 4;
+    }
+
+    if(strlen(linha) == 4 && strcmp(linha,"pos\n") == 0){
+        jog(e);
         return 4;
     }
 
