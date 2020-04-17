@@ -3,6 +3,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
+#include "math.h"
 #include "../dados/data.h"
 #include "interpretador.h"
 
@@ -30,5 +31,7 @@ LISTA remove_cabeca(LISTA L);
 int lista_esta_vazia(LISTA L);
 
 void jog(ESTADO *estado);
+LISTA jogadasProximas(ESTADO *e, LISTA L);
+float distancia_eucladiana(COORDENADA coord1, COORDENADA coord2);
 
 #endif //SRC_LISTA_H

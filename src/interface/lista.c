@@ -9,10 +9,15 @@ LISTA criar_lista(){
 
 // Insere um valor na cabeça da lista
 LISTA insere_cabeca(LISTA L, void *valor){
-    LISTA head = malloc(sizeof(NODO));
-    head->valor = valor;
-    head->proximo = L;
-    return head;
+    if (L->valor == NULL) {
+        L->valor = valor;
+        return L;
+    } else {
+        LISTA t = malloc(sizeof(NODO));
+        t->valor = valor;
+        t->proximo = L;
+        return t;
+    }
 }
 
 // Devolve a cabeça da lista
@@ -27,36 +32,75 @@ LISTA proximo(LISTA L){
 
 // Remove a cabeça da lista (libertando o espaço ocupado) e devolve a cauda
 LISTA remove_cabeca(LISTA L){
-    free(L->valor);
-    return L->proximo;
+    LISTA tail = proximo(L);
+    free(L);
+    return tail;
 }
 
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L){
-    return L->valor == NULL;
+    return L == NULL || (L->valor == NULL && L->proximo == NULL);
 }
 
 void jog(ESTADO *estado){
-    LISTA L = criar_lista();
+    COORDENADA pos1, pos2, *atual, best;
+    float bestDist = 100;
+    LISTA lista = criar_lista();
+
+    pos1.coluna = 7;
+    pos1.linha = 0;
+
+    pos2.coluna = 0;
+    pos2.linha = 7;
+
+    lista = jogadasProximas(estado, lista);
+
+    while(!lista_esta_vazia(lista)){
+        atual = (COORDENADA *) devolve_cabeca(lista);
+        if(obter_jogador_atual(estado) == 1){
+            if(estado->tab[atual->linha][atual->coluna] == POS1){
+                best = *atual;
+                break;
+            }
+            if(distancia_eucladiana(*atual,pos1) < bestDist){
+                bestDist = distancia_eucladiana(*atual,pos1);
+                best = *atual;
+            }
+        }else{
+            if(estado->tab[atual->linha][atual->coluna] == POS2){
+                best = *atual;
+                break;
+            }
+            if(distancia_eucladiana(*atual,pos2) < bestDist){
+                bestDist = distancia_eucladiana(*atual,pos2);
+                best.linha = atual->linha;
+                best.coluna = atual->coluna;
+            }
+        }
+        lista = proximo(lista);
+    }
+    printf("%d\n", best.coluna);
+    printf("%d", best.linha);
+
+    jogar(estado, best);
+
+    free(lista);
+
+    /*LISTA L = criar_lista();
     char linha[BUF_SIZE];
 
     printf("Insira várias linhas, acabando com CTRL-D:\n");
 
-    // control-D é a tecla CTRL e a tecla D ao mesmo tempo
-    // Em windows é capaz de ser CTRL-Z
-    while(fgets(linha, BUF_SIZE, stdin) != 0) {
-        // A função strdup cria uma cópia da string que foi lida
-        // Insere uma cópia da linha lida na cabeça da lista
+    for(int i = 0; i < 10 ; i++){
+        fgets(linha, BUF_SIZE, stdin);
+        printf("%s", linha);
         L = insere_cabeca(L, strdup(linha));
     }
 
     printf("\n==============================\n");
     printf(  "=          PERCURSO          =\n");
     printf(  "==============================\n\n");
-    // percorre sem remover os elementos da lista
     for(LISTA T = L; !lista_esta_vazia(T); T = proximo(T)) {
-        // Vai buscar a cabeça da lista
-        // Passa do tipo genérico void * para char *
         char *str = (char *) devolve_cabeca(T);
         printf("%s", str);
     }
@@ -64,11 +108,45 @@ void jog(ESTADO *estado){
     printf("\n==============================\n");
     printf(  "=           REMOCAO          =\n");
     printf(  "==============================\n\n");
-    // percorre e vai removendo a cabeça
     while(!lista_esta_vazia(L)) {
         char *str = (char *) devolve_cabeca(L);
-        L = remove_cabeca(L);
         printf("%s", str);
+        L = remove_cabeca(L);
         free(str);
+    }*/
+}
+
+LISTA jogadasProximas(ESTADO *e, LISTA L){
+    COORDENADA peca = obter_coordenada_peca(e->tab);
+    COORDENADA coord;
+    COORDENADA *atual;
+
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            if (e->tab[j][i] == VAZIO
+            || e->tab[j][i] == POS1
+            || e->tab[j][i] == POS2){
+                atual = malloc(sizeof(COORDENADA));
+                atual->linha = j;
+                atual->coluna = i;
+                int valida = jogada_valida(e, *atual);
+                if(valida == 1 || valida == 2 || valida == 3){
+                    L = insere_cabeca(L, atual);
+                }
+            }
+        }
     }
+
+    /*for (int i = peca.coluna - 1; i <= peca.coluna + 1; i++){
+        for (int j = peca.linha - 1; j <= peca.linha + 1; ++j) {
+
+        }
+    }*/
+
+    L->proximo = NULL;
+    return L;
+}
+
+float distancia_eucladiana(COORDENADA coord1, COORDENADA coord2){
+    return sqrtf(pow(coord1.linha - coord2.linha, 2) + pow(coord1.coluna - coord2.coluna, 2));
 }
