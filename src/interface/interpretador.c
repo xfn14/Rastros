@@ -1,7 +1,5 @@
 #include "interpretador.h"
 
-#define BUF_SIZE 1024
-
 int quit = 0;
 int comandos = 0;
 
@@ -38,7 +36,7 @@ int interpretador(ESTADO *e) {
         return 4;
     }
 
-    if(strlen(linha) == 4 && strcmp(linha,"pos\n") == 0){
+    if(strlen(linha) == 4 && strcmp(linha,"jog\n") == 0){
         jog(e);
         return 4;
     }

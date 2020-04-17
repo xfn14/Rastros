@@ -1,7 +1,10 @@
 #ifndef SRC_LISTA_H
 #define SRC_LISTA_H
 
+#include "stdio.h"
+#include "stdlib.h"
 #include "../dados/data.h"
+#include "interpretador.h"
 
 typedef struct nodo {
     void *valor;
@@ -25,5 +28,7 @@ LISTA remove_cabeca(LISTA L);
 
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L);
+
+void jog(ESTADO *estado);
 
 #endif //SRC_LISTA_H
