@@ -44,7 +44,8 @@ int lista_esta_vazia(LISTA L){
 
 void jog(ESTADO *estado){
     COORDENADA pos1, pos2, *atual, best;
-    float bestDist = 100;
+    float bestDist;
+    bestDist = 100;
     LISTA lista = criar_lista();
 
     pos1.coluna = 7;
@@ -85,35 +86,52 @@ void jog(ESTADO *estado){
     jogar(estado, best);
 
     free(lista);
+}
 
-    /*LISTA L = criar_lista();
-    char linha[BUF_SIZE];
+void jog2(ESTADO *estado){
+    COORDENADA pos1, pos2, *atual, best;
+    float bestDist;
+    bestDist = 100;
+    LISTA lista = criar_lista();
 
-    printf("Insira várias linhas, acabando com CTRL-D:\n");
+    pos1.coluna = 7;
+    pos1.linha = 0;
 
-    for(int i = 0; i < 10 ; i++){
-        fgets(linha, BUF_SIZE, stdin);
-        printf("%s", linha);
-        L = insere_cabeca(L, strdup(linha));
+    pos2.coluna = 0;
+    pos2.linha = 7;
+
+    lista = jogadasProximas(estado, lista);
+
+    while(!lista_esta_vazia(lista)){
+        atual = (COORDENADA *) devolve_cabeca(lista);
+        if(obter_jogador_atual(estado) == 1){
+            if(estado->tab[atual->linha][atual->coluna] == POS1){
+                best = *atual;
+                break;
+            }
+            if(distancia_eucladiana(*atual,pos1) < bestDist){
+                bestDist = distancia_eucladiana(*atual,pos1);
+                best = *atual;
+            }
+        }else{
+            if(estado->tab[atual->linha][atual->coluna] == POS2){
+                best = *atual;
+                break;
+            }
+            if(distancia_eucladiana(*atual,pos2) < bestDist){
+                bestDist = distancia_eucladiana(*atual,pos2);
+                best.linha = atual->linha;
+                best.coluna = atual->coluna;
+            }
+        }
+        lista = proximo(lista);
     }
+    printf("%d\n", best.coluna);
+    printf("%d", best.linha);
 
-    printf("\n==============================\n");
-    printf(  "=          PERCURSO          =\n");
-    printf(  "==============================\n\n");
-    for(LISTA T = L; !lista_esta_vazia(T); T = proximo(T)) {
-        char *str = (char *) devolve_cabeca(T);
-        printf("%s", str);
-    }
+    jogar(estado, best);
 
-    printf("\n==============================\n");
-    printf(  "=           REMOCAO          =\n");
-    printf(  "==============================\n\n");
-    while(!lista_esta_vazia(L)) {
-        char *str = (char *) devolve_cabeca(L);
-        printf("%s", str);
-        L = remove_cabeca(L);
-        free(str);
-    }*/
+    free(lista);
 }
 
 LISTA jogadasProximas(ESTADO *e, LISTA L){
@@ -123,12 +141,20 @@ LISTA jogadasProximas(ESTADO *e, LISTA L){
 
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
-            if (e->tab[j][i] == VAZIO
-            || e->tab[j][i] == POS1
-            || e->tab[j][i] == POS2){
-                atual = malloc(sizeof(COORDENADA));
-                atual->linha = j;
-                atual->coluna = i;
+            atual = malloc(sizeof(COORDENADA));
+            atual->linha = i;
+            atual->coluna = j;
+            if((e->jogador_atual == 1 && e->tab[i][j] == POS1) || (e->jogador_atual == 2 && e->tab[i][j] == POS2)){
+                int valida = jogada_valida(e, *atual);
+                if(valida == 1 || valida == 2 || valida == 3){
+                    LISTA t = malloc(sizeof(NODO));
+                    t->valor = atual;
+                    t->proximo = NULL;
+                    return t;
+                }
+            }
+
+            if (e->tab[i][j] == VAZIO){
                 int valida = jogada_valida(e, *atual);
                 if(valida == 1 || valida == 2 || valida == 3){
                     L = insere_cabeca(L, atual);
@@ -136,13 +162,6 @@ LISTA jogadasProximas(ESTADO *e, LISTA L){
             }
         }
     }
-
-    /*for (int i = peca.coluna - 1; i <= peca.coluna + 1; i++){
-        for (int j = peca.linha - 1; j <= peca.linha + 1; ++j) {
-
-        }
-    }*/
-
     L->proximo = NULL;
     return L;
 }

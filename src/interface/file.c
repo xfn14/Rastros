@@ -177,7 +177,7 @@ void pos(ESTADO *estado, int pos){
     nula.coluna = -1;
 
     int jogadas = obter_numero_de_jogadas(estado);
-    if(0 <= pos && pos <= jogadas){
+    if(0 < pos && pos <= jogadas + 1){
         for(int i = pos; i <= jogadas; i++){
             COORDENADA jogador1_coord = estado->jogadas[i].jogador1;
             COORDENADA jogador2_coord = estado->jogadas[i].jogador2;
