@@ -86,26 +86,31 @@ Definition at line 6 of file interpretador.\+c.
 36         \textcolor{keywordflow}{return} 4;
 37     \}
 38 
-39     \textcolor{keywordflow}{if}(strlen(linha) == 4 && strcmp(linha,\textcolor{stringliteral}{"jog\(\backslash\)n"}) == 0)\{
-40         jog(e);
-41         \textcolor{keywordflow}{return} 4;
-42     \}
-43 
-44     \textcolor{keywordflow}{if}((strlen(linha) == 6 || strlen(linha) == 7)
-45     && strstr(linha, \textcolor{stringliteral}{"pos"}))\{
-46         p = atoi(&linha[4]);
-47         \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}(e, p);
-48         \textcolor{keywordflow}{return} 5;
+39     \textcolor{keywordflow}{if}((strlen(linha) == 6 || strlen(linha) == 7)
+40     && strstr(linha, \textcolor{stringliteral}{"pos"}))\{
+41         p = atoi(&linha[4]);
+42         \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}(e, p);
+43         \textcolor{keywordflow}{return} 5;
+44     \}
+45 
+46     \textcolor{keywordflow}{if}(strlen(linha) == 4 && strcmp(linha,\textcolor{stringliteral}{"jog\(\backslash\)n"}) == 0)\{
+47         jog(e);
+48         \textcolor{keywordflow}{return} 6;
 49     \}
 50 
-51     \textcolor{keywordflow}{if}(strlen(linha) == 3 && sscanf(linha, \textcolor{stringliteral}{"%[a-h]%[1-8]"}, col, lin) == 2)\{
-52         \hyperlink{structCOORDENADA}{COORDENADA} coord = \{*col - \textcolor{charliteral}{'a'}, *lin - \textcolor{charliteral}{'1'}\};
-53         coord.linha = 7-coord.linha;
-54         \hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}(e, coord);
-55         \textcolor{keywordflow}{return} 1;
-56     \}
-57 
-58     printf(\textcolor{stringliteral}{"Comando invalido.\(\backslash\)n"});
-59     \textcolor{keywordflow}{return} 0;
-60 \}
+51     \textcolor{keywordflow}{if}(strlen(linha) == 5 && strcmp(linha,\textcolor{stringliteral}{"jog2\(\backslash\)n"}) == 0)\{
+52         jog2(e);
+53         \textcolor{keywordflow}{return} 7;
+54     \}
+55 
+56     \textcolor{keywordflow}{if}(strlen(linha) == 3 && sscanf(linha, \textcolor{stringliteral}{"%[a-h]%[1-8]"}, col, lin) == 2)\{
+57         \hyperlink{structCOORDENADA}{COORDENADA} coord = \{*col - \textcolor{charliteral}{'a'}, *lin - \textcolor{charliteral}{'1'}\};
+58         coord.linha = 7-coord.linha;
+59         \hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}(e, coord);
+60         \textcolor{keywordflow}{return} 1;
+61     \}
+62 
+63     printf(\textcolor{stringliteral}{"Comando invalido.\(\backslash\)n"});
+64     \textcolor{keywordflow}{return} 0;
+65 \}
 \end{DoxyCode}

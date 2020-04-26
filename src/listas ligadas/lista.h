@@ -63,10 +63,20 @@ void jog(ESTADO *estado);
 LISTA jogadasProximas(ESTADO *e, LISTA L);
 /**
 \brief Funçao que calcula a distancia para um dos jogadores ganhar
+@param coord1 primeira coordenada
+@param coord2 segunda coordenada
 */
 float distancia_eucladiana(COORDENADA coord1, COORDENADA coord2);
-
+/**
+\brief Funçao que efetua uma jogada para o jogador atual mas melhorada
+@param estado estado atual
+*/
 void jog2(ESTADO *estado);
+/**
+\brief Funçao que através da heuristica minimax calcula a proxima jogada
+@param estado estado atual
+@param lista lista de jogadas possiveis
+*/
 LISTA minimax(ESTADO *estado, LISTA lista);
 
 #endif //SRC_LISTA_H
