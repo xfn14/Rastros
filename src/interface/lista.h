@@ -66,4 +66,7 @@ LISTA jogadasProximas(ESTADO *e, LISTA L);
 */
 float distancia_eucladiana(COORDENADA coord1, COORDENADA coord2);
 
+void jog2(ESTADO *estado);
+LISTA minimax(ESTADO *estado, LISTA lista);
+
 #endif //SRC_LISTA_H

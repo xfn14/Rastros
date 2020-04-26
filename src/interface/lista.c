@@ -80,8 +80,6 @@ void jog(ESTADO *estado){
         }
         lista = proximo(lista);
     }
-    printf("%d\n", best.coluna);
-    printf("%d", best.linha);
 
     jogar(estado, best);
 
@@ -90,8 +88,8 @@ void jog(ESTADO *estado){
 
 void jog2(ESTADO *estado){
     COORDENADA pos1, pos2, *atual, best;
-    float bestDist;
-    bestDist = 100;
+    void *bestValor;
+    bestValor = (float *) 100;
     LISTA lista = criar_lista();
 
     pos1.coluna = 7;
@@ -100,38 +98,62 @@ void jog2(ESTADO *estado){
     pos2.coluna = 0;
     pos2.linha = 7;
 
-    lista = jogadasProximas(estado, lista);
+
+    lista = minimax(estado, lista);
 
     while(!lista_esta_vazia(lista)){
-        atual = (COORDENADA *) devolve_cabeca(lista);
-        if(obter_jogador_atual(estado) == 1){
-            if(estado->tab[atual->linha][atual->coluna] == POS1){
-                best = *atual;
-                break;
-            }
-            if(distancia_eucladiana(*atual,pos1) < bestDist){
-                bestDist = distancia_eucladiana(*atual,pos1);
-                best = *atual;
+        void *valor;
+        valor = devolve_cabeca(lista);
+        if(estado->jogador_atual == 1){
+            if(valor < bestValor){
+                bestValor = valor;
             }
         }else{
-            if(estado->tab[atual->linha][atual->coluna] == POS2){
-                best = *atual;
-                break;
-            }
-            if(distancia_eucladiana(*atual,pos2) < bestDist){
-                bestDist = distancia_eucladiana(*atual,pos2);
-                best.linha = atual->linha;
-                best.coluna = atual->coluna;
+            if(valor > bestValor){
+                bestValor = valor;
             }
         }
         lista = proximo(lista);
     }
-    printf("%d\n", best.coluna);
-    printf("%d", best.linha);
+
+    LISTA proximos = criar_lista();
+    proximos = jogadasProximas(estado, proximos);
+
+    atual = devolve_cabeca(proximos);
+    best.linha = atual->linha;
+    best.coluna = atual->coluna;
+
+    while(!lista_esta_vazia(proximos)){
+        atual = devolve_cabeca(proximos);
+        void *valor_atual;
+        valor_atual = (float *) (atual->coluna + atual->linha);
+        if(valor_atual == bestValor){
+            best.linha = atual->linha;
+            best.coluna = atual->coluna;
+        }
+        proximos = proximo(proximos);
+        printf("test2\n");
+    }
 
     jogar(estado, best);
 
     free(lista);
+}
+
+LISTA minimax(ESTADO *estado, LISTA lista){
+    LISTA proximas = criar_lista();
+    proximas = jogadasProximas(estado, proximas);
+
+   COORDENADA *atual = malloc(sizeof(COORDENADA));
+   while(!lista_esta_vazia(proximas)){
+       atual = (COORDENADA *) devolve_cabeca(proximas);
+       void *valor;
+       valor = (float *) (atual->coluna + atual->linha);
+       insere_cabeca(lista, valor);
+       proximas = proximo(proximas);
+   }
+   lista->proximo = NULL;
+   return lista;
 }
 
 LISTA jogadasProximas(ESTADO *e, LISTA L){
@@ -144,19 +166,17 @@ LISTA jogadasProximas(ESTADO *e, LISTA L){
             atual = malloc(sizeof(COORDENADA));
             atual->linha = i;
             atual->coluna = j;
-            if((e->jogador_atual == 1 && e->tab[i][j] == POS1) || (e->jogador_atual == 2 && e->tab[i][j] == POS2)){
-                int valida = jogada_valida(e, *atual);
-                if(valida == 1 || valida == 2 || valida == 3){
+
+            int valida = jogada_valida(e, *atual);
+            if(valida == 1 || valida == 2 || valida == 3){
+                if((e->jogador_atual == 1 && e->tab[i][j] == POS1) || (e->jogador_atual == 2 && e->tab[i][j] == POS2)){
                     LISTA t = malloc(sizeof(NODO));
                     t->valor = atual;
                     t->proximo = NULL;
                     return t;
                 }
-            }
 
-            if (e->tab[i][j] == VAZIO){
-                int valida = jogada_valida(e, *atual);
-                if(valida == 1 || valida == 2 || valida == 3){
+                if (e->tab[i][j] == VAZIO){
                     L = insere_cabeca(L, atual);
                 }
             }

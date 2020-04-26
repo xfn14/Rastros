@@ -36,16 +36,21 @@ int interpretador(ESTADO *e) {
         return 4;
     }
 
-    if(strlen(linha) == 4 && strcmp(linha,"jog\n") == 0){
-        jog(e);
-        return 4;
-    }
-
     if((strlen(linha) == 6 || strlen(linha) == 7)
     && strstr(linha, "pos")){
         p = atoi(&linha[4]);
         pos(e, p);
         return 5;
+    }
+
+    if(strlen(linha) == 4 && strcmp(linha,"jog\n") == 0){
+        jog(e);
+        return 6;
+    }
+
+    if(strlen(linha) == 5 && strcmp(linha,"jog2\n") == 0){
+        jog2(e);
+        return 7;
     }
 
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
