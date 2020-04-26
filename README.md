@@ -16,7 +16,7 @@
 <br>
 <br>
 
-## PL6 - Grupo 8 🧔
+## PL6 - Grupo 8 -MIEI 🧔
 - André Filipe Novais Vaz - A93221
 - Ricardo Lopes Santos Silva - A93195
 - Benjamim Meleiro Rodrigues - A93323
