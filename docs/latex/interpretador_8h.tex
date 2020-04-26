@@ -4,6 +4,13 @@
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}../logica/jogada.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lista/lista.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interpretador_8h_a6821bafc3c88dfb2e433a095df9940c6}\label{interpretador_8h_a6821bafc3c88dfb2e433a095df9940c6}} 
+\#define {\bfseries B\+U\+F\+\_\+\+S\+I\+ZE}~1024
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,59 +48,64 @@ Retorna -\/1 para sair do programa, 0 nao acontece nada, 1 jogar, 2 gr, 3 ler, 4
 \end{DoxyReturn}
 
 
-Definition at line 9 of file interpretador.\+c.
+Definition at line 6 of file interpretador.\+c.
 
 
 \begin{DoxyCode}
-9                              \{
-10     \textcolor{keywordtype}{char} linha[BUF\_SIZE];
-11     \textcolor{keywordtype}{char} col[2], lin[2];
-12     \textcolor{keywordtype}{char} file[16];
-13     \textcolor{keywordtype}{int} p;
-14 
-15     printf(\textcolor{stringliteral}{"%d PL%d (%d)>"}, comandos, \hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}(e), 
+6                              \{
+7     \textcolor{keywordtype}{char} linha[BUF\_SIZE];
+8     \textcolor{keywordtype}{char} col[2], lin[2];
+9     \textcolor{keywordtype}{char} file[16];
+10     \textcolor{keywordtype}{int} p;
+11 
+12     printf(\textcolor{stringliteral}{"%d PL%d (%d)>"}, comandos, \hyperlink{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}{obter\_jogador\_atual}(e), 
       \hyperlink{estado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\_numero\_de\_jogadas}(e) + 1);
+13 
+14     \textcolor{keywordflow}{if}(fgets(linha, BUF\_SIZE, stdin) == NULL)
+15         \textcolor{keywordflow}{return} 0;
 16 
-17     \textcolor{keywordflow}{if}(fgets(linha, BUF\_SIZE, stdin) == NULL)
-18         \textcolor{keywordflow}{return} 0;
-19 
-20     comandos++;
-21 
-22     \textcolor{keywordflow}{if}(strlen(linha) == 2 && strcmp(linha,\textcolor{stringliteral}{"Q\(\backslash\)n"}) == 0)\{
-23         quit = 1;
-24         \textcolor{keywordflow}{return} -1;
-25     \}
-26 
-27     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"gr %s"}, file))\{
-28         \hyperlink{file_8h_a88be94d179abd5073870fc1d206b3770}{gr}(file, e);
-29         \textcolor{keywordflow}{return} 2;
-30     \}
-31 
-32     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"ler %s"}, file)) \{
-33         \hyperlink{file_8h_ae6bfa898954094e9a4f4540e72ac3c81}{ler}(file, e);
-34         \textcolor{keywordflow}{return} 3;
-35     \}
-36 
-37     \textcolor{keywordflow}{if}(strlen(linha) == 5 && strcmp(linha,\textcolor{stringliteral}{"movs\(\backslash\)n"}) == 0)\{
-38         \hyperlink{file_8h_a4e054f36607c534b3680ef11fa600868}{movs}(e);
-39         \textcolor{keywordflow}{return} 4;
-40     \}
-41 
-42     \textcolor{keywordflow}{if}((strlen(linha) == 6 || strlen(linha) == 7)
-43     && strstr(linha, \textcolor{stringliteral}{"pos"}))\{
-44         p = atoi(&linha[4]);
-45         \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}(e, p);
-46         \textcolor{keywordflow}{return} 5;
-47     \}
-48 
-49     \textcolor{keywordflow}{if}(strlen(linha) == 3 && sscanf(linha, \textcolor{stringliteral}{"%[a-h]%[1-8]"}, col, lin) == 2)\{
-50         \hyperlink{structCOORDENADA}{COORDENADA} coord = \{*col - \textcolor{charliteral}{'a'}, *lin - \textcolor{charliteral}{'1'}\};
-51         coord.linha = 7-coord.linha;
-52         \hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}(e, coord);
-53         \textcolor{keywordflow}{return} 1;
-54     \}
-55 
-56     printf(\textcolor{stringliteral}{"Comando invalido.\(\backslash\)n"});
-57     \textcolor{keywordflow}{return} 0;
-58 \}
+17     comandos++;
+18 
+19     \textcolor{keywordflow}{if}(strlen(linha) == 2 && strcmp(linha,\textcolor{stringliteral}{"Q\(\backslash\)n"}) == 0)\{
+20         quit = 1;
+21         \textcolor{keywordflow}{return} -1;
+22     \}
+23 
+24     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"gr %s"}, file))\{
+25         \hyperlink{file_8h_a88be94d179abd5073870fc1d206b3770}{gr}(file, e);
+26         \textcolor{keywordflow}{return} 2;
+27     \}
+28 
+29     \textcolor{keywordflow}{if}(sscanf(linha, \textcolor{stringliteral}{"ler %s"}, file)) \{
+30         \hyperlink{file_8h_ae6bfa898954094e9a4f4540e72ac3c81}{ler}(file, e);
+31         \textcolor{keywordflow}{return} 3;
+32     \}
+33 
+34     \textcolor{keywordflow}{if}(strlen(linha) == 5 && strcmp(linha,\textcolor{stringliteral}{"movs\(\backslash\)n"}) == 0)\{
+35         \hyperlink{file_8h_a4e054f36607c534b3680ef11fa600868}{movs}(e);
+36         \textcolor{keywordflow}{return} 4;
+37     \}
+38 
+39     \textcolor{keywordflow}{if}(strlen(linha) == 4 && strcmp(linha,\textcolor{stringliteral}{"jog\(\backslash\)n"}) == 0)\{
+40         jog(e);
+41         \textcolor{keywordflow}{return} 4;
+42     \}
+43 
+44     \textcolor{keywordflow}{if}((strlen(linha) == 6 || strlen(linha) == 7)
+45     && strstr(linha, \textcolor{stringliteral}{"pos"}))\{
+46         p = atoi(&linha[4]);
+47         \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}(e, p);
+48         \textcolor{keywordflow}{return} 5;
+49     \}
+50 
+51     \textcolor{keywordflow}{if}(strlen(linha) == 3 && sscanf(linha, \textcolor{stringliteral}{"%[a-h]%[1-8]"}, col, lin) == 2)\{
+52         \hyperlink{structCOORDENADA}{COORDENADA} coord = \{*col - \textcolor{charliteral}{'a'}, *lin - \textcolor{charliteral}{'1'}\};
+53         coord.linha = 7-coord.linha;
+54         \hyperlink{jogada_8h_aedac94896fa0c978db67ffa48463b731}{jogar}(e, coord);
+55         \textcolor{keywordflow}{return} 1;
+56     \}
+57 
+58     printf(\textcolor{stringliteral}{"Comando invalido.\(\backslash\)n"});
+59     \textcolor{keywordflow}{return} 0;
+60 \}
 \end{DoxyCode}
