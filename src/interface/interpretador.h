@@ -9,7 +9,7 @@ Definição do interpretador e das suas funções
 #include <string.h>
 #include "../logica/jogada.h"
 #include "file.h"
-#include "lista.h"
+#include "../lista/lista.h"
 #define BUF_SIZE 1024
 
 int quit;

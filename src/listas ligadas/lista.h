@@ -5,7 +5,7 @@
 #include "stdlib.h"
 #include "math.h"
 #include "../dados/data.h"
-#include "interpretador.h"
+#include "../interface/interpretador.h"
 /**
 \brief Tipo de dados para os nodos
 */
@@ -15,38 +15,38 @@ typedef struct nodo {
 } NODO, *LISTA;
 
 /**
-\brief Cria uma lista vazia
-@returns lista vazia
+\brief Cria uma listas ligadas vazia
+@returns listas ligadas vazia
 */
 LISTA criar_lista();
 /**
-\brief Insere um valor à cabeça da lista
-@param L lista
+\brief Insere um valor à cabeça da listas ligadas
+@param L listas ligadas
 @param valor valor pretendido
-@returns L retorna a lista apenas com o valor, t insere o valor à cabeça de uma lista
+@returns L retorna a listas ligadas apenas com o valor, t insere o valor à cabeça de uma listas ligadas
 */
 LISTA insere_cabeca(LISTA L, void *valor);
 /**
-\brief Devolve a cabeça de uma lista
+\brief Devolve a cabeça de uma listas ligadas
 @param L Lista
 */
 void *devolve_cabeca(LISTA L);
 /**
-\brief Devolve a cauda de uma lista
+\brief Devolve a cauda de uma listas ligadas
 @param L Lista
-@returns Retorna a cauda da lista
+@returns Retorna a cauda da listas ligadas
 */
 LISTA proximo(LISTA L);
 /**
-\brief Remove a cabeça de uma lista, libertando o espaço ocupado
+\brief Remove a cabeça de uma listas ligadas, libertando o espaço ocupado
 @param L Lista
-@returns Retorna a cauda da lista
+@returns Retorna a cauda da listas ligadas
 */
 LISTA remove_cabeca(LISTA L);
 /**
-\brief Verifica se uma lista está vazia
+\brief Verifica se uma listas ligadas está vazia
 @param L Lista
-@returns Retorna verdadeiro se a lista estiver vazia
+@returns Retorna verdadeiro se a listas ligadas estiver vazia
 */
 int lista_esta_vazia(LISTA L);
 /**
@@ -58,7 +58,7 @@ void jog(ESTADO *estado);
 \brief Funçao que verifica quais sao as jogadas proximas da coordenada atual
 @param e estado atual
 @param L Lista
-@returns Retorna uma lista com as jogadas proximas
+@returns Retorna uma listas ligadas com as jogadas proximas
 */
 LISTA jogadasProximas(ESTADO *e, LISTA L);
 /**

@@ -1,13 +1,13 @@
 #include "lista.h"
 
-// Cria uma lista vazia
+// Cria uma listas ligadas vazia
 LISTA criar_lista(){
     LISTA lista1 = malloc(sizeof(NODO));
     lista1->valor = NULL;
     return lista1;
 }
 
-// Insere um valor na cabeça da lista
+// Insere um valor na cabeça da listas ligadas
 LISTA insere_cabeca(LISTA L, void *valor){
     if (L->valor == NULL) {
         L->valor = valor;
@@ -20,24 +20,24 @@ LISTA insere_cabeca(LISTA L, void *valor){
     }
 }
 
-// Devolve a cabeça da lista
+// Devolve a cabeça da listas ligadas
 void *devolve_cabeca(LISTA L){
     return L->valor;
 }
 
-// Devolve a cauda da lista
+// Devolve a cauda da listas ligadas
 LISTA proximo(LISTA L){
     return L->proximo;
 }
 
-// Remove a cabeça da lista (libertando o espaço ocupado) e devolve a cauda
+// Remove a cabeça da listas ligadas (libertando o espaço ocupado) e devolve a cauda
 LISTA remove_cabeca(LISTA L){
     LISTA tail = proximo(L);
     free(L);
     return tail;
 }
 
-// Devolve verdareiro se a lista é vazia
+// Devolve verdareiro se a listas ligadas é vazia
 int lista_esta_vazia(LISTA L){
     return L == NULL || (L->valor == NULL && L->proximo == NULL);
 }
