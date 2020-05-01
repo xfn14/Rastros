@@ -53,4 +53,8 @@ typedef struct{
     int jogador_atual;
 }ESTADO;
 
+int obter_linha_coord(COORDENADA coord);
+int obter_coluna_coord(COORDENADA coord);
+COORDENADA obter_jogada_jogador(ESTADO *estado,int jogada, int jogador);
+
 #endif //SRC_DATA_H

@@ -38,6 +38,10 @@ int obter_jogador_atual(ESTADO *estado){
     return estado->jogador_atual;
 }
 
+COORDENADA obter_ultima_jogada(ESTADO *estado){
+    return estado->ultima_jogada;
+}
+
 int obter_numero_de_jogadas(ESTADO *estado){
     return estado->num_jogadas;
 }

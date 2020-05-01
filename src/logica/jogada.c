@@ -4,8 +4,9 @@ int jogar(ESTADO *estado, COORDENADA coord){
 
     int validar = jogada_valida(estado, coord);
     if(validar == 1 || validar == 2 || validar == 3) {
-        estado->tab[coord.linha][coord.coluna] = PECA;
-        estado->tab[estado->ultima_jogada.linha][estado->ultima_jogada.coluna] = RASTRO;
+        COORDENADA ultima_jogada = obter_ultima_jogada(estado);
+        estado->tab[obter_linha_coord(coord)][obter_coluna_coord(coord)] = PECA;
+        estado->tab[obter_linha_coord(ultima_jogada)][obter_coluna_coord(ultima_jogada)] = RASTRO;
         estado->ultima_jogada = coord;
 
         // Adicionar jogada ao array de jogadas
@@ -32,8 +33,9 @@ int jogar(ESTADO *estado, COORDENADA coord){
 }
 
 int jogada_valida(ESTADO *estado, COORDENADA coord){
-    int x1 = estado->ultima_jogada.coluna, y1 = estado->ultima_jogada.linha;
-    int x2 = coord.coluna, y2 = coord.linha;
+    COORDENADA ultima_jogada = obter_ultima_jogada(estado);
+    int x1 = obter_coluna_coord(ultima_jogada), y1 = obter_linha_coord(ultima_jogada);
+    int x2 = obter_coluna_coord(coord), y2 = obter_coluna_coord(coord);
 
     // Validar casas em volta da PECA
     if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
@@ -45,11 +47,15 @@ int jogada_valida(ESTADO *estado, COORDENADA coord){
         CASA new_tab[8][8];
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
-                new_tab[i][j] = estado->tab[i][j];
+                COORDENADA new;
+                new.linha = i;
+                new.coluna = j;
+                new_tab[i][j] = obter_estado_casa(estado, new);
             }
         }
+
         new_tab[coord.linha][coord.coluna] = PECA;
-        new_tab[estado->ultima_jogada.linha][estado->ultima_jogada.coluna] = RASTRO;
+        new_tab[obter_linha_coord(ultima_jogada)][obter_coluna_coord(ultima_jogada)] = RASTRO;
 
         if((new_tab[abs(coord.linha-1)][abs(coord.coluna-1)] == RASTRO)
         && (new_tab[abs(coord.linha-1)][abs(coord.coluna)] == RASTRO)
@@ -82,11 +88,11 @@ void adicionar_jogada(ESTADO *estado, COORDENADA coord){
         nula.coluna = -1;
         jog.jogador2 = nula;
 
-        estado->jogadas[estado->num_jogadas] = jog;
+        estado->jogadas[obter_numero_de_jogadas(estado)] = jog;
     }else{
-        JOGADA jog = estado->jogadas[estado->num_jogadas];
+        JOGADA jog = estado->jogadas[obter_numero_de_jogadas(estado)];
         jog.jogador2 = coord;
-        estado->jogadas[estado->num_jogadas] = jog;
+        estado->jogadas[obter_numero_de_jogadas(estado)] = jog;
         estado->num_jogadas = obter_numero_de_jogadas(estado) + 1;
     }
 }

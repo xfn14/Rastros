@@ -51,4 +51,6 @@ COORDENADA obter_coordenada_peca(CASA tab[8][8]);
  */
 void resetJogadas(ESTADO *estado);
 
+COORDENADA obter_ultima_jogada(ESTADO *estado);
+
 #endif //SRC_ESTADO_H
