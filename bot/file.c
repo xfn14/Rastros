@@ -4,9 +4,6 @@
 #include "estado.h"
 #include "jogada.h"
 
-void gr(char *file_name, ESTADO *estado);
-void ler(char *file_name, ESTADO *estado);
-
 void gr(char *file_name, ESTADO *estado){
     FILE *file_p;
     file_p = fopen(file_name, "w");
