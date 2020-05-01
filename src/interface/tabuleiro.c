@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "tabuleiro.h"
 
-
 void mostrar_tabuleiro(ESTADO *e){
     int linha = 8;
 
