@@ -21,3 +21,16 @@ void *devolve_cabeca(LISTA L){
 LISTA proximo(LISTA L){
     return L->proximo;
 }
+
+// Insere um valor na cabeça da listas ligadas
+LISTA insere_cabeca(LISTA L, void *valor){
+    if (L->valor == NULL) {
+        L->valor = valor;
+        return L;
+    } else {
+        LISTA t = malloc(sizeof(NODO));
+        t->valor = valor;
+        t->proximo = L;
+        return t;
+    }
+}

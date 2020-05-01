@@ -74,7 +74,7 @@ LISTA jogadasProximas(ESTADO *e, LISTA L){
 
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
-            Ondeatual = malloc(sizeof(COORDENADA));
+            atual = malloc(sizeof(COORDENADA));
             atual->linha = i;
             atual->coluna = j;
 
