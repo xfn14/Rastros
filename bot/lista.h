@@ -1,6 +1,9 @@
 #ifndef SRC_LISTA_H
 #define SRC_LISTA_H
 
+#include "stdio.h"
+#include "stdlib.h"
+
 /**
 \brief Tipo de dados para os nodos
 */
