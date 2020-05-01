@@ -54,4 +54,7 @@ void resetJogadas(ESTADO *estado); // USED
 
 COORDENADA obter_ultima_jogada(ESTADO *estado); // USED
 
+int obter_linha_coord(COORDENADA coord);
+int obter_coluna_coord(COORDENADA coord);
+
 #endif //SRC_ESTADO_H

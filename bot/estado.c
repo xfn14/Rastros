@@ -82,3 +82,11 @@ void resetJogadas(ESTADO *estado){
         estado->jogadas[i].jogador2 = nula;
     }
 }
+
+int obter_linha_coord(COORDENADA coord){
+    return coord.linha;
+}
+
+int obter_coluna_coord(COORDENADA coord){
+    return coord.coluna;
+}
