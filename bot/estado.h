@@ -7,6 +7,7 @@ Definição das funções que alteram o estado
 
 #include <stdlib.h>
 #include "jogada.h"
+#include "data.h"
 /**
 \brief Inicializa o estado
 @returns Retorna o estado inicializado
