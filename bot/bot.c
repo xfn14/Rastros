@@ -1,6 +1,6 @@
 #include "data.h"
 #include "estado.h"
-#include "file.h"
+#include "file.c"
 #include "lista.h"
 #include "jogada.h"
 #include "stdio.h"

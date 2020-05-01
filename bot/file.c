@@ -109,7 +109,5 @@ FILE *file_p;
     setTabuleiro(estado, tabuleiro);
     estado->ultima_jogada = obter_coordenada_peca(tabuleiro);
 
-    mostrar_tabuleiro(estado);
-
     fclose(file_p);
 }

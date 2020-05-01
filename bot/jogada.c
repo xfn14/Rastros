@@ -19,11 +19,9 @@ int jogar(ESTADO *estado, COORDENADA coord){
         }
 
         putchar('\n');
-        mostrar_tabuleiro(estado);
 
         if(validar == 1 || validar == 2){
             printf("\nJogador %d vence.", validar);
-            quit = 1;
         }
         return 1;
     }else{

@@ -7,6 +7,7 @@ Definição da camada logica e das suas funções
 
 #include "estado.h"
 #include "stdio.h"
+#include "data.h"
 /**
 \brief Efetua uma jogada
 @param estado Apontador para o estado
