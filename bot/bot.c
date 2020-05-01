@@ -1,4 +1,8 @@
 #include "bot.h"
+#include "../src/dados/data.h"
+#include "../src/dados/estado.h"
+#include "../src/interface/file.h"
+#include "../src/dados/lista.h"
 
 int main(int nr, char **args){
     ESTADO *estado = inicializar_estado();
