@@ -1,7 +1,6 @@
 #include "bot.h"
 
 int main(int nr, char **args){
-    FILE *file;
     ESTADO *estado = inicializar_estado();
     if(nr == 3){
         char *old = args[1];
