@@ -4,6 +4,7 @@
 #include "stdio.h"
 #include "../dados/data.h"
 #include "../dados/estado.h"
+#include "../interface/tabuleiro.h"
 
 /**
 \brief Esta função lê o estado e o valor dado pelo jogador e volta ao tabuleiro com as jogadas até essa posição
