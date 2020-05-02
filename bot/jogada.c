@@ -19,11 +19,9 @@ int jogar(ESTADO *estado, COORDENADA coord){
         }
 
         putchar('\n');
-        mostrar_tabuleiro(estado);
 
         if(validar == 1 || validar == 2){
             printf("\nJogador %d vence.", validar);
-            quit = 1;
         }
         return 1;
     }else{
@@ -35,14 +33,13 @@ int jogar(ESTADO *estado, COORDENADA coord){
 int jogada_valida(ESTADO *estado, COORDENADA coord){
     COORDENADA ultima_jogada = obter_ultima_jogada(estado);
     int x1 = obter_coluna_coord(ultima_jogada), y1 = obter_linha_coord(ultima_jogada);
-    int x2 = obter_coluna_coord(coord), y2 = obter_linha_coord(coord);
+    int x2 = obter_coluna_coord(coord), y2 = obter_coluna_coord(coord);
 
     // Validar casas em volta da PECA
     if(((x1 == x2) && (((abs(y1-y2))==1))) // Cima e baixo
        || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))) // Esquerda e Direita
     {
         CASA casa_coord = obter_estado_casa(estado, coord);
-        if(casa_coord == RASTRO) return 0;
 
         // Tabuleiro com a jogada efetuada
         CASA new_tab[8][8];
