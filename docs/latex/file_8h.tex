@@ -1,21 +1,17 @@
-\hypertarget{file_8h}{}\section{interface/file.h File Reference}
-\label{file_8h}\index{interface/file.\+h@{interface/file.\+h}}
+\hypertarget{file_8h}{}\section{file.\+h File Reference}
+\label{file_8h}\index{file.\+h@{file.\+h}}
 {\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../dados/data.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../dados/estado.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../logica/jogada.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}jogada.\+h\char`\"{}}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{file_8h_a88be94d179abd5073870fc1d206b3770}{gr} (char $\ast$file\+\_\+name, \hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
 \begin{DoxyCompactList}\small\item\em Esta função lê o Estado atual e grava o tabuleiro correspondente num ficheiro. \end{DoxyCompactList}\item 
 void \hyperlink{file_8h_ae6bfa898954094e9a4f4540e72ac3c81}{ler} (char $\ast$file\+\_\+name, \hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
-\begin{DoxyCompactList}\small\item\em Esta função lê um ficheiro e verifica o Estado do tabuleiro. \end{DoxyCompactList}\item 
-void \hyperlink{file_8h_a4e054f36607c534b3680ef11fa600868}{movs} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
-\begin{DoxyCompactList}\small\item\em Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores. \end{DoxyCompactList}\item 
-void \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado, int jogada)
-\begin{DoxyCompactList}\small\item\em Esta função lê o estado e o valor dado pelo jogador e volta ao tabuleiro com as jogadas até essa posição. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Esta função lê um ficheiro e verifica o Estado do tabuleiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -129,194 +125,89 @@ Definition at line 46 of file file.\+c.
 62         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 150; i++)\{
 63             line[i] = \textcolor{charliteral}{'\(\backslash\)0'};
 64         \}
-65         fgets(line, 150, file\_p);
+65         \textcolor{comment}{//fgets(line, 150, file\_p);}
 66 
-67         \textcolor{keywordflow}{if}(linha < 8)\{
-68             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
-69                 \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'1'}) tabuleiro[linha][i] = POS1;
-70                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'2'}) tabuleiro[linha][i] = POS2;
-71                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'#'}) tabuleiro[linha][i] = RASTRO;
-72                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'*'}) tabuleiro[linha][i] = PECA;
-73                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'.'}) tabuleiro[linha][i] = VAZIO;
-74             \}
-75         \}\textcolor{keywordflow}{else}\{
-76             \textcolor{keywordflow}{if}(strcmp(line, \textcolor{stringliteral}{"\(\backslash\)n"}) != 0)\{
-77                 \hyperlink{structCOORDENADA}{COORDENADA} jog1\_coord;
-78                 jog1\_coord.coluna = line[4] - \textcolor{charliteral}{'a'};
-79                 jog1\_coord.linha = 7 - (line[5] - \textcolor{charliteral}{'1'});
-80 
-81                 \textcolor{comment}{//printf("1: %c %c\(\backslash\)n", line[4], line[5]);}
-82                 \textcolor{comment}{//printf("1: %d %d\(\backslash\)n", jog1\_coord.coluna, jog1\_coord.linha);}
-83 
-84                 \hyperlink{structCOORDENADA}{COORDENADA} jog2\_coord;
-85                 jog2\_coord.coluna = line[7] - \textcolor{charliteral}{'a'};
-86                 jog2\_coord.linha = 7 - (line[8] - \textcolor{charliteral}{'1'});
-87 
-88                 \textcolor{comment}{//printf("2: %c %c\(\backslash\)n", line[7], line[8]);}
-89                 \textcolor{comment}{//printf("2: %d %d\(\backslash\)n", jog2\_coord.coluna, jog2\_coord.linha);}
-90 
-91                 \textcolor{keywordflow}{if}(0 <= jog1\_coord.coluna && jog1\_coord.coluna <= 7)\{
-92                     estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
-93                     \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\_jogada}(estado, jog1\_coord);
-94                     estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 2;
-95                 \}
-96 
-97                 \textcolor{keywordflow}{if}(0 <= jog2\_coord.coluna && jog2\_coord.coluna <= 7)\{
-98                     estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 2;
-99                     \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\_jogada}(estado, jog2\_coord);
-100                     estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
-101                 \}
-102             \}
-103         \}
-104 
-105         \textcolor{keywordflow}{if}(feof(file\_p))\{
-106             \textcolor{keywordflow}{break};
-107         \}
-108         linha++;
-109     \}
-110 
-111     \hyperlink{estado_8h_ab3b8be2c1d31ca864df920d8f0df3a04}{setTabuleiro}(estado, tabuleiro);
-112     estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada} = \hyperlink{estado_8h_aa21af881dfebf0f0e822b806edf9a006}{obter\_coordenada\_peca}(tabuleiro);
-113 
-114     \textcolor{comment}{// FIX Bug de linha no ficheiro}
-115     \textcolor{comment}{/*if(obter\_jogador\_atual(estado) == 1)\{}
-116 \textcolor{comment}{        COORDENADA nula;}
-117 \textcolor{comment}{        nula.linha = -1;}
-118 \textcolor{comment}{        nula.coluna = -1;}
-119 \textcolor{comment}{}
-120 \textcolor{comment}{        estado->num\_jogadas = estado->num\_jogadas-1;}
+67         \textcolor{keywordflow}{if}(fgets(line, 150, file\_p) != NULL)\{
+68             \textcolor{keywordflow}{if}(linha < 8)\{
+69                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
+70                     \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'1'}) tabuleiro[linha][i] = POS1;
+71                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'2'}) tabuleiro[linha][i] = POS2;
+72                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'#'}) tabuleiro[linha][i] = RASTRO;
+73                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'*'}) tabuleiro[linha][i] = PECA;
+74                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(line[i] == \textcolor{charliteral}{'.'}) tabuleiro[linha][i] = VAZIO;
+75                 \}
+76             \}\textcolor{keywordflow}{else}\{
+77                 \textcolor{keywordflow}{if}(strcmp(line, \textcolor{stringliteral}{"\(\backslash\)n"}) != 0)\{
+78                     \hyperlink{structCOORDENADA}{COORDENADA} jog1\_coord;
+79                     jog1\_coord.coluna = line[4] - \textcolor{charliteral}{'a'};
+80                     jog1\_coord.linha = 7 - (line[5] - \textcolor{charliteral}{'1'});
+81 
+82                     \textcolor{comment}{//printf("1: %c %c\(\backslash\)n", line[4], line[5]);}
+83                     \textcolor{comment}{//printf("1: %d %d\(\backslash\)n", jog1\_coord.coluna, jog1\_coord.linha);}
+84 
+85                     \hyperlink{structCOORDENADA}{COORDENADA} jog2\_coord;
+86                     jog2\_coord.coluna = line[7] - \textcolor{charliteral}{'a'};
+87                     jog2\_coord.linha = 7 - (line[8] - \textcolor{charliteral}{'1'});
+88 
+89                     \textcolor{comment}{//printf("2: %c %c\(\backslash\)n", line[7], line[8]);}
+90                     \textcolor{comment}{//printf("2: %d %d\(\backslash\)n", jog2\_coord.coluna, jog2\_coord.linha);}
+91 
+92                     \textcolor{keywordflow}{if}(0 <= jog1\_coord.coluna && jog1\_coord.coluna <= 7)\{
+93                         estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
+94                         \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\_jogada}(estado, jog1\_coord);
+95                         estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 2;
+96                     \}
+97 
+98                     \textcolor{keywordflow}{if}(0 <= jog2\_coord.coluna && jog2\_coord.coluna <= 7)\{
+99                         estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 2;
+100                         \hyperlink{jogada_8h_a4067bb2bd3a973474435b8bebcf51775}{adicionar\_jogada}(estado, jog2\_coord);
+101                         estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
+102                     \}
+103                 \}
+104             \}
+105         \}
+106 
+107         \textcolor{keywordflow}{if}(feof(file\_p))\{
+108             \textcolor{keywordflow}{break};
+109         \}
+110         linha++;
+111     \}
+112 
+113     \hyperlink{estado_8h_ab3b8be2c1d31ca864df920d8f0df3a04}{setTabuleiro}(estado, tabuleiro);
+114     estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada} = \hyperlink{estado_8h_aa21af881dfebf0f0e822b806edf9a006}{obter\_coordenada\_peca}(tabuleiro);
+115 
+116     \textcolor{comment}{// FIX Bug de linha no ficheiro}
+117     \textcolor{comment}{/*if(obter\_jogador\_atual(estado) == 1)\{}
+118 \textcolor{comment}{        COORDENADA nula;}
+119 \textcolor{comment}{        nula.linha = -1;}
+120 \textcolor{comment}{        nula.coluna = -1;}
 121 \textcolor{comment}{}
-122 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador1 = nula;}
-123 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador2 = nula;}
-124 \textcolor{comment}{    \}*/}
-126 
-127     \textcolor{comment}{/*if (obter\_jogador\_atual(estado) != 1) \{}
-128 \textcolor{comment}{        estado->jogador\_atual = 1;}
-129 \textcolor{comment}{    \} else \{}
-130 \textcolor{comment}{        estado->jogador\_atual = 2;}
-131 \textcolor{comment}{        estado->num\_jogadas = obter\_numero\_de\_jogadas(estado) - 1;}
-132 \textcolor{comment}{    \}}
-133 \textcolor{comment}{}
-134 \textcolor{comment}{    COORDENADA nula;}
-135 \textcolor{comment}{    nula.linha = -1;}
-136 \textcolor{comment}{    nula.coluna = -1;}
-137 \textcolor{comment}{}
-138 \textcolor{comment}{    if(obter\_jogador\_atual(estado) == 1)\{}
-139 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador1 = nula;}
-140 \textcolor{comment}{    \}else\{}
-141 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador2 = nula;}
-142 \textcolor{comment}{    \}*/}
-143 
-144     \hyperlink{tabuleiro_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\_tabuleiro}(estado);
-145     \textcolor{comment}{//printf("\(\backslash\)n%d %d", estado->ultima\_jogada.coluna, estado->ultima\_jogada.linha);}
-146 
-147     fclose(file\_p);
-148 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{file_8h_a4e054f36607c534b3680ef11fa600868}\label{file_8h_a4e054f36607c534b3680ef11fa600868}} 
-\index{file.\+h@{file.\+h}!movs@{movs}}
-\index{movs@{movs}!file.\+h@{file.\+h}}
-\subsubsection{\texorpdfstring{movs()}{movs()}}
-{\footnotesize\ttfamily void movs (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado }\end{DoxyParamCaption})}
-
-
-
-Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em estado} & O estado atual \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 150 of file file.\+c.
-
-
-\begin{DoxyCode}
-150                          \{
-151     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 32; i++)\{
-152         \hyperlink{structCOORDENADA}{COORDENADA} jogador1 = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador1;
-153         \hyperlink{structCOORDENADA}{COORDENADA} jogador2 = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador2;
-154 
-155         \textcolor{comment}{//printf("2: %d %d", jogador2.coluna, jogador2.linha);}
-156 
-157         \textcolor{keywordtype}{int} jogador1\_linha, jogador2\_linha;
-158         \textcolor{keywordtype}{char} jogador1\_coluna, jogador2\_coluna;
-159 
-160         jogador1\_linha = 8 - jogador1.linha;
-161         jogador2\_linha = 8 - jogador2.linha;
-162 
-163         jogador1\_coluna = \textcolor{charliteral}{'a'} + jogador1.coluna;
-164         jogador2\_coluna = \textcolor{charliteral}{'a'} + jogador2.coluna;
-165 
-166         \textcolor{keywordflow}{if}(jogador2.linha == -1 && jogador1.linha != -1)\{
-167             printf(\textcolor{stringliteral}{"(%d) %c%d\(\backslash\)n"}, i+1, jogador1\_coluna, jogador1\_linha);
-168         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(jogador1.linha != -1 && jogador2.linha != -1)\{
-169             printf(\textcolor{stringliteral}{"(%d) %c%d %c%d\(\backslash\)n"}, i+1, jogador1\_coluna, jogador1\_linha, jogador2\_coluna, 
-      jogador2\_linha);
-170         \}
-171     \}
-172 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{file_8h_a03b39d5580a9cf878ee44640ee530f2b}\label{file_8h_a03b39d5580a9cf878ee44640ee530f2b}} 
-\index{file.\+h@{file.\+h}!pos@{pos}}
-\index{pos@{pos}!file.\+h@{file.\+h}}
-\subsubsection{\texorpdfstring{pos()}{pos()}}
-{\footnotesize\ttfamily void pos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado,  }\item[{int}]{jogada }\end{DoxyParamCaption})}
-
-
-
-Esta função lê o estado e o valor dado pelo jogador e volta ao tabuleiro com as jogadas até essa posição. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em estado} & O estado atual \\
-\hline
-{\em jogada} & Posição à qual se pretende voltar \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 174 of file file.\+c.
-
-
-\begin{DoxyCode}
-174                                  \{
-175     \hyperlink{structCOORDENADA}{COORDENADA} nula;
-176     nula.linha = -1;
-177     nula.coluna = -1;
-178 
-179     \textcolor{keywordtype}{int} jogadas = \hyperlink{estado_8h_a6cd0b387bdee9e18003c78852394aa63}{obter\_numero\_de\_jogadas}(estado);
-180     \textcolor{keywordflow}{if}(0 < \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos} && \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos} <= jogadas + 1)\{
-181         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}; i <= jogadas; i++)\{
-182             \hyperlink{structCOORDENADA}{COORDENADA} jogador1\_coord = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador1;
-183             \hyperlink{structCOORDENADA}{COORDENADA} jogador2\_coord = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador2;
-184 
-185             estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[jogador1\_coord.linha][jogador1\_coord.coluna] = VAZIO;
-186             estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[jogador2\_coord.linha][jogador2\_coord.coluna] = VAZIO;
-187 
-188             estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador1 = nula;
-189             estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador2 = nula;
-190         \}
-191 
-192         \textcolor{keywordflow}{if}(\hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos} == 0)\{
-193             \hyperlink{structCOORDENADA}{COORDENADA} init;
-194             init.linha = 3;
-195             init.coluna = 4;
-196             estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[init.linha][init.coluna] = PECA;
-197             estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada} = init;
-198         \}\textcolor{keywordflow}{else}\{
-199             \hyperlink{structCOORDENADA}{COORDENADA} jogador2\_coord = estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[\hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}-1].jogador2;
-200             estado->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[jogador2\_coord.linha][jogador2\_coord.coluna] = PECA;
-201             estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada} = jogador2\_coord;
-202         \}
-203 
-204         estado->\hyperlink{structESTADO_a5dd28e2e68b7aef2b6b7ea88e02eff58}{jogador\_atual} = 1;
-205         estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas} = \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos};
-206         \hyperlink{tabuleiro_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\_tabuleiro}(estado);
-207     \}\textcolor{keywordflow}{else}\{
-208         printf(\textcolor{stringliteral}{"Argumento invalido.\(\backslash\)n"});
-209     \}
-210 \}
+122 \textcolor{comment}{        estado->num\_jogadas = estado->num\_jogadas-1;}
+123 \textcolor{comment}{}
+124 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador1 = nula;}
+125 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador2 = nula;}
+126 \textcolor{comment}{    \}*/}
+128 
+129     \textcolor{comment}{/*if (obter\_jogador\_atual(estado) != 1) \{}
+130 \textcolor{comment}{        estado->jogador\_atual = 1;}
+131 \textcolor{comment}{    \} else \{}
+132 \textcolor{comment}{        estado->jogador\_atual = 2;}
+133 \textcolor{comment}{        estado->num\_jogadas = obter\_numero\_de\_jogadas(estado) - 1;}
+134 \textcolor{comment}{    \}}
+135 \textcolor{comment}{}
+136 \textcolor{comment}{    COORDENADA nula;}
+137 \textcolor{comment}{    nula.linha = -1;}
+138 \textcolor{comment}{    nula.coluna = -1;}
+139 \textcolor{comment}{}
+140 \textcolor{comment}{    if(obter\_jogador\_atual(estado) == 1)\{}
+141 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador1 = nula;}
+142 \textcolor{comment}{    \}else\{}
+143 \textcolor{comment}{        estado->jogadas[obter\_numero\_de\_jogadas(estado)].jogador2 = nula;}
+144 \textcolor{comment}{    \}*/}
+145 
+146     \hyperlink{tabuleiro_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\_tabuleiro}(estado);
+147     \textcolor{comment}{//printf("\(\backslash\)n%d %d", estado->ultima\_jogada.coluna, estado->ultima\_jogada.linha);}
+148 
+149     fclose(file\_p);
+150 \}
 \end{DoxyCode}

@@ -1,7 +1,7 @@
-\hypertarget{estado_8h}{}\section{dados/estado.h File Reference}
-\label{estado_8h}\index{dados/estado.\+h@{dados/estado.\+h}}
+\hypertarget{estado_8h}{}\section{estado.\+h File Reference}
+\label{estado_8h}\index{estado.\+h@{estado.\+h}}
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../interface/tabuleiro.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,7 +18,9 @@ void \hyperlink{estado_8h_ab3b8be2c1d31ca864df920d8f0df3a04}{set\+Tabuleiro} (\h
 \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{estado_8h_aa21af881dfebf0f0e822b806edf9a006}{obter\+\_\+coordenada\+\_\+peca} (\hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{C\+A\+SA} tab\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
 \begin{DoxyCompactList}\small\item\em Função para obter a posição da P\+E\+CA percorrendo a matriz da tabuleiro. \end{DoxyCompactList}\item 
 void \hyperlink{estado_8h_a8c15dc48cadd06ac3887d88e47fd5ed1}{reset\+Jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
-\begin{DoxyCompactList}\small\item\em Função para resetar as jogadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Função para resetar as jogadas. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{estado_8h_a002d7b97f6e1f8bfa2b50efbe03d62bf}{obter\+\_\+ultima\+\_\+jogada} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$estado)
+\begin{DoxyCompactList}\small\item\em Função para obter a última jogada efetuada. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -86,23 +88,27 @@ Retorna a coordenada da P\+E\+CA
 \end{DoxyReturn}
 
 
-Definition at line 57 of file estado.\+c.
+Definition at line 61 of file estado.\+c.
 
 
 \begin{DoxyCode}
-57                                                 \{
-58     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
-59         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
-60             \textcolor{keywordflow}{if}(tab[i][j] == PECA)\{
-61                 \hyperlink{structCOORDENADA}{COORDENADA} coord = \{
-62                         .coluna = j,
-63                         .linha = i
-64                 \};
-65                 \textcolor{keywordflow}{return} coord;
-66             \}
-67         \}
-68     \}
-69 \}
+61                                                 \{
+62     \hyperlink{structCOORDENADA}{COORDENADA} nula;
+63     nula.linha = -1;
+64     nula.coluna = -1;
+65     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
+66         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
+67             \textcolor{keywordflow}{if}(tab[i][j] == PECA)\{
+68                 \hyperlink{structCOORDENADA}{COORDENADA} coord = \{
+69                         .coluna = j,
+70                         .linha = i
+71                 \};
+72                 \textcolor{keywordflow}{return} coord;
+73             \}
+74         \}
+75     \}
+76     \textcolor{keywordflow}{return} nula;
+77 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{estado_8h_a6faa68373203923729ed38657aa0f768}\label{estado_8h_a6faa68373203923729ed38657aa0f768}} 
 \index{estado.\+h@{estado.\+h}!obter\+\_\+estado\+\_\+casa@{obter\+\_\+estado\+\_\+casa}}
@@ -126,13 +132,13 @@ Retorna o estado da casa
 \end{DoxyReturn}
 
 
-Definition at line 45 of file estado.\+c.
+Definition at line 49 of file estado.\+c.
 
 
 \begin{DoxyCode}
-45                                                \{
-46     \textcolor{keywordflow}{return} e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[c.linha][c.coluna];
-47 \}
+49                                                \{
+50     \textcolor{keywordflow}{return} e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[c.linha][c.coluna];
+51 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}\label{estado_8h_ad6e326e4ffa57ca1ae0c75377ecefc8c}} 
 \index{estado.\+h@{estado.\+h}!obter\+\_\+jogador\+\_\+atual@{obter\+\_\+jogador\+\_\+atual}}
@@ -182,12 +188,40 @@ Retorna o numero de jogadas efetuadas
 \end{DoxyReturn}
 
 
+Definition at line 45 of file estado.\+c.
+
+
+\begin{DoxyCode}
+45                                            \{
+46     \textcolor{keywordflow}{return} estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas};
+47 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{estado_8h_a002d7b97f6e1f8bfa2b50efbe03d62bf}\label{estado_8h_a002d7b97f6e1f8bfa2b50efbe03d62bf}} 
+\index{estado.\+h@{estado.\+h}!obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}}
+\index{obter\+\_\+ultima\+\_\+jogada@{obter\+\_\+ultima\+\_\+jogada}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+ultima\+\_\+jogada()}{obter\_ultima\_jogada()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} obter\+\_\+ultima\+\_\+jogada (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{estado }\end{DoxyParamCaption})}
+
+
+
+Função para obter a última jogada efetuada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em estado} & O estado atual \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna a última jogada efetuada 
+\end{DoxyReturn}
+
+
 Definition at line 41 of file estado.\+c.
 
 
 \begin{DoxyCode}
-41                                            \{
-42     \textcolor{keywordflow}{return} estado->\hyperlink{structESTADO_a261495728744647e618b4e623f5a4b7a}{num\_jogadas};
+41                                               \{
+42     \textcolor{keywordflow}{return} estado->\hyperlink{structESTADO_a4896a5c5c1f40b43fb795623327e3f47}{ultima\_jogada};
 43 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{estado_8h_a8c15dc48cadd06ac3887d88e47fd5ed1}\label{estado_8h_a8c15dc48cadd06ac3887d88e47fd5ed1}} 
@@ -207,20 +241,20 @@ Função para resetar as jogadas.
 \end{DoxyParams}
 
 
-Definition at line 71 of file estado.\+c.
+Definition at line 79 of file estado.\+c.
 
 
 \begin{DoxyCode}
-71                                  \{
-72     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 32; i++)\{
-73         \hyperlink{structCOORDENADA}{COORDENADA} nula;
-74         nula.coluna = -1;
-75         nula.linha = -1;
-76 
-77         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador1 = nula;
-78         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador2 = nula;
-79     \}
-80 \}
+79                                  \{
+80     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 32; i++)\{
+81         \hyperlink{structCOORDENADA}{COORDENADA} nula;
+82         nula.coluna = -1;
+83         nula.linha = -1;
+84 
+85         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador1 = nula;
+86         estado->\hyperlink{structESTADO_afae43b87a488fad0f2b56a18bad31d18}{jogadas}[i].jogador2 = nula;
+87     \}
+88 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{estado_8h_ab3b8be2c1d31ca864df920d8f0df3a04}\label{estado_8h_ab3b8be2c1d31ca864df920d8f0df3a04}} 
 \index{estado.\+h@{estado.\+h}!set\+Tabuleiro@{set\+Tabuleiro}}
@@ -244,15 +278,15 @@ Retorna o tabuleiro
 \end{DoxyReturn}
 
 
-Definition at line 49 of file estado.\+c.
+Definition at line 53 of file estado.\+c.
 
 
 \begin{DoxyCode}
-49                                             \{
-50     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
-51         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
-52             e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[i][j] = tab[i][j];
-53         \}
-54     \}
-55 \}
+53                                             \{
+54     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
+55         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
+56             e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[i][j] = tab[i][j];
+57         \}
+58     \}
+59 \}
 \end{DoxyCode}

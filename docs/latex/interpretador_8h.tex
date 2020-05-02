@@ -1,10 +1,12 @@
-\hypertarget{interpretador_8h}{}\section{interface/interpretador.h File Reference}
-\label{interpretador_8h}\index{interface/interpretador.\+h@{interface/interpretador.\+h}}
+\hypertarget{interpretador_8h}{}\section{interpretador.\+h File Reference}
+\label{interpretador_8h}\index{interpretador.\+h@{interpretador.\+h}}
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../logica/jogada.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}jogada.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}movs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pos.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}file.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../lista/lista.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -82,14 +84,14 @@ Definition at line 6 of file interpretador.\+c.
 32     \}
 33 
 34     \textcolor{keywordflow}{if}(strlen(linha) == 5 && strcmp(linha,\textcolor{stringliteral}{"movs\(\backslash\)n"}) == 0)\{
-35         \hyperlink{file_8h_a4e054f36607c534b3680ef11fa600868}{movs}(e);
+35         movs(e);
 36         \textcolor{keywordflow}{return} 4;
 37     \}
 38 
 39     \textcolor{keywordflow}{if}((strlen(linha) == 6 || strlen(linha) == 7)
 40     && strstr(linha, \textcolor{stringliteral}{"pos"}))\{
 41         p = atoi(&linha[4]);
-42         \hyperlink{file_8h_a03b39d5580a9cf878ee44640ee530f2b}{pos}(e, p);
+42         pos(e, p);
 43         \textcolor{keywordflow}{return} 5;
 44     \}
 45 

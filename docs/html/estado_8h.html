@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>li2pl6g08: dados/estado.h File Reference</title>
+<title>li2pl6g08: estado.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -57,10 +57,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_eb8800cb0c3fd4fa9d40306d6b83386d.html">dados</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -70,7 +66,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="tabuleiro_8h_source.html">../interface/tabuleiro.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="data_8h_source.html">data.h</a>&quot;</code><br />
 </div>
 <p><a href="estado_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -97,6 +93,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c15dc48cadd06ac3887d88e47fd5ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="estado_8h.html#a8c15dc48cadd06ac3887d88e47fd5ed1">resetJogadas</a> (<a class="el" href="structESTADO.html">ESTADO</a> *estado)</td></tr>
 <tr class="memdesc:a8c15dc48cadd06ac3887d88e47fd5ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para resetar as jogadas.  <a href="#a8c15dc48cadd06ac3887d88e47fd5ed1">More...</a><br /></td></tr>
 <tr class="separator:a8c15dc48cadd06ac3887d88e47fd5ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002d7b97f6e1f8bfa2b50efbe03d62bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="estado_8h.html#a002d7b97f6e1f8bfa2b50efbe03d62bf">obter_ultima_jogada</a> (<a class="el" href="structESTADO.html">ESTADO</a> *estado)</td></tr>
+<tr class="memdesc:a002d7b97f6e1f8bfa2b50efbe03d62bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para obter a última jogada efetuada.  <a href="#a002d7b97f6e1f8bfa2b50efbe03d62bf">More...</a><br /></td></tr>
+<tr class="separator:a002d7b97f6e1f8bfa2b50efbe03d62bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definição das funções que alteram o estado </p>
@@ -127,7 +126,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="structCOORDENADA_html"><div class="ttname"><a href="structCOORDENADA.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00022">data.h:22</a></div></div>
 <div class="ttc" id="structESTADO_html_a5dd28e2e68b7aef2b6b7ea88e02eff58"><div class="ttname"><a href="structESTADO.html#a5dd28e2e68b7aef2b6b7ea88e02eff58">ESTADO::jogador_atual</a></div><div class="ttdeci">int jogador_atual</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00053">data.h:53</a></div></div>
 <div class="ttc" id="structESTADO_html_a4896a5c5c1f40b43fb795623327e3f47"><div class="ttname"><a href="structESTADO.html#a4896a5c5c1f40b43fb795623327e3f47">ESTADO::ultima_jogada</a></div><div class="ttdeci">COORDENADA ultima_jogada</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00047">data.h:47</a></div></div>
-<div class="ttc" id="estado_8h_html_a8c15dc48cadd06ac3887d88e47fd5ed1"><div class="ttname"><a href="estado_8h.html#a8c15dc48cadd06ac3887d88e47fd5ed1">resetJogadas</a></div><div class="ttdeci">void resetJogadas(ESTADO *estado)</div><div class="ttdoc">Função para resetar as jogadas. </div><div class="ttdef"><b>Definition:</b> <a href="estado_8c_source.html#l00071">estado.c:71</a></div></div>
+<div class="ttc" id="estado_8h_html_a8c15dc48cadd06ac3887d88e47fd5ed1"><div class="ttname"><a href="estado_8h.html#a8c15dc48cadd06ac3887d88e47fd5ed1">resetJogadas</a></div><div class="ttdeci">void resetJogadas(ESTADO *estado)</div><div class="ttdoc">Função para resetar as jogadas. </div><div class="ttdef"><b>Definition:</b> <a href="estado_8c_source.html#l00079">estado.c:79</a></div></div>
 <div class="ttc" id="structESTADO_html_ab56f0f1be16954d3768b4174d14c087d"><div class="ttname"><a href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">ESTADO::tab</a></div><div class="ttdeci">CASA tab[8][8]</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00045">data.h:45</a></div></div>
 <div class="ttc" id="tabuleiro_8h_html_a7da4591f49e575d89b802ef9a29c06df"><div class="ttname"><a href="tabuleiro_8h.html#a7da4591f49e575d89b802ef9a29c06df">tabuleiro_inicial</a></div><div class="ttdeci">const CASA tabuleiro_inicial[8][8]</div><div class="ttdoc">tabuleiro inicial </div><div class="ttdef"><b>Definition:</b> <a href="tabuleiro_8h_source.html#l00012">tabuleiro.h:12</a></div></div>
 </div><!-- fragment -->
@@ -158,8 +157,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Retorna a coordenada da PECA </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00057">57</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 8; i++){</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; 8; j++){</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(tab[i][j] == PECA){</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord = {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        .coluna = j,</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        .linha = i</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                };</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">return</span> coord;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="structCOORDENADA_html"><div class="ttname"><a href="structCOORDENADA.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00022">data.h:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00061">61</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="structCOORDENADA.html">COORDENADA</a> nula;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    nula.linha = -1;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    nula.coluna = -1;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 8; i++){</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; 8; j++){</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span>(tab[i][j] == PECA){</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord = {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        .coluna = j,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        .linha = i</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                };</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">return</span> coord;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> nula;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="ttc" id="structCOORDENADA_html"><div class="ttname"><a href="structCOORDENADA.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00022">data.h:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,8 +198,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Retorna o estado da casa </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00045">45</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                               {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> e-&gt;<a class="code" href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">tab</a>[c.linha][c.coluna];</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="ttc" id="structESTADO_html_ab56f0f1be16954d3768b4174d14c087d"><div class="ttname"><a href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">ESTADO::tab</a></div><div class="ttdeci">CASA tab[8][8]</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00045">data.h:45</a></div></div>
+<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00049">49</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                               {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> e-&gt;<a class="code" href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">tab</a>[c.linha][c.coluna];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="structESTADO_html_ab56f0f1be16954d3768b4174d14c087d"><div class="ttname"><a href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">ESTADO::tab</a></div><div class="ttdeci">CASA tab[8][8]</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00045">data.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -259,8 +258,38 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Retorna o numero de jogadas efetuadas </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00045">45</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                           {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> estado-&gt;<a class="code" href="structESTADO.html#a261495728744647e618b4e623f5a4b7a">num_jogadas</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="ttc" id="structESTADO_html_a261495728744647e618b4e623f5a4b7a"><div class="ttname"><a href="structESTADO.html#a261495728744647e618b4e623f5a4b7a">ESTADO::num_jogadas</a></div><div class="ttdeci">int num_jogadas</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00051">data.h:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a002d7b97f6e1f8bfa2b50efbe03d62bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002d7b97f6e1f8bfa2b50efbe03d62bf">&#9670;&nbsp;</a></span>obter_ultima_jogada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> obter_ultima_jogada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>estado</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para obter a última jogada efetuada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">estado</td><td>O estado atual </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Retorna a última jogada efetuada </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00041">41</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                           {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> estado-&gt;<a class="code" href="structESTADO.html#a261495728744647e618b4e623f5a4b7a">num_jogadas</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="structESTADO_html_a261495728744647e618b4e623f5a4b7a"><div class="ttname"><a href="structESTADO.html#a261495728744647e618b4e623f5a4b7a">ESTADO::num_jogadas</a></div><div class="ttdeci">int num_jogadas</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00051">data.h:51</a></div></div>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                              {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> estado-&gt;<a class="code" href="structESTADO.html#a4896a5c5c1f40b43fb795623327e3f47">ultima_jogada</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="structESTADO_html_a4896a5c5c1f40b43fb795623327e3f47"><div class="ttname"><a href="structESTADO.html#a4896a5c5c1f40b43fb795623327e3f47">ESTADO::ultima_jogada</a></div><div class="ttdeci">COORDENADA ultima_jogada</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00047">data.h:47</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -288,8 +317,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00071">71</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                 {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 32; i++){</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="structCOORDENADA.html">COORDENADA</a> nula;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        nula.coluna = -1;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        nula.linha = -1;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        estado-&gt;<a class="code" href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">jogadas</a>[i].jogador1 = nula;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        estado-&gt;<a class="code" href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">jogadas</a>[i].jogador2 = nula;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="structESTADO_html_afae43b87a488fad0f2b56a18bad31d18"><div class="ttname"><a href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">ESTADO::jogadas</a></div><div class="ttdeci">JOGADAS jogadas</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00049">data.h:49</a></div></div>
+<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00079">79</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                 {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 32; i++){</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="structCOORDENADA.html">COORDENADA</a> nula;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        nula.coluna = -1;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        nula.linha = -1;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        estado-&gt;<a class="code" href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">jogadas</a>[i].jogador1 = nula;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        estado-&gt;<a class="code" href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">jogadas</a>[i].jogador2 = nula;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div><div class="ttc" id="structESTADO_html_afae43b87a488fad0f2b56a18bad31d18"><div class="ttname"><a href="structESTADO.html#afae43b87a488fad0f2b56a18bad31d18">ESTADO::jogadas</a></div><div class="ttdeci">JOGADAS jogadas</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00049">data.h:49</a></div></div>
 <div class="ttc" id="structCOORDENADA_html"><div class="ttname"><a href="structCOORDENADA.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00022">data.h:22</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -330,8 +359,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Retorna o tabuleiro </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00049">49</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                            {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 8; i++){</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; 8; j++){</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            e-&gt;<a class="code" href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">tab</a>[i][j] = tab[i][j];</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="ttc" id="structESTADO_html_ab56f0f1be16954d3768b4174d14c087d"><div class="ttname"><a href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">ESTADO::tab</a></div><div class="ttdeci">CASA tab[8][8]</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00045">data.h:45</a></div></div>
+<p class="definition">Definition at line <a class="el" href="estado_8c_source.html#l00053">53</a> of file <a class="el" href="estado_8c_source.html">estado.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                            {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 8; i++){</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; 8; j++){</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            e-&gt;<a class="code" href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">tab</a>[i][j] = tab[i][j];</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="structESTADO_html_ab56f0f1be16954d3768b4174d14c087d"><div class="ttname"><a href="structESTADO.html#ab56f0f1be16954d3768b4174d14c087d">ESTADO::tab</a></div><div class="ttdeci">CASA tab[8][8]</div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00045">data.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

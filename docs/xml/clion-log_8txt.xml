@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="clion-log_8txt" kind="file" language="C++">
+    <compoundname>clion-log.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">/home/ricardo/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6015.37/bin/cmake/linux/bin/cmake<sp/>-DCMAKE_BUILD_TYPE=Debug<sp/>-G<sp/></highlight><highlight class="stringliteral">&quot;CodeBlocks<sp/>-<sp/>Unix<sp/>Makefiles&quot;</highlight><highlight class="normal"><sp/>/home/ricardo/projetoLi2/src</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">--<sp/>Configuring<sp/>done</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">--<sp/>Generating<sp/>done</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">--<sp/>Build<sp/>files<sp/>have<sp/>been<sp/>written<sp/>to:<sp/>/home/ricardo/projetoLi2/src/cmake-build-debug</highlight></codeline>
+    </programlisting>
+    <location file="cmake-build-debug/CMakeFiles/clion-log.txt"/>
+  </compounddef>
+</doxygen>

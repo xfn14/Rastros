@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>li2pl6g08: logica/jogada.h Source File</title>
+<title>li2pl6g08: jogada.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -43,6 +43,7 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -57,21 +58,19 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_6ea6a6918393993a6a2c0f40fca09e95.html">logica</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">jogada.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="jogada_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SRC_JOGADA_H</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SRC_JOGADA_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../dados/estado.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../interface/interpretador.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="jogada_8h.html#aedac94896fa0c978db67ffa48463b731">jogar</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="jogada_8h.html#ad38b311e5dd671c323311b069aab168f">jogada_valida</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="jogada_8h.html#a4067bb2bd3a973474435b8bebcf51775">adicionar_jogada</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif //SRC_JOGADA_H</span></div><div class="ttc" id="structESTADO_html"><div class="ttname"><a href="structESTADO.html">ESTADO</a></div><div class="ttdoc">Tipo de dados para o estado. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00043">data.h:43</a></div></div>
+<a href="jogada_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SRC_JOGADA_H</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SRC_JOGADA_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="estado_8h.html">estado.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interpretador_8h.html">interpretador.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tabuleiro_8h.html">tabuleiro.h</a>&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="jogada_8h.html#aedac94896fa0c978db67ffa48463b731">jogar</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="jogada_8h.html#ad38b311e5dd671c323311b069aab168f">jogada_valida</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="jogada_8h.html#a4067bb2bd3a973474435b8bebcf51775">adicionar_jogada</a>(<a class="code" href="structESTADO.html">ESTADO</a> *estado, <a class="code" href="structCOORDENADA.html">COORDENADA</a> coord);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif //SRC_JOGADA_H</span></div><div class="ttc" id="structESTADO_html"><div class="ttname"><a href="structESTADO.html">ESTADO</a></div><div class="ttdoc">Tipo de dados para o estado. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00043">data.h:43</a></div></div>
+<div class="ttc" id="interpretador_8h_html"><div class="ttname"><a href="interpretador_8h.html">interpretador.h</a></div></div>
+<div class="ttc" id="tabuleiro_8h_html"><div class="ttname"><a href="tabuleiro_8h.html">tabuleiro.h</a></div></div>
 <div class="ttc" id="structCOORDENADA_html"><div class="ttname"><a href="structCOORDENADA.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00022">data.h:22</a></div></div>
+<div class="ttc" id="estado_8h_html"><div class="ttname"><a href="estado_8h.html">estado.h</a></div></div>
 <div class="ttc" id="jogada_8h_html_aedac94896fa0c978db67ffa48463b731"><div class="ttname"><a href="jogada_8h.html#aedac94896fa0c978db67ffa48463b731">jogar</a></div><div class="ttdeci">int jogar(ESTADO *estado, COORDENADA coord)</div><div class="ttdoc">Efetua uma jogada. </div><div class="ttdef"><b>Definition:</b> <a href="jogada_8c_source.html#l00003">jogada.c:3</a></div></div>
-<div class="ttc" id="jogada_8h_html_a4067bb2bd3a973474435b8bebcf51775"><div class="ttname"><a href="jogada_8h.html#a4067bb2bd3a973474435b8bebcf51775">adicionar_jogada</a></div><div class="ttdeci">void adicionar_jogada(ESTADO *estado, COORDENADA coord)</div><div class="ttdoc">Adicionar jogadas ao array de jogadas. </div><div class="ttdef"><b>Definition:</b> <a href="jogada_8c_source.html#l00075">jogada.c:75</a></div></div>
-<div class="ttc" id="jogada_8h_html_ad38b311e5dd671c323311b069aab168f"><div class="ttname"><a href="jogada_8h.html#ad38b311e5dd671c323311b069aab168f">jogada_valida</a></div><div class="ttdeci">int jogada_valida(ESTADO *estado, COORDENADA coord)</div><div class="ttdoc">Verifica se a jogada é válida. </div><div class="ttdef"><b>Definition:</b> <a href="jogada_8c_source.html#l00034">jogada.c:34</a></div></div>
+<div class="ttc" id="jogada_8h_html_a4067bb2bd3a973474435b8bebcf51775"><div class="ttname"><a href="jogada_8h.html#a4067bb2bd3a973474435b8bebcf51775">adicionar_jogada</a></div><div class="ttdeci">void adicionar_jogada(ESTADO *estado, COORDENADA coord)</div><div class="ttdoc">Adicionar jogadas ao array de jogadas. </div><div class="ttdef"><b>Definition:</b> <a href="jogada_8c_source.html#l00082">jogada.c:82</a></div></div>
+<div class="ttc" id="jogada_8h_html_ad38b311e5dd671c323311b069aab168f"><div class="ttname"><a href="jogada_8h.html#ad38b311e5dd671c323311b069aab168f">jogada_valida</a></div><div class="ttdeci">int jogada_valida(ESTADO *estado, COORDENADA coord)</div><div class="ttdoc">Verifica se a jogada é válida. </div><div class="ttdef"><b>Definition:</b> <a href="jogada_8c_source.html#l00035">jogada.c:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

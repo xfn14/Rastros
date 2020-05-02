@@ -50,7 +50,11 @@ COORDENADA obter_coordenada_peca(CASA tab[8][8]);
 @param estado O estado atual
  */
 void resetJogadas(ESTADO *estado);
-
+/**
+\brief Função para obter a última jogada efetuada
+@param estado O estado atual
+@returns Retorna a última jogada efetuada
+ */
 COORDENADA obter_ultima_jogada(ESTADO *estado);
 
 #endif //SRC_ESTADO_H

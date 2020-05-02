@@ -1,6 +1,6 @@
-\hypertarget{tabuleiro_8h}{}\section{interface/tabuleiro.h File Reference}
-\label{tabuleiro_8h}\index{interface/tabuleiro.\+h@{interface/tabuleiro.\+h}}
-{\ttfamily \#include \char`\"{}../dados/data.\+h\char`\"{}}\newline
+\hypertarget{tabuleiro_8h}{}\section{tabuleiro.\+h File Reference}
+\label{tabuleiro_8h}\index{tabuleiro.\+h@{tabuleiro.\+h}}
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,27 +35,27 @@ Função que recebe um estado e imprime o tabuleiro para esse estado.
 \end{DoxyParams}
 
 
-Definition at line 5 of file tabuleiro.\+c.
+Definition at line 4 of file tabuleiro.\+c.
 
 
 \begin{DoxyCode}
-5                                  \{
-6     \textcolor{keywordtype}{int} linha = 8;
-7 
-8     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
-9         printf(\textcolor{stringliteral}{"%d | "}, linha);
-10         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
-11             \hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA} cs = e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[i][j];
-12             \textcolor{keywordflow}{if}(cs == POS1) putchar(\textcolor{charliteral}{'1'});
-13             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == POS2) putchar(\textcolor{charliteral}{'2'});
-14             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == RASTRO) putchar(\textcolor{charliteral}{'#'});
-15             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == PECA) putchar(\textcolor{charliteral}{'*'});
-16             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == VAZIO) putchar(\textcolor{charliteral}{'.'});
-17         \}
-18         putchar(\textcolor{charliteral}{'\(\backslash\)n'});
-19         linha--;
-20     \}
-21 
-22     printf(\textcolor{stringliteral}{"  | ABCDEFGH\(\backslash\)n"});
-23 \}
+4                                  \{
+5     \textcolor{keywordtype}{int} linha = 8;
+6 
+7     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{
+8         printf(\textcolor{stringliteral}{"%d | "}, linha);
+9         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < 8; j++)\{
+10             \hyperlink{data_8h_aba91601f16d4c485b2d9b8c429f27039}{CASA} cs = e->\hyperlink{structESTADO_ab56f0f1be16954d3768b4174d14c087d}{tab}[i][j];
+11             \textcolor{keywordflow}{if}(cs == POS1) putchar(\textcolor{charliteral}{'1'});
+12             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == POS2) putchar(\textcolor{charliteral}{'2'});
+13             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == RASTRO) putchar(\textcolor{charliteral}{'#'});
+14             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == PECA) putchar(\textcolor{charliteral}{'*'});
+15             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cs == VAZIO) putchar(\textcolor{charliteral}{'.'});
+16         \}
+17         putchar(\textcolor{charliteral}{'\(\backslash\)n'});
+18         linha--;
+19     \}
+20 
+21     printf(\textcolor{stringliteral}{"  | ABCDEFGH\(\backslash\)n"});
+22 \}
 \end{DoxyCode}

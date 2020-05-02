@@ -52,9 +52,25 @@ typedef struct{
     /** O nº do comando, usado no prompt */
     int jogador_atual;
 }ESTADO;
-
+/**
+\brief Funçao para obter a linha de uma coordenada
+@param coord coordenada pretendida
+@returns Retorna a linha correspondente à coordenada
+*/
 int obter_linha_coord(COORDENADA coord);
+/**
+\brief Funçao para obter a coluna de uma coordenada
+@param coord coordenada pretendida
+@returns Retorna a coluna correspondente à coordenada
+*/
 int obter_coluna_coord(COORDENADA coord);
+/**
+\brief Funçao para obter a jogada efetuada por um jogador
+@param estado apontador para o estado
+@param jogada numero da jogada
+@param jogador jogador pretendido
+@returns Retorna a jogada efetuada pelo jogador
+*/
 COORDENADA obter_jogada_jogador(ESTADO *estado,int jogada, int jogador);
 
 #endif //SRC_DATA_H

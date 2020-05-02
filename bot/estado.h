@@ -51,10 +51,22 @@ COORDENADA obter_coordenada_peca(CASA tab[8][8]); // USED
 @param estado O estado atual
  */
 void resetJogadas(ESTADO *estado); // USED
-
+/**
+\brief Função para obter a última jogada efetuada
+@param estado O estado atual
+@returns Retorna a última jogada efetuada
+ */
 COORDENADA obter_ultima_jogada(ESTADO *estado); // USED
-
+/**
+\brief Funçao para obter a linha de uma coordenada
+@param coord coordenada pretendida
+@returns Retorna a linha correspondente à coordenada
+*/
 int obter_linha_coord(COORDENADA coord);
+/**
+\brief Funçao para obter a coluna de uma coordenada
+@param coord coordenada pretendida
+@returns Retorna a coluna correspondente à coordenada
+*/
 int obter_coluna_coord(COORDENADA coord);
-
 #endif //SRC_ESTADO_H
