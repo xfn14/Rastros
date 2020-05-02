@@ -2,9 +2,9 @@
 #define SRC_POS_H
 
 #include "stdio.h"
-#include "../dados/data.h"
-#include "../dados/estado.h"
-#include "../interface/tabuleiro.h"
+#include "data.h"
+#include "estado.h"
+#include "tabuleiro.h"
 
 /**
 \brief Esta função lê o estado e o valor dado pelo jogador e volta ao tabuleiro com as jogadas até essa posição

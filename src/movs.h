@@ -2,7 +2,7 @@
 #define SRC_MOVS_H
 
 #include "stdio.h"
-#include "../dados/data.h"
+#include "data.h"
 
 /**
 \brief Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores

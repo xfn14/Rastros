@@ -73,8 +73,6 @@ void jog(ESTADO *estado){
 }
 
 LISTA jogadasProximas(ESTADO *e, LISTA L){
-    COORDENADA peca = obter_coordenada_peca(e->tab);
-    COORDENADA coord;
     COORDENADA *atual;
 
     for(int i = 0; i < 8; i++){
@@ -168,39 +166,40 @@ void ler(char *file_name, ESTADO *estado){
         for(int i = 0; i < 150; i++){
             line[i] = '\0';
         }
-        fgets(line, 150, file_p);
-
-        if(linha < 8){
-            for(int i = 0; i < 8; i++){
-                if(line[i] == '1') tabuleiro[linha][i] = POS1;
-                else if(line[i] == '2') tabuleiro[linha][i] = POS2;
-                else if(line[i] == '#') tabuleiro[linha][i] = RASTRO;
-                else if(line[i] == '*') tabuleiro[linha][i] = PECA;
-                else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
-            }
-        }else{
-            if(strcmp(line, "\n") != 0){
-                COORDENADA jog1_coord;
-                jog1_coord.coluna = line[4] - 'a';
-                jog1_coord.linha = 7 - (line[5] - '1');
-
-                COORDENADA jog2_coord;
-                jog2_coord.coluna = line[7] - 'a';
-                jog2_coord.linha = 7 - (line[8] - '1');
-
-                if(0 <= jog1_coord.coluna && jog1_coord.coluna <= 7){
-                    estado->jogador_atual = 1;
-                    adicionar_jogada(estado, jog1_coord);
-                    estado->jogador_atual = 2;
+        if(fgets(line, 150, file_p) != NULL){
+            if(linha < 8){
+                for(int i = 0; i < 8; i++){
+                    if(line[i] == '1') tabuleiro[linha][i] = POS1;
+                    else if(line[i] == '2') tabuleiro[linha][i] = POS2;
+                    else if(line[i] == '#') tabuleiro[linha][i] = RASTRO;
+                    else if(line[i] == '*') tabuleiro[linha][i] = PECA;
+                    else if(line[i] == '.') tabuleiro[linha][i] = VAZIO;
                 }
+            }else{
+                if(strcmp(line, "\n") != 0){
+                    COORDENADA jog1_coord;
+                    jog1_coord.coluna = line[4] - 'a';
+                    jog1_coord.linha = 7 - (line[5] - '1');
 
-                if(0 <= jog2_coord.coluna && jog2_coord.coluna <= 7){
-                    estado->jogador_atual = 2;
-                    adicionar_jogada(estado, jog2_coord);
-                    estado->jogador_atual = 1;
+                    COORDENADA jog2_coord;
+                    jog2_coord.coluna = line[7] - 'a';
+                    jog2_coord.linha = 7 - (line[8] - '1');
+
+                    if(0 <= jog1_coord.coluna && jog1_coord.coluna <= 7){
+                        estado->jogador_atual = 1;
+                        adicionar_jogada(estado, jog1_coord);
+                        estado->jogador_atual = 2;
+                    }
+
+                    if(0 <= jog2_coord.coluna && jog2_coord.coluna <= 7){
+                        estado->jogador_atual = 2;
+                        adicionar_jogada(estado, jog2_coord);
+                        estado->jogador_atual = 1;
+                    }
                 }
             }
         }
+        //fgets(line, 150, file_p);
 
         if(feof(file_p)){
             break;

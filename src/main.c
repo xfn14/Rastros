@@ -1,7 +1,7 @@
-#include "dados/data.h"
-#include "dados/estado.h"
-#include "interface/interpretador.h"
-#include "interface/tabuleiro.h"
+#include "data.h"
+#include "estado.h"
+#include "interpretador.h"
+#include "tabuleiro.h"
 
 int main() {
     ESTADO *estado = inicializar_estado();
@@ -11,4 +11,3 @@ int main() {
     }
     return 0;
 }
-

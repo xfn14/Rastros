@@ -87,34 +87,10 @@ void jog(ESTADO *estado){
 }
 
 void jog2(ESTADO *estado){
-    COORDENADA pos1, pos2, *atual, best;
-    void *bestValor;
-    bestValor = (float *) 100;
+    COORDENADA *atual, best;
     LISTA lista = criar_lista();
 
-    pos1.coluna = 7;
-    pos1.linha = 0;
-
-    pos2.coluna = 0;
-    pos2.linha = 7;
-
-
     lista = minimax(estado, lista);
-
-    while(!lista_esta_vazia(lista)){
-        void *valor;
-        valor = devolve_cabeca(lista);
-        if(estado->jogador_atual == 1){
-            if(valor < bestValor){
-                bestValor = valor;
-            }
-        }else{
-            if(valor > bestValor){
-                bestValor = valor;
-            }
-        }
-        lista = proximo(lista);
-    }
 
     LISTA proximos = criar_lista();
     proximos = jogadasProximas(estado, proximos);
@@ -125,14 +101,9 @@ void jog2(ESTADO *estado){
 
     while(!lista_esta_vazia(proximos)){
         atual = devolve_cabeca(proximos);
-        void *valor_atual;
-        valor_atual = (float *) (atual->coluna + atual->linha);
-        if(valor_atual == bestValor){
-            best.linha = atual->linha;
-            best.coluna = atual->coluna;
-        }
+        best.linha = atual->linha;
+        best.coluna = atual->coluna;
         proximos = proximo(proximos);
-        printf("test2\n");
     }
 
     jogar(estado, best);
@@ -141,15 +112,13 @@ void jog2(ESTADO *estado){
 }
 
 LISTA minimax(ESTADO *estado, LISTA lista){
-    LISTA proximas = criar_lista();
-    proximas = jogadasProximas(estado, proximas);
+   LISTA proximas = criar_lista();
+   proximas = jogadasProximas(estado, proximas);
 
    COORDENADA *atual = malloc(sizeof(COORDENADA));
    while(!lista_esta_vazia(proximas)){
        atual = (COORDENADA *) devolve_cabeca(proximas);
-       void *valor;
-       valor = (float *) (atual->coluna + atual->linha);
-       insere_cabeca(lista, valor);
+       insere_cabeca(lista, atual);
        proximas = proximo(proximas);
    }
    lista->proximo = NULL;
@@ -157,8 +126,6 @@ LISTA minimax(ESTADO *estado, LISTA lista){
 }
 
 LISTA jogadasProximas(ESTADO *e, LISTA L){
-    COORDENADA peca = obter_coordenada_peca(e->tab);
-    COORDENADA coord;
     COORDENADA *atual;
 
     for(int i = 0; i < 8; i++){

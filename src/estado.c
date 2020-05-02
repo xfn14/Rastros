@@ -59,6 +59,9 @@ void setTabuleiro(ESTADO *e, CASA tab[8][8]){
 }
 
 COORDENADA obter_coordenada_peca(CASA tab[8][8]){
+    COORDENADA nula;
+    nula.linha = -1;
+    nula.coluna = -1;
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
             if(tab[i][j] == PECA){
@@ -70,6 +73,7 @@ COORDENADA obter_coordenada_peca(CASA tab[8][8]){
             }
         }
     }
+    return nula;
 }
 
 void resetJogadas(ESTADO *estado){

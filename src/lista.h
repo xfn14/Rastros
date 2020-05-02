@@ -5,7 +5,7 @@
 #include "stdlib.h"
 #include "math.h"
 #include "data.h"
-#include "../interface/interpretador.h"
+#include "interpretador.h"
 
 /**
 \brief Tipo de dados para os nodos

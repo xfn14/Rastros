@@ -5,9 +5,9 @@ Definição da camada logica e das suas funções
 #ifndef SRC_JOGADA_H
 #define SRC_JOGADA_H
 
-#include "../dados/estado.h"
-#include "../interface/interpretador.h"
-#include "../interface/tabuleiro.h"
+#include "estado.h"
+#include "interpretador.h"
+#include "tabuleiro.h"
 /**
 \brief Efetua uma jogada
 @param estado Apontador para o estado

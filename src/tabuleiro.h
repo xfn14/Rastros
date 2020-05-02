@@ -5,7 +5,7 @@ Definição do tabuleiro e das suas funções
 #ifndef SRC_TABULEIRO_H
 #define SRC_TABULEIRO_H
 
-#include "../dados/data.h"
+#include "data.h"
 /**
 \brief tabuleiro inicial
  */

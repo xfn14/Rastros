@@ -7,9 +7,9 @@ Definição do
 
 #include "stdio.h"
 #include <string.h>
-#include "../dados/data.h"
-#include "../dados/estado.h"
-#include "../logica/jogada.h"
+#include "data.h"
+#include "estado.h"
+#include "jogada.h"
 
 /**
 \brief Esta função lê o Estado atual e grava o tabuleiro correspondente num ficheiro.
