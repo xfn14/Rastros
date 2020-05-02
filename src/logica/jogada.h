@@ -7,6 +7,7 @@ Definição da camada logica e das suas funções
 
 #include "../dados/estado.h"
 #include "../interface/interpretador.h"
+#include "../interface/tabuleiro.h"
 /**
 \brief Efetua uma jogada
 @param estado Apontador para o estado
