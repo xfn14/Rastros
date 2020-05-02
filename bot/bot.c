@@ -22,7 +22,10 @@ int main(int nr, char **args){
         ler(old, estado);
         jog(estado);
         gr(new, estado);
+    }else{
+        printf("Uso %s <tabuleiro a ler> <tabuleiro a escrever>\n", args[0]);
     }
+    return 0;
 }
 
 void jog(ESTADO *estado){
