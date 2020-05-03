@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="estado_8c" kind="file" language="C++">
     <compoundname>estado.c</compoundname>
     <includes refid="estado_8h" local="yes">estado.h</includes>
     <incdepgraph>
-      <node id="45">
-        <label>stdlib.h</label>
-      </node>
-      <node id="46">
-        <label>data.h</label>
-        <link refid="data_8h"/>
-      </node>
-      <node id="43">
+      <node id="1">
         <label>estado.c</label>
         <link refid="estado_8c"/>
-        <childnode refid="44" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="44">
+      <node id="2">
         <label>estado.h</label>
         <link refid="estado_8h"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>data.h</label>
+        <link refid="data_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="3" column="1" bodyfile="estado.c" bodystart="3" bodyend="-1"/>
+        <location file="estado.c" line="3" column="12" bodyfile="estado.c" bodystart="3" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -59,13 +59,16 @@
         <argsstring>()</argsstring>
         <name>inicializar_estado</name>
         <briefdescription>
-<para>Inicializa o estado. </para>        </briefdescription>
+<para>Inicializa o estado. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Retorna o estado inicializado </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>Retorna o estado inicializado </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="15" column="1" bodyfile="estado.c" bodystart="15" bodyend="35"/>
+        <location file="estado.c" line="15" column="8" bodyfile="estado.c" bodystart="15" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1ad6e326e4ffa57ca1ae0c75377ecefc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -77,21 +80,25 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Função para obter o jogador atual. </para>        </briefdescription>
+<para>Função para obter o jogador atual. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Estado atual </para></parameterdescription>
+<para>Estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna o jogador atual </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna o jogador atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="37" column="1" bodyfile="estado.c" bodystart="37" bodyend="39"/>
+        <location file="estado.c" line="37" column="5" bodyfile="estado.c" bodystart="37" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1a002d7b97f6e1f8bfa2b50efbe03d62bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -103,21 +110,25 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Função para obter a última jogada efetuada. </para>        </briefdescription>
+<para>Função para obter a última jogada efetuada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O estado atual </para></parameterdescription>
+<para>O estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a última jogada efetuada </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a última jogada efetuada </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="41" column="1" bodyfile="estado.c" bodystart="41" bodyend="43"/>
+        <location file="estado.c" line="41" column="12" bodyfile="estado.c" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1a6cd0b387bdee9e18003c78852394aa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -129,21 +140,25 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Função para obter o número de jogadas efetuadas. </para>        </briefdescription>
+<para>Função para obter o número de jogadas efetuadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Estado atual </para></parameterdescription>
+<para>Estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna o numero de jogadas efetuadas </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna o numero de jogadas efetuadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="45" column="1" bodyfile="estado.c" bodystart="45" bodyend="47"/>
+        <location file="estado.c" line="45" column="5" bodyfile="estado.c" bodystart="45" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="data_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
@@ -159,28 +174,33 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Função que através do estado e da coordenada indica o estado da casa referente a essas coordenadas. </para>        </briefdescription>
+<para>Função que através do estado e da coordenada indica o estado da casa referente a essas coordenadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Apontador para o estado </para></parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>c</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A coordenada </para></parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna o estado da casa </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna o estado da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="49" column="1" bodyfile="estado.c" bodystart="49" bodyend="51"/>
+        <location file="estado.c" line="49" column="6" bodyfile="estado.c" bodystart="49" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1ab3b8be2c1d31ca864df920d8f0df3a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,28 +217,33 @@
           <array>[8][8]</array>
         </param>
         <briefdescription>
-<para>Função para desenhar o tabuleiro. </para>        </briefdescription>
+<para>Função para desenhar o tabuleiro. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Estado atual </para></parameterdescription>
+<para>Estado atual </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>tab</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O tabuleiro </para></parameterdescription>
+<para>O tabuleiro </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna o tabuleiro </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna o tabuleiro </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="53" column="1" bodyfile="estado.c" bodystart="53" bodyend="59"/>
+        <location file="estado.c" line="53" column="6" bodyfile="estado.c" bodystart="53" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1aa21af881dfebf0f0e822b806edf9a006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -231,21 +256,25 @@
           <array>[8][8]</array>
         </param>
         <briefdescription>
-<para>Função para obter a posição da PECA percorrendo a matriz da tabuleiro. </para>        </briefdescription>
+<para>Função para obter a posição da PECA percorrendo a matriz da tabuleiro. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>tab</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O tabuleiro </para></parameterdescription>
+<para>O tabuleiro </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a coordenada da PECA </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a coordenada da PECA </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="61" column="1" bodyfile="estado.c" bodystart="61" bodyend="77"/>
+        <location file="estado.c" line="61" column="12" bodyfile="estado.c" bodystart="61" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="estado_8c_1a8c15dc48cadd06ac3887d88e47fd5ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -257,20 +286,23 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Função para resetar as jogadas. </para>        </briefdescription>
+<para>Função para resetar as jogadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O estado atual </para></parameterdescription>
+<para>O estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="estado.c" line="79" column="1" bodyfile="estado.c" bodystart="79" bodyend="88"/>
+        <location file="estado.c" line="79" column="6" bodyfile="estado.c" bodystart="79" bodyend="88"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

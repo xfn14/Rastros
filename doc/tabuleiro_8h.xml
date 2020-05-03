@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="tabuleiro_8h" kind="file" language="C++">
     <compoundname>tabuleiro.h</compoundname>
     <includes refid="data_8h" local="yes">data.h</includes>
@@ -8,102 +8,102 @@
     <includedby refid="main_8c" local="yes">main.c</includedby>
     <includedby refid="tabuleiro_8c" local="yes">tabuleiro.c</includedby>
     <incdepgraph>
-      <node id="276">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="277" relation="include">
-        </childnode>
-      </node>
-      <node id="277">
+      <node id="2">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="290">
-        <label>tabuleiro.c</label>
-        <link refid="tabuleiro_8c_source"/>
-      </node>
-      <node id="278">
+      <node id="1">
         <label>tabuleiro.h</label>
         <link refid="tabuleiro_8h"/>
-        <childnode refid="279" relation="include">
-        </childnode>
-        <childnode refid="281" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
-        </childnode>
-        <childnode refid="290" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="289">
-        <label>pos.c</label>
-        <link refid="pos_8c_source"/>
-      </node>
-      <node id="279">
-        <label>pos.h</label>
-        <link refid="pos_8h_source"/>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="289" relation="include">
-        </childnode>
-      </node>
-      <node id="286">
-        <label>lista.c</label>
-        <link refid="lista_8c_source"/>
-      </node>
-      <node id="285">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="286" relation="include">
-        </childnode>
-      </node>
-      <node id="288">
-        <label>main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="283">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
         <label>file.c</label>
         <link refid="file_8c_source"/>
       </node>
-      <node id="282">
+      <node id="5">
         <label>file.h</label>
         <link refid="file_8h"/>
-        <childnode refid="283" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="280" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="284">
+      <node id="13">
+        <label>tabuleiro.c</label>
+        <link refid="tabuleiro_8c_source"/>
+      </node>
+      <node id="1">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pos.c</label>
+        <link refid="pos_8c_source"/>
+      </node>
+      <node id="2">
+        <label>pos.h</label>
+        <link refid="pos_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="9">
+        <label>lista.c</label>
+        <link refid="lista_8c_source"/>
+      </node>
+      <node id="7">
         <label>jogada.c</label>
         <link refid="jogada_8c_source"/>
       </node>
-      <node id="287">
+      <node id="8">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>jogada.h</label>
+        <link refid="jogada_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>interpretador.c</label>
         <link refid="interpretador_8c_source"/>
       </node>
-      <node id="281">
-        <label>jogada.h</label>
-        <link refid="jogada_8h"/>
-        <childnode refid="282" relation="include">
-        </childnode>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="284" relation="include">
-        </childnode>
-      </node>
-      <node id="280">
+      <node id="3">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="281" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="285" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="287" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="288" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -114,12 +114,13 @@
         <argsstring>[8][8]</argsstring>
         <name>tabuleiro_inicial</name>
         <briefdescription>
-<para>tabuleiro inicial </para>        </briefdescription>
+<para>tabuleiro inicial </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tabuleiro.h" line="12" column="1" bodyfile="tabuleiro.h" bodystart="12" bodyend="-1"/>
+        <location file="tabuleiro.h" line="12" column="12" bodyfile="tabuleiro.h" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -133,26 +134,30 @@
           <declname>e</declname>
         </param>
         <briefdescription>
-<para>Função que recebe um estado e imprime o tabuleiro para esse estado. </para>        </briefdescription>
+<para>Função que recebe um estado e imprime o tabuleiro para esse estado. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Estado atual </para></parameterdescription>
+<para>Estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tabuleiro.h" line="18" column="1" bodyfile="tabuleiro.c" bodystart="4" bodyend="22"/>
+        <location file="tabuleiro.h" line="18" column="6" bodyfile="tabuleiro.c" bodystart="4" bodyend="22" declfile="tabuleiro.h" declline="18" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Definição do tabuleiro e das suas funções </para>    </detaileddescription>
+<para>Definição do tabuleiro e das suas funções </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
 <codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>SRC_TABULEIRO_H</highlight><highlight class="normal"></highlight></codeline>

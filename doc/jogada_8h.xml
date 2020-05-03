@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="jogada_8h" kind="file" language="C++">
     <compoundname>jogada.h</compoundname>
     <includes refid="estado_8h" local="yes">estado.h</includes>
@@ -9,170 +9,170 @@
     <includedby refid="interpretador_8h" local="yes">interpretador.h</includedby>
     <includedby refid="jogada_8c" local="yes">jogada.c</includedby>
     <incdepgraph>
-      <node id="160">
-        <label>movs.h</label>
-        <link refid="movs_8h_source"/>
-        <childnode refid="158" relation="include">
+      <node id="2">
+        <label>estado.h</label>
+        <link refid="estado_8h"/>
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="155">
+      <node id="3">
         <label>stdlib.h</label>
       </node>
-      <node id="162">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="156" relation="include">
+      <node id="8">
+        <label>movs.h</label>
+        <link refid="movs_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="156">
+      <node id="11">
+        <label>file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-      <node id="161">
+      <node id="10">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
         <label>pos.h</label>
         <link refid="pos_8h_source"/>
-        <childnode refid="158" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="154" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="162" relation="include">
-        </childnode>
-      </node>
-      <node id="164">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-        <childnode refid="165" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="159">
+      <node id="7">
         <label>string.h</label>
       </node>
-      <node id="163">
-        <label>file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="159" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="154" relation="include">
-        </childnode>
-        <childnode refid="153" relation="include">
-        </childnode>
-      </node>
-      <node id="165">
+      <node id="13">
         <label>math.h</label>
       </node>
-      <node id="154">
-        <label>estado.h</label>
-        <link refid="estado_8h"/>
-        <childnode refid="155" relation="include">
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="153">
+      <node id="1">
         <label>jogada.h</label>
         <link refid="jogada_8h"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="162" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="157">
+      <node id="5">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="158" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="159" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="153" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="160" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="163" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="164" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-      </node>
-      <node id="158">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="171">
-        <label>lista.c</label>
-        <link refid="lista_8c_source"/>
-      </node>
-      <node id="170">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="169" relation="include">
-        </childnode>
-        <childnode refid="171" relation="include">
-        </childnode>
-      </node>
-      <node id="173">
-        <label>main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="168">
+      <node id="3">
         <label>file.c</label>
         <link refid="file_8c_source"/>
       </node>
-      <node id="167">
+      <node id="2">
         <label>file.h</label>
         <link refid="file_8h"/>
-        <childnode refid="168" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="169" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="174">
+      <node id="8">
+        <label>main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="6">
+        <label>lista.c</label>
+        <link refid="lista_8c_source"/>
+      </node>
+      <node id="9">
         <label>jogada.c</label>
         <link refid="jogada_8c_source"/>
       </node>
-      <node id="172">
+      <node id="5">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>jogada.h</label>
+        <link refid="jogada_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>interpretador.c</label>
         <link refid="interpretador_8c_source"/>
       </node>
-      <node id="166">
-        <label>jogada.h</label>
-        <link refid="jogada_8h"/>
-        <childnode refid="167" relation="include">
-        </childnode>
-        <childnode refid="169" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-      </node>
-      <node id="169">
+      <node id="4">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="166" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="170" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="172" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="173" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -191,28 +191,33 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Efetua uma jogada. </para>        </briefdescription>
+<para>Efetua uma jogada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Apontador para o estado </para></parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A coordenada </para></parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>1 se a jogada for válida, 0 caso contrário </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>1 se a jogada for válida, 0 caso contrário </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="jogada.h" line="17" column="1" bodyfile="jogada.c" bodystart="3" bodyend="33"/>
+        <location file="jogada.h" line="17" column="5" bodyfile="jogada.c" bodystart="3" bodyend="33" declfile="jogada.h" declline="17" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="jogada_8h_1ad38b311e5dd671c323311b069aab168f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -228,28 +233,33 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Verifica se a jogada é válida. </para>        </briefdescription>
+<para>Verifica se a jogada é válida. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Apontador para o estado </para></parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A coordenada </para></parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>1 se o jogador ganha, 2 se o jogador 2 ganha, 3 se se move para uma casa vazia e 0 se a jogada não é válida </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>1 se o jogador ganha, 2 se o jogador 2 ganha, 3 se se move para uma casa vazia e 0 se a jogada não é válida </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="jogada.h" line="24" column="1" bodyfile="jogada.c" bodystart="35" bodyend="80"/>
+        <location file="jogada.h" line="24" column="5" bodyfile="jogada.c" bodystart="35" bodyend="80" declfile="jogada.h" declline="24" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="jogada_8h_1a4067bb2bd3a973474435b8bebcf51775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -265,33 +275,38 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Adicionar jogadas ao array de jogadas. </para>        </briefdescription>
+<para>Adicionar jogadas ao array de jogadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Apontador para o estado </para></parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A coordenada </para></parameterdescription>
+<para>A coordenada </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="jogada.h" line="30" column="1" bodyfile="jogada.c" bodystart="82" bodyend="99"/>
+        <location file="jogada.h" line="30" column="6" bodyfile="jogada.c" bodystart="82" bodyend="99" declfile="jogada.h" declline="30" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Definição da camada logica e das suas funções </para>    </detaileddescription>
+<para>Definição da camada logica e das suas funções </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
 <codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>SRC_JOGADA_H</highlight><highlight class="normal"></highlight></codeline>

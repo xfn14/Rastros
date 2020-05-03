@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="CMakeCCompilerId_8c" kind="file" language="C++">
     <compoundname>CMakeCCompilerId.c</compoundname>
       <sectiondef kind="define">
@@ -12,7 +12,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="314" column="10" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="314" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="314" column="10" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" prot="public" static="no">
         <name>STRINGIFY_HELPER</name>
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="334" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="334" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="334" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="334" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" prot="public" static="no">
         <name>STRINGIFY</name>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="335" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="335" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="335" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="335" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" prot="public" static="no">
         <name>PLATFORM_ID</name>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="436" column="10" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="436" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="436" column="10" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="436" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" prot="public" static="no">
         <name>ARCHITECTURE_ID</name>
@@ -56,12 +56,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="534" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="534" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="540" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="540" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" prot="public" static="no">
         <name>DEC</name>
         <param><defname>n</defname></param>
-        <initializer>(&apos;0&apos; + (((n) / 10000000)%10)), \
+        <initializer>  (&apos;0&apos; + (((n) / 10000000)%10)), \
   (&apos;0&apos; + (((n) / 1000000)%10)),  \
   (&apos;0&apos; + (((n) / 100000)%10)),   \
   (&apos;0&apos; + (((n) / 10000)%10)),    \
@@ -75,12 +75,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="538" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="538" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="544" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="544" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" prot="public" static="no">
         <name>HEX</name>
         <param><defname>n</defname></param>
-        <initializer>(&apos;0&apos; + ((n)&gt;&gt;28 &amp; 0xF)), \
+        <initializer>  (&apos;0&apos; + ((n)&gt;&gt;28 &amp; 0xF)), \
   (&apos;0&apos; + ((n)&gt;&gt;24 &amp; 0xF)), \
   (&apos;0&apos; + ((n)&gt;&gt;20 &amp; 0xF)), \
   (&apos;0&apos; + ((n)&gt;&gt;16 &amp; 0xF)), \
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="549" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="549" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="555" column="9" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="555" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" prot="public" static="no">
         <name>C_DIALECT</name>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="619" column="13" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="619" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="625" column="13" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="625" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="321" column="1" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="321" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="321" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="321" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" prot="public" static="no" mutable="no">
         <type>char const  *</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="608" column="1" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="608" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="614" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="614" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" prot="public" static="no" mutable="no">
         <type>char const  *</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="609" column="1" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="609" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="615" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="615" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="628" column="1" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="628" bodyend="-1"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="634" column="12" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="634" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" line="639" column="1" bodyfile="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" bodystart="639" bodyend="664"/>
+        <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" line="645" column="5" bodyfile="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" bodystart="645" bodyend="670"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -480,7 +480,7 @@
 <codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_MINOR<sp/>DEC(((__VER__)<sp/>/<sp/>1000)<sp/>%<sp/>1000)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_PATCH<sp/>DEC((__VER__)<sp/>%<sp/>1000)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_INTERNAL<sp/>DEC(__IAR_SYSTEMS_ICC__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__VER__)<sp/>&amp;&amp;<sp/>(defined(__ICCAVR__)<sp/>||<sp/>defined(__ICCRX__)<sp/>||<sp/>defined(__ICCRH850__)<sp/>||<sp/>defined(__ICCRL78__)<sp/>||<sp/>defined(__ICC430__)<sp/>||<sp/>defined(__ICCRISCV__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__VER__)<sp/>&amp;&amp;<sp/>(defined(__ICCAVR__)<sp/>||<sp/>defined(__ICCRX__)<sp/>||<sp/>defined(__ICCRH850__)<sp/>||<sp/>defined(__ICCRL78__)<sp/>||<sp/>defined(__ICC430__)<sp/>||<sp/>defined(__ICCRISCV__)<sp/>||<sp/>defined(__ICCV850__)<sp/>||<sp/>defined(__ICC8051__))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_MAJOR<sp/>DEC((__VER__)<sp/>/<sp/>100)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_MINOR<sp/>DEC((__VER__)<sp/>-<sp/>(((__VER__)<sp/>/<sp/>100)*100))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>COMPILER_VERSION_PATCH<sp/>DEC(__SUBVERSION__)</highlight><highlight class="normal"></highlight></codeline>
@@ -704,163 +704,169 @@
 <codeline lineno="507"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ICC430__)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="508"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;MSP430&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="509"><highlight class="normal"></highlight></codeline>
-<codeline lineno="510"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else<sp/></highlight><highlight class="comment">/*<sp/>unknown<sp/>architecture<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="511"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="512"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="513"><highlight class="normal"></highlight></codeline>
-<codeline lineno="514"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ghs__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="515"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__PPC64__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;PPC64&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="517"><highlight class="normal"></highlight></codeline>
-<codeline lineno="518"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ppc__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="519"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;PPC&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="520"><highlight class="normal"></highlight></codeline>
-<codeline lineno="521"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ARM__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="522"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;ARM&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ICCV850__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;V850&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ICC8051__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;8051&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else<sp/></highlight><highlight class="comment">/*<sp/>unknown<sp/>architecture<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ghs__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__PPC64__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;PPC64&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="523"><highlight class="normal"></highlight></codeline>
-<codeline lineno="524"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__x86_64__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;x64&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ppc__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;PPC&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="526"><highlight class="normal"></highlight></codeline>
-<codeline lineno="527"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__i386__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="528"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;X86&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__ARM__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;ARM&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="529"><highlight class="normal"></highlight></codeline>
-<codeline lineno="530"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else<sp/></highlight><highlight class="comment">/*<sp/>unknown<sp/>architecture<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="531"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="532"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="533"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="534"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="535"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="536"><highlight class="normal"></highlight></codeline>
-<codeline lineno="537"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Convert<sp/>integer<sp/>to<sp/>decimal<sp/>digit<sp/>literals.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="538"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEC(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="539"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000000)%10)),<sp/>\</highlight></codeline>
-<codeline lineno="540"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000000)%10)),<sp/><sp/>\</highlight></codeline>
-<codeline lineno="541"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100000)%10)),<sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="542"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000)%10)),<sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="543"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000)%10)),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="544"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100)%10)),<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="545"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10)%10)),<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="546"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/><sp/>((n)<sp/>%<sp/>10))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="547"><highlight class="normal"></highlight></codeline>
-<codeline lineno="548"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Convert<sp/>integer<sp/>to<sp/>hex<sp/>digit<sp/>literals.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEX(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="550"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;28<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="551"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;24<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="552"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;20<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="553"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;16<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="554"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;12<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="555"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;8<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="556"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;4<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
-<codeline lineno="557"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)<sp/><sp/><sp/><sp/><sp/>&amp;<sp/>0xF))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="558"><highlight class="normal"></highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>version<sp/>number<sp/>components.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="560"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="561"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_version[]<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="562"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="563"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="564"><highlight class="normal"><sp/><sp/>COMPILER_VERSION_MAJOR,</highlight></codeline>
-<codeline lineno="565"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>COMPILER_VERSION_MINOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="566"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_MINOR,</highlight></codeline>
-<codeline lineno="567"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>COMPILER_VERSION_PATCH</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_PATCH,</highlight></codeline>
-<codeline lineno="569"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>ifdef<sp/>COMPILER_VERSION_TWEAK</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_TWEAK,</highlight></codeline>
-<codeline lineno="571"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="572"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="573"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="574"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="575"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="576"><highlight class="normal"></highlight></codeline>
-<codeline lineno="577"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>internal<sp/>version<sp/>number.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="578"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_INTERNAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="579"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_version_internal[]<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="580"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="582"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="583"><highlight class="normal"><sp/><sp/>COMPILER_VERSION_INTERNAL,</highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="584"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="585"><highlight class="normal"></highlight></codeline>
-<codeline lineno="586"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>version<sp/>number<sp/>components.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="587"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="588"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_simulate_version[]<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="589"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="590"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="591"><highlight class="normal"><sp/><sp/>SIMULATE_VERSION_MAJOR,</highlight></codeline>
-<codeline lineno="592"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>SIMULATE_VERSION_MINOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="593"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_MINOR,</highlight></codeline>
-<codeline lineno="594"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>SIMULATE_VERSION_PATCH</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_PATCH,</highlight></codeline>
-<codeline lineno="596"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>ifdef<sp/>SIMULATE_VERSION_TWEAK</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_TWEAK,</highlight></codeline>
-<codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="600"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="601"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="602"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="603"><highlight class="normal"></highlight></codeline>
-<codeline lineno="604"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>the<sp/>string<sp/>literal<sp/>in<sp/>pieces<sp/>to<sp/>prevent<sp/>the<sp/>source<sp/>from</highlight></codeline>
-<codeline lineno="605"><highlight class="comment"><sp/><sp/><sp/>getting<sp/>matched.<sp/><sp/>Store<sp/>it<sp/>in<sp/>a<sp/>pointer<sp/>rather<sp/>than<sp/>an<sp/>array</highlight></codeline>
-<codeline lineno="606"><highlight class="comment"><sp/><sp/><sp/>because<sp/>some<sp/>compilers<sp/>will<sp/>just<sp/>produce<sp/>instructions<sp/>to<sp/>fill<sp/>the</highlight></codeline>
-<codeline lineno="607"><highlight class="comment"><sp/><sp/><sp/>array<sp/>rather<sp/>than<sp/>assigning<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>static<sp/>array.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="608"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>info_platform<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;platform[&quot;</highlight><highlight class="normal"><sp/>PLATFORM_ID<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="609"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>info_arch<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;arch[&quot;</highlight><highlight class="normal"><sp/>ARCHITECTURE_ID<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="610"><highlight class="normal"></highlight></codeline>
-<codeline lineno="611"><highlight class="normal"></highlight></codeline>
-<codeline lineno="612"><highlight class="normal"></highlight></codeline>
-<codeline lineno="613"><highlight class="normal"></highlight></codeline>
-<codeline lineno="614"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__STDC__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="615"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>(defined(_MSC_VER)<sp/>&amp;&amp;<sp/>!defined(__clang__))<sp/>\</highlight></codeline>
-<codeline lineno="616"><highlight class="preprocessor"><sp/><sp/>||<sp/>(defined(__ibmxl__)<sp/>||<sp/>defined(__IBMC__))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="617"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>C_DIALECT<sp/>&quot;90&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="618"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="619"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>C_DIALECT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="620"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="621"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>201000L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="622"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;11&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="624"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;99&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="625"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="626"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;90&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="627"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="628"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>info_language_dialect_default<sp/>=</highlight></codeline>
-<codeline lineno="629"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;dialect_default[&quot;</highlight><highlight class="normal"><sp/>C_DIALECT<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="630"><highlight class="normal"></highlight></codeline>
-<codeline lineno="631"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="632"><highlight class="normal"></highlight></codeline>
-<codeline lineno="633"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ID_VOID_MAIN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="634"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main()<sp/>{}</highlight></codeline>
-<codeline lineno="635"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="636"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__CLASSIC_C__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="637"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(argc,<sp/>argv)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc;<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[];</highlight></codeline>
-<codeline lineno="638"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="639"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
-<codeline lineno="640"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="641"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="642"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>require<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="643"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_compiler[argc];</highlight></codeline>
-<codeline lineno="644"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_platform[argc];</highlight></codeline>
-<codeline lineno="645"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_arch[argc];</highlight></codeline>
-<codeline lineno="646"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="647"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_version[argc];</highlight></codeline>
-<codeline lineno="648"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="649"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_INTERNAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="650"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_version_internal[argc];</highlight></codeline>
-<codeline lineno="651"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="652"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_ID</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="653"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_simulate[argc];</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__x86_64__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;x64&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__i386__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;X86&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else<sp/></highlight><highlight class="comment">/*<sp/>unknown<sp/>architecture<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ARCHITECTURE_ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Convert<sp/>integer<sp/>to<sp/>decimal<sp/>digit<sp/>literals.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEC(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="545"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000000)%10)),<sp/>\</highlight></codeline>
+<codeline lineno="546"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000000)%10)),<sp/><sp/>\</highlight></codeline>
+<codeline lineno="547"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100000)%10)),<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="548"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000)%10)),<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="549"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000)%10)),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="550"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100)%10)),<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="551"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10)%10)),<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="552"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/><sp/>((n)<sp/>%<sp/>10))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Convert<sp/>integer<sp/>to<sp/>hex<sp/>digit<sp/>literals.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEX(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="556"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;28<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="557"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;24<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="558"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;20<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="559"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;16<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="560"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;12<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="561"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;8<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="562"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;4<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="563"><highlight class="preprocessor"><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)<sp/><sp/><sp/><sp/><sp/>&amp;<sp/>0xF))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>version<sp/>number<sp/>components.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_version[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/>COMPILER_VERSION_MAJOR,</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>COMPILER_VERSION_MINOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_MINOR,</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>COMPILER_VERSION_PATCH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_PATCH,</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>ifdef<sp/>COMPILER_VERSION_TWEAK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>COMPILER_VERSION_TWEAK,</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>internal<sp/>version<sp/>number.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_INTERNAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_version_internal[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>COMPILER_VERSION_INTERNAL,</highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>a<sp/>string<sp/>literal<sp/>encoding<sp/>the<sp/>version<sp/>number<sp/>components.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>info_simulate_version[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/>SIMULATE_VERSION_MAJOR,</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>SIMULATE_VERSION_MINOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_MINOR,</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>SIMULATE_VERSION_PATCH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_PATCH,</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>ifdef<sp/>SIMULATE_VERSION_TWEAK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>SIMULATE_VERSION_TWEAK,</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/></highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construct<sp/>the<sp/>string<sp/>literal<sp/>in<sp/>pieces<sp/>to<sp/>prevent<sp/>the<sp/>source<sp/>from</highlight></codeline>
+<codeline lineno="611"><highlight class="comment"><sp/><sp/><sp/>getting<sp/>matched.<sp/><sp/>Store<sp/>it<sp/>in<sp/>a<sp/>pointer<sp/>rather<sp/>than<sp/>an<sp/>array</highlight></codeline>
+<codeline lineno="612"><highlight class="comment"><sp/><sp/><sp/>because<sp/>some<sp/>compilers<sp/>will<sp/>just<sp/>produce<sp/>instructions<sp/>to<sp/>fill<sp/>the</highlight></codeline>
+<codeline lineno="613"><highlight class="comment"><sp/><sp/><sp/>array<sp/>rather<sp/>than<sp/>assigning<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>static<sp/>array.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>info_platform<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;platform[&quot;</highlight><highlight class="normal"><sp/>PLATFORM_ID<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>info_arch<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;arch[&quot;</highlight><highlight class="normal"><sp/>ARCHITECTURE_ID<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__STDC__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>(defined(_MSC_VER)<sp/>&amp;&amp;<sp/>!defined(__clang__))<sp/>\</highlight></codeline>
+<codeline lineno="622"><highlight class="preprocessor"><sp/><sp/>||<sp/>(defined(__ibmxl__)<sp/>||<sp/>defined(__IBMC__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>C_DIALECT<sp/>&quot;90&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>C_DIALECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>201000L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;11&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;99&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>C_DIALECT<sp/>&quot;90&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>info_language_dialect_default<sp/>=</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;dialect_default[&quot;</highlight><highlight class="normal"><sp/>C_DIALECT<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ID_VOID_MAIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main()<sp/>{}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined(__CLASSIC_C__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(argc,<sp/>argv)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc;<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[];</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>require<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_compiler[argc];</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_platform[argc];</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_arch[argc];</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_version[argc];</highlight></codeline>
 <codeline lineno="654"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="655"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="656"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_simulate_version[argc];</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>COMPILER_VERSION_INTERNAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_version_internal[argc];</highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="658"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__CRAYXE)<sp/>||<sp/>defined(__CRAYXC)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="659"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_cray[argc];</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_simulate[argc];</highlight></codeline>
 <codeline lineno="660"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="661"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_language_dialect_default[argc];</highlight></codeline>
-<codeline lineno="662"><highlight class="normal"><sp/><sp/>(void)argv;</highlight></codeline>
-<codeline lineno="663"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>require;</highlight></codeline>
-<codeline lineno="664"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="665"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SIMULATE_VERSION_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_simulate_version[argc];</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__CRAYXE)<sp/>||<sp/>defined(__CRAYXC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_cray[argc];</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_language_dialect_default[argc];</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/>(void)argv;</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>require;</highlight></codeline>
+<codeline lineno="670"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c"/>
+    <location file="cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c"/>
   </compounddef>
 </doxygen>

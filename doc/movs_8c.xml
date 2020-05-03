@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="movs_8c" kind="file" language="C++">
     <compoundname>movs.c</compoundname>
     <includes refid="movs_8h" local="yes">movs.h</includes>
     <incdepgraph>
-      <node id="227">
+      <node id="1">
         <label>movs.c</label>
         <link refid="movs_8c"/>
-        <childnode refid="228" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="228">
+      <node id="2">
         <label>movs.h</label>
         <link refid="movs_8h_source"/>
-        <childnode refid="229" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="230" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="230">
+      <node id="4">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-      <node id="229">
+      <node id="3">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -37,20 +37,23 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores. </para>        </briefdescription>
+<para>Esta função através do estado indica quais foram as jogadas efetuadas pelos jogadores. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O estado atual </para></parameterdescription>
+<para>O estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="movs.c" line="3" column="1" bodyfile="movs.c" bodystart="3" bodyend="25"/>
+        <location file="movs.c" line="3" column="6" bodyfile="movs.c" bodystart="3" bodyend="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="data_8h" kind="file" language="C++">
     <compoundname>data.h</compoundname>
     <includedby refid="data_8c" local="yes">data.c</includedby>
@@ -11,144 +11,144 @@
     <includedby refid="lista_8h" local="yes">lista.h</includedby>
     <includedby refid="main_8c" local="yes">main.c</includedby>
     <invincdepgraph>
-      <node id="40">
-        <label>movs.c</label>
-        <link refid="movs_8c_source"/>
-      </node>
-      <node id="39">
-        <label>movs.h</label>
-        <link refid="movs_8h_source"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-      </node>
-      <node id="42">
-        <label>tabuleiro.c</label>
-        <link refid="tabuleiro_8c_source"/>
-      </node>
-      <node id="41">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>data.c</label>
-        <link refid="data_8c_source"/>
-      </node>
-      <node id="24">
-        <label>data.h</label>
-        <link refid="data_8h"/>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-      </node>
-      <node id="38">
-        <label>pos.c</label>
-        <link refid="pos_8c_source"/>
-      </node>
-      <node id="37">
-        <label>pos.h</label>
-        <link refid="pos_8h_source"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-      </node>
-      <node id="34">
-        <label>lista.c</label>
-        <link refid="lista_8c_source"/>
-      </node>
-      <node id="33">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="29">
-        <label>file.c</label>
-        <link refid="file_8c_source"/>
-      </node>
-      <node id="28">
-        <label>file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
+      <node id="4">
         <label>estado.c</label>
         <link refid="estado_8c_source"/>
       </node>
-      <node id="26">
+      <node id="3">
         <label>estado.h</label>
         <link refid="estado_8h"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="17">
+        <label>movs.c</label>
+        <link refid="movs_8c_source"/>
+      </node>
+      <node id="16">
+        <label>movs.h</label>
+        <link refid="movs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>file.c</label>
+        <link refid="file_8c_source"/>
+      </node>
+      <node id="5">
+        <label>file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>data.c</label>
+        <link refid="data_8c_source"/>
+      </node>
+      <node id="1">
+        <label>data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>tabuleiro.c</label>
+        <link refid="tabuleiro_8c_source"/>
+      </node>
+      <node id="18">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>pos.c</label>
+        <link refid="pos_8c_source"/>
+      </node>
+      <node id="14">
+        <label>pos.h</label>
+        <link refid="pos_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="11">
+        <label>lista.c</label>
+        <link refid="lista_8c_source"/>
+      </node>
+      <node id="9">
         <label>jogada.c</label>
         <link refid="jogada_8c_source"/>
       </node>
-      <node id="35">
+      <node id="10">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>jogada.h</label>
+        <link refid="jogada_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
         <label>interpretador.c</label>
         <link refid="interpretador_8c_source"/>
       </node>
-      <node id="31">
-        <label>jogada.h</label>
-        <link refid="jogada_8h"/>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="30">
+      <node id="7">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -156,7 +156,8 @@
     <innerclass refid="structJOGADA" prot="public">JOGADA</innerclass>
     <innerclass refid="structESTADO" prot="public">ESTADO</innerclass>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="data_8h_1aba91601f16d4c485b2d9b8c429f27039" prot="public" static="no">
+      <memberdef kind="enum" id="data_8h_1aba91601f16d4c485b2d9b8c429f27039" prot="public" static="no" strong="no">
+        <type></type>
         <name>CASA</name>
         <enumvalue id="data_8h_1aba91601f16d4c485b2d9b8c429f27039abc711f491a56ec7af7a688be508c5113" prot="public">
           <name>VAZIO</name>
@@ -194,12 +195,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>Tipo de dados para a casa. </para>        </briefdescription>
+<para>Tipo de dados para a casa. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.h" line="11" column="1" bodyfile="data.h" bodystart="11" bodyend="17"/>
+        <location file="data.h" line="11" column="14" bodyfile="data.h" bodystart="11" bodyend="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -209,12 +211,13 @@
         <argsstring>[32]</argsstring>
         <name>JOGADAS</name>
         <briefdescription>
-<para>Tipo de dados para as jogadas. </para>        </briefdescription>
+<para>Tipo de dados para as jogadas. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.h" line="38" column="1" bodyfile="data.h" bodystart="38" bodyend="-1"/>
+        <location file="data.h" line="38" column="16" bodyfile="data.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -228,21 +231,25 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a linha de uma coordenada. </para>        </briefdescription>
+<para>Funçao para obter a linha de uma coordenada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>coordenada pretendida </para></parameterdescription>
+<para>coordenada pretendida </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a linha correspondente à coordenada </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a linha correspondente à coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.h" line="60" column="1" bodyfile="data.c" bodystart="3" bodyend="5"/>
+        <location file="data.h" line="60" column="5" bodyfile="data.c" bodystart="3" bodyend="5" declfile="data.h" declline="60" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="data_8h_1a3ed4d21a46780eeda0ed8f424bee08a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -254,21 +261,25 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a coluna de uma coordenada. </para>        </briefdescription>
+<para>Funçao para obter a coluna de uma coordenada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>coordenada pretendida </para></parameterdescription>
+<para>coordenada pretendida </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a coluna correspondente à coordenada </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a coluna correspondente à coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.h" line="66" column="1" bodyfile="data.c" bodystart="7" bodyend="9"/>
+        <location file="data.h" line="66" column="5" bodyfile="data.c" bodystart="7" bodyend="9" declfile="data.h" declline="66" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="data_8h_1adff04e626f2030df84816a16df461e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -288,41 +299,48 @@
           <declname>jogador</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a jogada efetuada por um jogador. </para>        </briefdescription>
+<para>Funçao para obter a jogada efetuada por um jogador. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>apontador para o estado </para></parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jogada</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>numero da jogada </para></parameterdescription>
+<para>numero da jogada </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jogador</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>jogador pretendido </para></parameterdescription>
+<para>jogador pretendido </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a jogada efetuada pelo jogador </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a jogada efetuada pelo jogador </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.h" line="74" column="1" bodyfile="data.c" bodystart="11" bodyend="17"/>
+        <location file="data.h" line="74" column="12" bodyfile="data.c" bodystart="11" bodyend="17" declfile="data.h" declline="74" declcolumn="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Definição do estado e das funções que o manipulam </para>    </detaileddescription>
+<para>Definição do estado e das funções que o manipulam </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
 <codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>SRC_DATA_H</highlight><highlight class="normal"></highlight></codeline>

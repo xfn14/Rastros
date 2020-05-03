@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="data_8c" kind="file" language="C++">
     <compoundname>data.c</compoundname>
     <includes refid="data_8h" local="yes">data.h</includes>
     <incdepgraph>
-      <node id="20">
+      <node id="1">
         <label>data.c</label>
         <link refid="data_8c"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="2">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
@@ -26,21 +26,25 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a linha de uma coordenada. </para>        </briefdescription>
+<para>Funçao para obter a linha de uma coordenada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>coordenada pretendida </para></parameterdescription>
+<para>coordenada pretendida </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a linha correspondente à coordenada </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a linha correspondente à coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.c" line="3" column="1" bodyfile="data.c" bodystart="3" bodyend="5"/>
+        <location file="data.c" line="3" column="5" bodyfile="data.c" bodystart="3" bodyend="5"/>
       </memberdef>
       <memberdef kind="function" id="data_8c_1a3ed4d21a46780eeda0ed8f424bee08a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -52,21 +56,25 @@
           <declname>coord</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a coluna de uma coordenada. </para>        </briefdescription>
+<para>Funçao para obter a coluna de uma coordenada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>coord</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>coordenada pretendida </para></parameterdescription>
+<para>coordenada pretendida </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a coluna correspondente à coordenada </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a coluna correspondente à coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.c" line="7" column="1" bodyfile="data.c" bodystart="7" bodyend="9"/>
+        <location file="data.c" line="7" column="5" bodyfile="data.c" bodystart="7" bodyend="9"/>
       </memberdef>
       <memberdef kind="function" id="data_8c_1adff04e626f2030df84816a16df461e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -86,35 +94,41 @@
           <declname>jogador</declname>
         </param>
         <briefdescription>
-<para>Funçao para obter a jogada efetuada por um jogador. </para>        </briefdescription>
+<para>Funçao para obter a jogada efetuada por um jogador. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>apontador para o estado </para></parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jogada</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>numero da jogada </para></parameterdescription>
+<para>numero da jogada </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jogador</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>jogador pretendido </para></parameterdescription>
+<para>jogador pretendido </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a jogada efetuada pelo jogador </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a jogada efetuada pelo jogador </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="data.c" line="11" column="1" bodyfile="data.c" bodystart="11" bodyend="17"/>
+        <location file="data.c" line="11" column="12" bodyfile="data.c" bodystart="11" bodyend="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

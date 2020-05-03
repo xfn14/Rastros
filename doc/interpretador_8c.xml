@@ -1,120 +1,120 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="interpretador_8c" kind="file" language="C++">
     <compoundname>interpretador.c</compoundname>
     <includes refid="interpretador_8h" local="yes">interpretador.h</includes>
     <incdepgraph>
-      <node id="110">
-        <label>movs.h</label>
-        <link refid="movs_8h_source"/>
-        <childnode refid="103" relation="include">
+      <node id="6">
+        <label>estado.h</label>
+        <link refid="estado_8h"/>
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="107">
+      <node id="7">
         <label>stdlib.h</label>
       </node>
-      <node id="109">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="108" relation="include">
+      <node id="10">
+        <label>movs.h</label>
+        <link refid="movs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="12">
+        <label>file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-      <node id="111">
+      <node id="9">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
         <label>pos.h</label>
         <link refid="pos_8h_source"/>
-        <childnode refid="103" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
-        </childnode>
-      </node>
-      <node id="113">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="102" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="104">
+      <node id="4">
         <label>string.h</label>
       </node>
-      <node id="112">
-        <label>file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="106" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
+      <node id="14">
         <label>math.h</label>
       </node>
-      <node id="106">
-        <label>estado.h</label>
-        <link refid="estado_8h"/>
-        <childnode refid="107" relation="include">
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="13">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="101">
-        <label>interpretador.c</label>
-        <link refid="interpretador_8c"/>
-        <childnode refid="102" relation="include">
-        </childnode>
-      </node>
-      <node id="105">
+      <node id="5">
         <label>jogada.h</label>
         <link refid="jogada_8h"/>
-        <childnode refid="106" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="102" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="102">
+      <node id="1">
+        <label>interpretador.c</label>
+        <link refid="interpretador_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="103" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="104" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="105" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-      </node>
-      <node id="103">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpretador.c" line="3" column="1" bodyfile="interpretador.c" bodystart="3" bodyend="-1"/>
+        <location file="interpretador.c" line="3" column="5" bodyfile="interpretador.c" bodystart="3" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="interpretador_8c_1a87f17ec76699656b03c59b9240fa2759" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpretador.c" line="4" column="1" bodyfile="interpretador.c" bodystart="4" bodyend="-1"/>
+        <location file="interpretador.c" line="4" column="5" bodyfile="interpretador.c" bodystart="4" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -158,21 +158,25 @@
           <declname>e</declname>
         </param>
         <briefdescription>
-<para>Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa. </para>        </briefdescription>
+<para>Esta função interpreta o comando a executar e chamar a função correspondente do interface ou da lógica do programa. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>estado atual </para></parameterdescription>
+<para>estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna -1 para sair do programa, 0 nao acontece nada, 1 jogar, 2 gr, 3 ler, 4 movs, 5 pos </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna -1 para sair do programa, 0 nao acontece nada, 1 jogar, 2 gr, 3 ler, 4 movs, 5 pos </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpretador.c" line="6" column="1" bodyfile="interpretador.c" bodystart="6" bodyend="65"/>
+        <location file="interpretador.c" line="6" column="5" bodyfile="interpretador.c" bodystart="6" bodyend="65"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

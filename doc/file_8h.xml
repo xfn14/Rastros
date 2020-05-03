@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="file_8h" kind="file" language="C++">
     <compoundname>file.h</compoundname>
     <includes local="yes">stdio.h</includes>
@@ -10,170 +10,170 @@
     <includedby refid="file_8c" local="yes">file.c</includedby>
     <includedby refid="interpretador_8h" local="yes">interpretador.h</includedby>
     <incdepgraph>
-      <node id="87">
-        <label>movs.h</label>
-        <link refid="movs_8h_source"/>
-        <childnode refid="80" relation="include">
+      <node id="5">
+        <label>estado.h</label>
+        <link refid="estado_8h"/>
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="84">
+      <node id="6">
         <label>stdlib.h</label>
       </node>
-      <node id="89">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="82" relation="include">
+      <node id="9">
+        <label>movs.h</label>
+        <link refid="movs_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="82">
+      <node id="1">
+        <label>file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-      <node id="88">
+      <node id="11">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>pos.h</label>
         <link refid="pos_8h_source"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="83" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
-        </childnode>
-      </node>
-      <node id="90">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="81">
+      <node id="3">
         <label>string.h</label>
       </node>
-      <node id="79">
-        <label>file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="81" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="83" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-      </node>
-      <node id="91">
+      <node id="13">
         <label>math.h</label>
       </node>
-      <node id="83">
-        <label>estado.h</label>
-        <link refid="estado_8h"/>
-        <childnode refid="84" relation="include">
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="7">
         <label>jogada.h</label>
         <link refid="jogada_8h"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="86">
+      <node id="8">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-      </node>
-      <node id="80">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="98">
-        <label>lista.c</label>
-        <link refid="lista_8c_source"/>
-      </node>
-      <node id="97">
-        <label>lista.h</label>
-        <link refid="lista_8h_source"/>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="98" relation="include">
-        </childnode>
-      </node>
-      <node id="100">
-        <label>main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="93">
+      <node id="2">
         <label>file.c</label>
         <link refid="file_8c_source"/>
       </node>
-      <node id="92">
+      <node id="1">
         <label>file.h</label>
         <link refid="file_8h"/>
-        <childnode refid="93" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="9">
+        <label>main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="7">
+        <label>lista.c</label>
+        <link refid="lista_8c_source"/>
+      </node>
+      <node id="5">
         <label>jogada.c</label>
         <link refid="jogada_8c_source"/>
       </node>
-      <node id="99">
+      <node id="6">
+        <label>lista.h</label>
+        <link refid="lista_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>jogada.h</label>
+        <link refid="jogada_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>interpretador.c</label>
         <link refid="interpretador_8c_source"/>
       </node>
-      <node id="95">
-        <label>jogada.h</label>
-        <link refid="jogada_8h"/>
-        <childnode refid="92" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
-        </childnode>
-      </node>
-      <node id="94">
+      <node id="3">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="95" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -192,27 +192,31 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Esta função lê o Estado atual e grava o tabuleiro correspondente num ficheiro. </para>        </briefdescription>
+<para>Esta função lê o Estado atual e grava o tabuleiro correspondente num ficheiro. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>file_name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O nome do ficheiro </para></parameterdescription>
+<para>O nome do ficheiro </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O estado atual </para></parameterdescription>
+<para>O estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="file.h" line="19" column="1" bodyfile="file.c" bodystart="3" bodyend="43"/>
+        <location file="file.h" line="19" column="6" bodyfile="file.c" bodystart="3" bodyend="43" declfile="file.h" declline="19" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="file_8h_1ae6bfa898954094e9a4f4540e72ac3c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -228,33 +232,38 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Esta função lê um ficheiro e verifica o Estado do tabuleiro. </para>        </briefdescription>
+<para>Esta função lê um ficheiro e verifica o Estado do tabuleiro. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>file_name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O nome do ficheiro </para></parameterdescription>
+<para>O nome do ficheiro </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>O estado atual </para></parameterdescription>
+<para>O estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="file.h" line="25" column="1" bodyfile="file.c" bodystart="46" bodyend="150"/>
+        <location file="file.h" line="25" column="6" bodyfile="file.c" bodystart="46" bodyend="150" declfile="file.h" declline="25" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Definição do </para>    </detaileddescription>
+<para>Definição do </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
 <codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>SRC_FILE_H</highlight><highlight class="normal"></highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="lista_8h" kind="file" language="C++">
     <compoundname>lista.h</compoundname>
     <includes local="yes">stdio.h</includes>
@@ -10,187 +10,188 @@
     <includedby refid="interpretador_8h" local="yes">interpretador.h</includedby>
     <includedby refid="lista_8c" local="yes">lista.c</includedby>
     <incdepgraph>
-      <node id="200">
-        <label>movs.h</label>
-        <link refid="movs_8h_source"/>
-        <childnode refid="191" relation="include">
+      <node id="9">
+        <label>estado.h</label>
+        <link refid="estado_8h"/>
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="194" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="192">
+      <node id="3">
         <label>stdlib.h</label>
       </node>
-      <node id="199">
-        <label>tabuleiro.h</label>
-        <link refid="tabuleiro_8h"/>
-        <childnode refid="194" relation="include">
+      <node id="11">
+        <label>movs.h</label>
+        <link refid="movs_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="194">
+      <node id="13">
+        <label>file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
         <label>data.h</label>
         <link refid="data_8h"/>
       </node>
-      <node id="201">
+      <node id="10">
+        <label>tabuleiro.h</label>
+        <link refid="tabuleiro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
         <label>pos.h</label>
         <link refid="pos_8h_source"/>
-        <childnode refid="191" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="194" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="199" relation="include">
-        </childnode>
-      </node>
-      <node id="190">
-        <label>lista.h</label>
-        <link refid="lista_8h"/>
-        <childnode refid="191" relation="include">
-        </childnode>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="193" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="195" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="196">
+      <node id="7">
         <label>string.h</label>
       </node>
-      <node id="202">
-        <label>file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="191" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="198" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-      </node>
-      <node id="193">
+      <node id="4">
         <label>math.h</label>
       </node>
-      <node id="198">
-        <label>estado.h</label>
-        <link refid="estado_8h"/>
-        <childnode refid="192" relation="include">
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="1">
+        <label>lista.h</label>
+        <link refid="lista_8h"/>
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="194" relation="include">
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="197">
+      <node id="8">
         <label>jogada.h</label>
         <link refid="jogada_8h"/>
-        <childnode refid="198" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="195" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="199" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="195">
+      <node id="6">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="191" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="196" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="197" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="200" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="201" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="202" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="190" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-      </node>
-      <node id="191">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="211">
-        <label>lista.c</label>
-        <link refid="lista_8c_source"/>
-      </node>
-      <node id="203">
-        <label>lista.h</label>
-        <link refid="lista_8h"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-        <childnode refid="211" relation="include">
-        </childnode>
-      </node>
-      <node id="210">
-        <label>main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="207">
+      <node id="5">
         <label>file.c</label>
         <link refid="file_8c_source"/>
       </node>
-      <node id="206">
+      <node id="4">
         <label>file.h</label>
         <link refid="file_8h"/>
-        <childnode refid="207" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="208">
+      <node id="8">
+        <label>main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="9">
+        <label>lista.c</label>
+        <link refid="lista_8c_source"/>
+      </node>
+      <node id="6">
         <label>jogada.c</label>
         <link refid="jogada_8c_source"/>
       </node>
-      <node id="209">
+      <node id="1">
+        <label>lista.h</label>
+        <link refid="lista_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>jogada.h</label>
+        <link refid="jogada_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>interpretador.c</label>
         <link refid="interpretador_8c_source"/>
       </node>
-      <node id="205">
-        <label>jogada.h</label>
-        <link refid="jogada_8h"/>
-        <childnode refid="206" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
-        <childnode refid="208" relation="include">
-        </childnode>
-      </node>
-      <node id="204">
+      <node id="2">
         <label>interpretador.h</label>
         <link refid="interpretador_8h"/>
-        <childnode refid="205" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="203" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="209" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="210" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structnodo" prot="public">nodo</innerclass>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="lista_8h_1ab74c40cea97ab9b24f68471bb1ded1a2" prot="public" static="no">
+      <memberdef kind="typedef" id="lista_8h_1ab352ead3fb06267f3afdd032d67c189c" prot="public" static="no">
         <type>struct <ref refid="structnodo" kindref="compound">nodo</ref></type>
-        <definition>typedef struct nodo  NODO</definition>
+        <definition>typedef struct nodo NODO</definition>
         <argsstring></argsstring>
         <name>NODO</name>
         <briefdescription>
-<para>Tipo de dados para os nodos. </para>        </briefdescription>
+<para>Tipo de dados para os nodos. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="16" column="1"/>
+        <location file="lista.h" line="16" column="6"/>
       </memberdef>
       <memberdef kind="typedef" id="lista_8h_1a2ed03b19209dd10718380b31b09a69f5" prot="public" static="no">
         <type>struct <ref refid="structnodo" kindref="compound">nodo</ref> *</type>
@@ -203,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="16" column="1"/>
+        <location file="lista.h" line="16" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -213,13 +214,16 @@
         <argsstring>()</argsstring>
         <name>criar_lista</name>
         <briefdescription>
-<para>Cria uma listas ligadas vazia. </para>        </briefdescription>
+<para>Cria uma listas ligadas vazia. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>listas ligadas vazia </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>listas ligadas vazia </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="22" column="1" bodyfile="lista.c" bodystart="4" bodyend="8"/>
+        <location file="lista.h" line="22" column="7" bodyfile="lista.c" bodystart="4" bodyend="8" declfile="lista.h" declline="22" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a37ba5fc3cfddb6bc94d4b54b00bc696e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
@@ -235,28 +239,33 @@
           <declname>valor</declname>
         </param>
         <briefdescription>
-<para>Insere um valor à cabeça da listas ligadas. </para>        </briefdescription>
+<para>Insere um valor à cabeça da listas ligadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>listas ligadas </para></parameterdescription>
+<para>listas ligadas </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>valor</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>valor pretendido </para></parameterdescription>
+<para>valor pretendido </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>L retorna a listas ligadas apenas com o valor, t insere o valor à cabeça de uma listas ligadas </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>L retorna a listas ligadas apenas com o valor, t insere o valor à cabeça de uma listas ligadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="29" column="1" bodyfile="lista.c" bodystart="11" bodyend="21"/>
+        <location file="lista.h" line="29" column="7" bodyfile="lista.c" bodystart="11" bodyend="21" declfile="lista.h" declline="29" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1abfcb205f3eb670157be0d1221021714b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -268,20 +277,23 @@
           <declname>L</declname>
         </param>
         <briefdescription>
-<para>Devolve a cabeça de uma listas ligadas. </para>        </briefdescription>
+<para>Devolve a cabeça de uma listas ligadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Lista </para></parameterdescription>
+<para>Lista </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="34" column="1" bodyfile="lista.c" bodystart="24" bodyend="26"/>
+        <location file="lista.h" line="34" column="6" bodyfile="lista.c" bodystart="24" bodyend="26" declfile="lista.h" declline="34" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1ad9380152361127432c55c1c6067e05ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
@@ -293,21 +305,25 @@
           <declname>L</declname>
         </param>
         <briefdescription>
-<para>Devolve a cauda de uma listas ligadas. </para>        </briefdescription>
+<para>Devolve a cauda de uma listas ligadas. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Lista </para></parameterdescription>
+<para>Lista </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a cauda da listas ligadas </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a cauda da listas ligadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="40" column="1" bodyfile="lista.c" bodystart="29" bodyend="31"/>
+        <location file="lista.h" line="40" column="7" bodyfile="lista.c" bodystart="29" bodyend="31" declfile="lista.h" declline="40" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a9026a681a68322b5ec7f07137b864cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
@@ -319,21 +335,25 @@
           <declname>L</declname>
         </param>
         <briefdescription>
-<para>Remove a cabeça de uma listas ligadas, libertando o espaço ocupado. </para>        </briefdescription>
+<para>Remove a cabeça de uma listas ligadas, libertando o espaço ocupado. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Lista </para></parameterdescription>
+<para>Lista </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna a cauda da listas ligadas </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna a cauda da listas ligadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="46" column="1" bodyfile="lista.c" bodystart="34" bodyend="38"/>
+        <location file="lista.h" line="46" column="7" bodyfile="lista.c" bodystart="34" bodyend="38" declfile="lista.h" declline="46" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a4c10928f7acaa4e3de3760cea0dfd9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -345,21 +365,25 @@
           <declname>L</declname>
         </param>
         <briefdescription>
-<para>Verifica se uma listas ligadas está vazia. </para>        </briefdescription>
+<para>Verifica se uma listas ligadas está vazia. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Lista </para></parameterdescription>
+<para>Lista </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna verdadeiro se a listas ligadas estiver vazia </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna verdadeiro se a listas ligadas estiver vazia </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="52" column="1" bodyfile="lista.c" bodystart="41" bodyend="43"/>
+        <location file="lista.h" line="52" column="5" bodyfile="lista.c" bodystart="41" bodyend="43" declfile="lista.h" declline="52" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1aa350100b1458a5de32b6eb1f6e8ce91a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -371,20 +395,23 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Funçao que efetua uma jogada para o jogador atual. </para>        </briefdescription>
+<para>Funçao que efetua uma jogada para o jogador atual. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>estado atual </para></parameterdescription>
+<para>estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="57" column="1" bodyfile="lista.c" bodystart="45" bodyend="87"/>
+        <location file="lista.h" line="57" column="6" bodyfile="lista.c" bodystart="45" bodyend="87" declfile="lista.h" declline="57" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a061abc2bb8a801636ce34c53ae41e3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
@@ -400,28 +427,33 @@
           <declname>L</declname>
         </param>
         <briefdescription>
-<para>Funçao que verifica quais sao as jogadas proximas da coordenada atual. </para>        </briefdescription>
+<para>Funçao que verifica quais sao as jogadas proximas da coordenada atual. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>estado atual </para></parameterdescription>
+<para>estado atual </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>L</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Lista </para></parameterdescription>
+<para>Lista </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Retorna uma listas ligadas com as jogadas proximas </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Retorna uma listas ligadas com as jogadas proximas </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="64" column="1" bodyfile="lista.c" bodystart="128" bodyend="154"/>
+        <location file="lista.h" line="64" column="7" bodyfile="lista.c" bodystart="128" bodyend="154" declfile="lista.h" declline="64" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a532ad94e0682b31895602a4aa60ab5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -437,27 +469,31 @@
           <declname>coord2</declname>
         </param>
         <briefdescription>
-<para>Funçao que calcula a distancia para um dos jogadores ganhar. </para>        </briefdescription>
+<para>Funçao que calcula a distancia para um dos jogadores ganhar. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>coord1</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>primeira coordenada </para></parameterdescription>
+<para>primeira coordenada </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>coord2</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>segunda coordenada </para></parameterdescription>
+<para>segunda coordenada </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="70" column="1" bodyfile="lista.c" bodystart="156" bodyend="158"/>
+        <location file="lista.h" line="70" column="7" bodyfile="lista.c" bodystart="156" bodyend="158" declfile="lista.h" declline="70" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a7c2a15ce74c8c3436b02d7b9fc0b18c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -469,20 +505,23 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-<para>Funçao que efetua uma jogada para o jogador atual mas melhorada. </para>        </briefdescription>
+<para>Funçao que efetua uma jogada para o jogador atual mas melhorada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>estado atual </para></parameterdescription>
+<para>estado atual </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="75" column="1" bodyfile="lista.c" bodystart="89" bodyend="112"/>
+        <location file="lista.h" line="75" column="6" bodyfile="lista.c" bodystart="89" bodyend="112" declfile="lista.h" declline="75" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="lista_8h_1a95f7d8d0e0842e0eaaab8550be91b16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structnodo" kindref="compound">LISTA</ref></type>
@@ -498,27 +537,31 @@
           <declname>lista</declname>
         </param>
         <briefdescription>
-<para>Funçao que através da heuristica minimax calcula a proxima jogada. </para>        </briefdescription>
+<para>Funçao que através da heuristica minimax calcula a proxima jogada. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>estado</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>estado atual </para></parameterdescription>
+<para>estado atual </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>lista</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>lista de jogadas possiveis </para></parameterdescription>
+<para>lista de jogadas possiveis </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lista.h" line="81" column="1" bodyfile="lista.c" bodystart="114" bodyend="126"/>
+        <location file="lista.h" line="81" column="7" bodyfile="lista.c" bodystart="114" bodyend="126" declfile="lista.h" declline="81" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -540,17 +583,17 @@
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnodo" kindref="compound">nodo</ref><sp/>*proximo;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structnodo" kindref="compound">NODO</ref>,<sp/>*<ref refid="structnodo" kindref="compound">LISTA</ref>;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal">LISTA<sp/>criar_lista();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">LISTA<sp/>insere_cabeca(LISTA<sp/>L,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*valor);</highlight></codeline>
-<codeline lineno="34"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*devolve_cabeca(LISTA<sp/>L);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal">LISTA<sp/>proximo(LISTA<sp/>L);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">LISTA<sp/>remove_cabeca(LISTA<sp/>L);</highlight></codeline>
-<codeline lineno="52"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lista_esta_vazia(LISTA<sp/>L);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>criar_lista();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>insere_cabeca(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*valor);</highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*devolve_cabeca(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>proximo(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>remove_cabeca(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L);</highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lista_esta_vazia(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L);</highlight></codeline>
 <codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jog(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">LISTA<sp/>jogadasProximas(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/>LISTA<sp/>L);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>jogadasProximas(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>L);</highlight></codeline>
 <codeline lineno="70"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distancia_eucladiana(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>coord1,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>coord2);</highlight></codeline>
 <codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jog2(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal">LISTA<sp/>minimax(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado,<sp/>LISTA<sp/>lista);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>minimax(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado,<sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>lista);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SRC_LISTA_H</highlight></codeline>
     </programlisting>
